@@ -1,0 +1,17 @@
+{
+  "name": "performance-rhythm-platform",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter @performance-rhythm/web dev",
+    "build": "pnpm --filter @performance-rhythm/web build",
+    "start": "pnpm --filter @performance-rhythm/web start",
+    "lint": "pnpm --filter @performance-rhythm/web lint",
+    "typecheck": "pnpm --filter @performance-rhythm/web typecheck"
+  },
+  "packageManager": "pnpm@10.25.0"
+}
