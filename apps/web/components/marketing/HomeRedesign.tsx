@@ -392,7 +392,7 @@ export default function HomeRedesign() {
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             {/* Image with Overlay Card */}
             <div className="relative w-full">
-              <div className="relative w-full h-auto">
+              <div className="w-full h-auto space-y-6">
                 <Image
                   src="/images/Shane-Curtis-Portrait.webp"
                   alt="Shane Curtis, Co-Founder of Performance Rhythm"
@@ -401,14 +401,54 @@ export default function HomeRedesign() {
                   className="w-full h-auto rounded-lg"
                 />
                 
-                {/* Experience Card Overlay - Transparent - Bottom of Image */}
-                <div className="absolute bottom-0 left-4 right-4 bg-black bg-opacity-30 backdrop-blur-md rounded-lg border border-white border-opacity-20 p-8 space-y-6">
+                {/* Experience Card - Desktop: Overlay, Mobile/Tablet: Below Image */}
+                <div className="hidden lg:block lg:absolute lg:bottom-0 lg:left-4 lg:right-4 bg-black bg-opacity-30 backdrop-blur-md rounded-lg border border-white border-opacity-20 p-8 space-y-6">
                   {/* Years & Title */}
                   <div className="space-y-2">
                     <h2 className="text-5xl lg:text-6xl font-bold text-white">
                       17+
                     </h2>
                     <p className="text-xl font-bold text-white">
+                      Years Leading Teams
+                    </p>
+                    <p className="text-sm font-bold uppercase tracking-wide text-white text-opacity-90">
+                      Healthcare Technology Leadership
+                    </p>
+                  </div>
+
+                  {/* Expertise Badges */}
+                  <div className="space-y-3">
+                    <div className="flex flex-wrap gap-2">
+                      {['Sales', 'Marketing', 'Customer Success'].map((badge) => (
+                        <div
+                          key={badge}
+                          className="px-4 py-2 bg-white bg-opacity-20 border border-white border-opacity-40 rounded-full text-sm font-bold text-white backdrop-blur-sm"
+                        >
+                          {badge}
+                        </div>
+                      ))}
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {['Support', 'Implementation'].map((badge) => (
+                        <div
+                          key={badge}
+                          className="px-4 py-2 bg-white bg-opacity-20 border border-white border-opacity-40 rounded-full text-sm font-bold text-white backdrop-blur-sm"
+                        >
+                          {badge}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Mobile/Tablet Version - Below Image */}
+                <div className="lg:hidden bg-black bg-opacity-30 backdrop-blur-md rounded-lg border border-white border-opacity-20 p-8 space-y-6">
+                  {/* Years & Title */}
+                  <div className="space-y-2">
+                    <h2 className="text-4xl font-bold text-white">
+                      17+
+                    </h2>
+                    <p className="text-lg font-bold text-white">
                       Years Leading Teams
                     </p>
                     <p className="text-sm font-bold uppercase tracking-wide text-white text-opacity-90">
