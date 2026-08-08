@@ -5,7 +5,7 @@ type Variant = "primary" | "secondary" | "text";
 type Size = "sm" | "md" | "lg";
 
 const variants: Record<Variant, string> = {
-  primary: "bg-accent text-white shadow-subtle hover:bg-secondary focus-visible:ring-accent",
+  primary: "bg-[#D97742] text-white shadow-md hover:bg-[#5E8AA8] hover:shadow-lg focus-visible:ring-[#D97742]",
   secondary: "border border-primary/20 bg-transparent text-primary hover:border-primary hover:bg-neutral/45 focus-visible:ring-primary",
   text: "text-primary underline decoration-accent/40 underline-offset-8 hover:text-accent focus-visible:ring-accent"
 };
@@ -29,10 +29,26 @@ export function Button({
   size?: Size;
   className?: string;
 }) {
+  const isExternal = href.startsWith("http") || href.startsWith("//") || href.includes("cal.com") || href.includes("calendly");
+  const buttonClass = `inline-flex items-center justify-center rounded-full font-bold transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${variants[variant]} ${sizes[size]} ${className}`;
+  
+  if (isExternal) {
+    return (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={buttonClass}
+      >
+        {children}
+      </a>
+    );
+  }
+  
   return (
     <Link
       href={href}
-      className={`inline-flex items-center justify-center rounded-full font-bold transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${variants[variant]} ${sizes[size]} ${className}`}
+      className={buttonClass}
     >
       {children}
     </Link>

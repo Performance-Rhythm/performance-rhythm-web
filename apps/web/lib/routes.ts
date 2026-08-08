@@ -8,7 +8,9 @@ export const routes = {
   login: "/login",
   dashboard: "/dashboard",
   privacy: "/privacy",
-  terms: "/terms"
+  terms: "/terms",
+  bookDiscovery: "https://cal.com/shane-curtis/30min",
+  bookFoundingPartner: "https://cal.com/shane-curtis/founding-partner"
 } as const;
 
 export const primaryNavigation = [
