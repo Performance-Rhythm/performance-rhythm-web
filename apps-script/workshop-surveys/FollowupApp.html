@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <base target="_top">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+      :root{--navy:#243746;--blue:#6e93aa;--orange:#d97742;--sand:#f2ede7;--ink:#1f2f3a;--line:#dce5ea}
+      *{box-sizing:border-box} body{margin:0;background:linear-gradient(145deg,#eef4f7,#faf7f3);color:var(--ink);font-family:Arial,sans-serif}
+      .wrap{max-width:760px;margin:0 auto;padding:28px 16px 64px}.brand{background:#fff;border-radius:18px 18px 0 0;padding:28px 32px 22px;border-bottom:5px solid var(--orange)}
+      .rhythm{height:32px;position:relative;margin-bottom:18px}.rhythm:before{content:"";position:absolute;left:0;right:0;top:15px;height:3px;background:linear-gradient(90deg,var(--orange),#b8a996,var(--blue));border-radius:4px}
+      h1{font-size:28px;line-height:1.15;margin:0;color:var(--navy)} .sub{margin:9px 0 0;color:var(--blue);font-weight:bold}.card{background:#fff;padding:28px 32px;border-radius:0 0 18px 18px;box-shadow:0 14px 45px rgba(36,55,70,.12)}
+      .intro{background:#eef4f7;border-left:4px solid var(--blue);padding:14px 16px;border-radius:6px;margin-bottom:24px}.q{border-top:1px solid var(--line);padding:23px 0}.q:first-of-type{border-top:0}
+      label.title{display:block;font-weight:bold;font-size:16px;line-height:1.4;margin-bottom:11px}.required{color:var(--orange)} select,textarea,input[type=number]{width:100%;border:1px solid #b9c9d2;border-radius:8px;padding:12px;font:inherit;background:#fff}textarea{min-height:108px;resize:vertical}
+      .scale{display:grid;grid-template-columns:repeat(10,1fr);gap:6px}.scale label{text-align:center;border:1px solid #c9d6dd;border-radius:7px;padding:9px 2px;cursor:pointer}.scale input{display:block;margin:0 auto 5px}.ends{display:flex;justify-content:space-between;font-size:12px;color:#677b87;margin-top:7px}
+      .choices{display:grid;gap:8px}.choice{display:flex;gap:9px;align-items:flex-start;padding:10px 12px;border:1px solid #d6e0e5;border-radius:8px;cursor:pointer}.choice input{margin-top:2px}
+      button{width:100%;border:0;border-radius:9px;background:var(--orange);color:#fff;padding:14px 18px;font-size:16px;font-weight:bold;cursor:pointer}button:disabled{opacity:.6;cursor:wait}.status{padding:18px;border-radius:9px;text-align:center}.error{background:#fce8e6;color:#9a2f25}.success{background:#e6f4ea;color:#176b3a}.loading{text-align:center;padding:45px;color:var(--blue)}
+      .privacy{text-align:center;font-size:12px;color:#6b7d87;margin-top:18px}@media(max-width:560px){.brand,.card{padding-left:20px;padding-right:20px}.scale{grid-template-columns:repeat(5,1fr)}h1{font-size:24px}}
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <header class="brand"><div class="rhythm"></div><h1 id="title">Performance Rhythm Progress Check</h1><p class="sub" id="subtitle"></p></header>
+      <section class="card"><div id="app" class="loading">Loading your private progress check…</div></section>
+      <p class="privacy">Your email address is not included in this response or in company reports.</p>
+    </main>
+    <script>
+      const TOKEN = <?!= JSON.stringify(token) ?>;
+      const app = document.getElementById('app');
+      const escapeHtml = value => String(value ?? '').replace(/[&<>'"]/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
+      function questionHtml(q){
+        const required = q.required ? ' required' : '';
+        const mark = q.required ? ' <span class="required">*</span>' : '';
+        if(q.type==='TEXTAREA') return `<div class="q"><label class="title" for="${q.key}">${escapeHtml(q.question)}${mark}</label><textarea id="${q.key}" name="${q.key}"${required}></textarea></div>`;
+        if(q.type==='NUMBER') return `<div class="q"><label class="title" for="${q.key}">${escapeHtml(q.question)}${mark}</label><input type="number" id="${q.key}" name="${q.key}"${required}></div>`;
+        if(q.type==='SCALE'){
+          const radios=Array.from({length:10},(_,i)=>`<label><input type="radio" name="${q.key}" value="${i+1}"${required}>${i+1}</label>`).join('');
+          return `<fieldset class="q" style="border-left:0;border-right:0;border-bottom:0"><legend class="title">${escapeHtml(q.question)}${mark}</legend><div class="scale">${radios}</div><div class="ends"><span>${escapeHtml(q.options[0]||'Low')}</span><span>${escapeHtml(q.options[1]||'High')}</span></div></fieldset>`;
+        }
+        const options=q.options.map((option,i)=>`<label class="choice"><input type="radio" name="${q.key}" value="${escapeHtml(option)}"${required}><span>${escapeHtml(option)}</span></label>`).join('');
+        return `<fieldset class="q" style="border-left:0;border-right:0;border-bottom:0"><legend class="title">${escapeHtml(q.question)}${mark}</legend><div class="choices">${options}</div></fieldset>`;
+      }
+      function showError(error){app.innerHTML=`<div class="status error"><strong>We couldn’t open this progress check.</strong><br><br>${escapeHtml(error.message||error)}</div>`}
+      function load(){
+        if(!TOKEN){showError(new Error('This link is missing its private invitation token.'));return}
+        google.script.run.withSuccessHandler(data=>{
+          document.getElementById('title').textContent=`Your ${data.day}-Day Progress Check`;
+          document.getElementById('subtitle').textContent=data.workshop;
+          app.className='';
+          app.innerHTML=`<div class="intro"><strong>Welcome back.</strong> This brief check-in helps measure how the workshop tools are supporting you over time. Your participant, workshop, and checkpoint information are already connected.</div><form id="progressForm">${data.questions.map(questionHtml).join('')}<button id="submitButton" type="submit">Submit progress check</button></form>`;
+          document.getElementById('progressForm').addEventListener('submit',submit);
+        }).withFailureHandler(showError).getFollowupPayload(TOKEN);
+      }
+      function submit(event){
+        event.preventDefault(); const form=event.currentTarget; if(!form.reportValidity())return;
+        const button=document.getElementById('submitButton'); button.disabled=true; button.textContent='Submitting…';
+        const answers={}; new FormData(form).forEach((value,key)=>answers[key]=value);
+        google.script.run.withSuccessHandler(result=>{app.innerHTML=`<div class="status success"><strong>${result.duplicate?'You already completed this check-in.':'Thank you—your progress check is complete.'}</strong><br><br>You may close this page.</div>`}).withFailureHandler(error=>{button.disabled=false;button.textContent='Submit progress check';showError(error)}).submitProgressFollowup(TOKEN,answers);
+      }
+      load();
+    </script>
+  </body>
+</html>
