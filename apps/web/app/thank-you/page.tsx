@@ -7,7 +7,7 @@ import { Section } from "@/components/ui/Section";
 import { pageMetadata } from "@/lib/seo";
 import { routes } from "@/lib/routes";
 
-export const metadata = pageMetadata({ title: "Thank You", path: "/thank-you" });
+export const metadata = pageMetadata({ title: "Thank You", path: "/thank-you", index: false });
 
 const nextSteps = [
   "We review your goals and context.",

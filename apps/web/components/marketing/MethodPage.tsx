@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { METHOD_CONTENT } from '@/content/method';
 import { Button } from '@/components/ui/Button';
 import { routes } from '@/lib/routes';

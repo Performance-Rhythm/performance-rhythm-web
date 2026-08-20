@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { ABOUT_CONTENT } from "@/content/about";
 import { routes } from "@/lib/routes";
 
@@ -76,7 +75,7 @@ export default function AboutPage() {
                 {ABOUT_CONTENT.philosophy.title}
               </h2>
               <p className="text-2xl font-bold text-[#0B1D2A] leading-relaxed">
-                "{ABOUT_CONTENT.philosophy.coreStatement}"
+                &ldquo;{ABOUT_CONTENT.philosophy.coreStatement}&rdquo;
               </p>
             </div>
 

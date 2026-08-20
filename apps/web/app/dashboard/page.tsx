@@ -4,7 +4,7 @@ import { Section } from "@/components/ui/Section";
 import { Container } from "@/components/ui/Container";
 import { pageMetadata } from "@/lib/seo";
 
-export const metadata = pageMetadata({ title: "Dashboard Coming Soon", path: "/dashboard" });
+export const metadata = pageMetadata({ title: "Dashboard Coming Soon", path: "/dashboard", index: false });
 
 export default function DashboardPage() {
   return (

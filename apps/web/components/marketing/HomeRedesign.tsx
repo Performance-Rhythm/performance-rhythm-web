@@ -15,7 +15,6 @@ export default function HomeRedesign() {
     method,
     offer,
     engagement,
-    outcomes,
     founder,
     finalCta
   } = HOMEPAGE_CONTENT;

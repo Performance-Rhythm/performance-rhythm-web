@@ -4,7 +4,7 @@ import { Section } from "@/components/ui/Section";
 import { Container } from "@/components/ui/Container";
 import { pageMetadata } from "@/lib/seo";
 
-export const metadata = pageMetadata({ title: "Login Coming Soon", path: "/login" });
+export const metadata = pageMetadata({ title: "Login Coming Soon", path: "/login", index: false });
 
 export default function LoginPage() {
   return (

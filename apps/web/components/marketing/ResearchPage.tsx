@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { RESEARCH_CONTENT } from "@/content/research";
 import { routes } from "@/lib/routes";
 
@@ -183,7 +182,7 @@ export default function ResearchPage() {
                   🧠 Neuroscience
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  The nervous system isn't mysterious. We understand how stress activates it, how regulation tools calm it, and how consistent practice rewires it.
+                  The nervous system isn&apos;t mysterious. We understand how stress activates it, how regulation tools calm it, and how consistent practice rewires it.
                 </p>
               </div>
               <div className="space-y-4">
@@ -214,7 +213,7 @@ export default function ResearchPage() {
             Ready to Bring Science-Backed Resilience to Your Organization?
           </h2>
           <p className="text-xl text-gray-700 leading-relaxed max-w-2xl mx-auto">
-            Let's discuss how Performance Rhythm's evidence-informed approach can develop the human capacity your organization needs.
+            Let&apos;s discuss how Performance Rhythm&apos;s evidence-informed approach can develop the human capacity your organization needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <a

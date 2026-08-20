@@ -8,7 +8,7 @@ import "./globals.css";
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-montserrat", display: "swap" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://performancerhythm.com"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://www.performancerhythm.com"),
   title: "Performance Rhythm | Human Capacity Development",
   description:
     "Performance Rhythm helps organizations strengthen the human capacity that drives resilience, leadership effectiveness, sustainable performance, growth, and long-term impact."

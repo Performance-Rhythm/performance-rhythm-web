@@ -7,18 +7,21 @@ const defaultDescription =
 export function pageMetadata({
   title,
   description = defaultDescription,
-  path = "/"
+  path = "/",
+  index = true
 }: {
   title: string;
   description?: string;
   path?: string;
+  index?: boolean;
 }): Metadata {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://performancerhythm.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.performancerhythm.com";
   const url = `${siteUrl}${path}`;
 
   return {
     title: `${title} | ${siteName}`,
     description,
+    robots: index ? undefined : { index: false, follow: false },
     alternates: { canonical: url },
     openGraph: {
       title: `${title} | ${siteName}`,
