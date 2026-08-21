@@ -1,51 +1,35 @@
 import { NextRequest, NextResponse } from "next/server";
+import { createStaffSessionToken } from "@/lib/staff-auth";
 
-function secureEqual(left: string, right: string) {
-  const maxLength = Math.max(left.length, right.length);
-  let difference = left.length ^ right.length;
-
-  for (let index = 0; index < maxLength; index += 1) {
-    difference |= (left.charCodeAt(index) || 0) ^ (right.charCodeAt(index) || 0);
-  }
-
-  return difference === 0;
-}
-
-function unauthorized() {
-  return new NextResponse("Staff sign-in required.", {
-    status: 401,
-    headers: {
-      "Cache-Control": "no-store",
-      "WWW-Authenticate": 'Basic realm="Performance Rhythm Staff", charset="UTF-8"'
-    }
+function unavailable() {
+  return new NextResponse("Staff access is not configured.", {
+    status: 503,
+    headers: { "Cache-Control": "no-store" }
   });
 }
 
-export function proxy(request: NextRequest) {
+function apiUnauthorized() {
+  return NextResponse.json(
+    { ok: false, error: "Staff sign-in required." },
+    { status: 401, headers: { "Cache-Control": "no-store" } }
+  );
+}
+
+export async function proxy(request: NextRequest) {
   const staffUsername = process.env.STAFF_USERNAME;
   const staffPassword = process.env.STAFF_PASSWORD;
+  if (!staffUsername || !staffPassword) return unavailable();
 
-  if (!staffUsername || !staffPassword) {
-    return new NextResponse("Staff access is not configured.", {
-      status: 503,
-      headers: { "Cache-Control": "no-store" }
-    });
-  }
+  const { pathname, search } = request.nextUrl;
+  if (pathname === "/staff/login" || pathname === "/api/staff/login") return NextResponse.next();
 
-  const authorization = request.headers.get("authorization");
-  if (!authorization?.startsWith("Basic ")) return unauthorized();
-
-  try {
-    const decoded = atob(authorization.slice(6));
-    const separator = decoded.indexOf(":");
-    const username = separator >= 0 ? decoded.slice(0, separator) : "";
-    const password = separator >= 0 ? decoded.slice(separator + 1) : "";
-
-    if (!secureEqual(username, staffUsername) || !secureEqual(password, staffPassword)) {
-      return unauthorized();
-    }
-  } catch {
-    return unauthorized();
+  const expectedToken = await createStaffSessionToken(staffUsername, staffPassword);
+  const suppliedToken = request.cookies.get("pr_staff_session")?.value || "";
+  if (suppliedToken !== expectedToken) {
+    if (pathname.startsWith("/api/")) return apiUnauthorized();
+    const loginUrl = new URL("/staff/login", request.url);
+    loginUrl.searchParams.set("next", pathname + search);
+    return NextResponse.redirect(loginUrl);
   }
 
   const response = NextResponse.next();
