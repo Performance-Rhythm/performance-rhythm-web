@@ -3,9 +3,9 @@
 
 export const programs = [
   {
-    title: "Signature Workshops",
+    title: "Corporate Workshops",
     description:
-      "60–90 minute experiences introducing the Human Operating System, stress and resilience fundamentals, guided regulation, and practical integration.",
+      "60–120 minute experiences introducing workplace stress and nervous-system regulation, guided practice, and practical integration.",
     slug: "workshops"
   },
   {
@@ -58,10 +58,10 @@ export const PROGRAMS_CONTENT = {
 
   // Program 1: Workshops
   workshopProgram: {
-    title: "Signature Workshops",
+    title: "Corporate Workshops",
     slug: "workshops",
     eyebrow: "ENTRY POINT",
-    duration: "60–90 minutes",
+    duration: "60–120 minutes",
     audience: "All-hands, leadership teams, departments, or small groups",
     
     overview: "The Signature Workshop is the introduction to the Performance Rhythm framework. It introduces the Human Operating System, teaches nervous system basics, walks through the Notice-Reset-Strengthen-Repeat method with live demonstrations, and gives participants immediate tools they can use today.",
@@ -80,8 +80,10 @@ export const PROGRAMS_CONTENT = {
       {
         title: "Delivery Options",
         items: [
-          "60-minute Standard (framework + multiple reset tools + Q&A)",
-          "90-minute Deep Dive (framework + tools + live practice + discussion)"
+          "60-minute Foundations workshop",
+          "90-minute Signature Workshop",
+          "120-minute Intensive",
+          "45-minute Rhythm Reset follow-up"
         ]
       },
       {
@@ -104,8 +106,8 @@ export const PROGRAMS_CONTENT = {
       }
     ],
 
-    format: "In-person or virtual delivery. Supports 10 to 500+ participants.",
-    investment: "Pricing based on group size and duration. Typical range: $750–$2,000.",
+    format: "Virtual or in-person delivery. Base pricing includes up to 10 participants; larger groups are scoped separately.",
+    investment: "Starting at $500 virtually or $1,000 in person.",
     cta: "Explore Workshop Options"
   },
 
@@ -164,7 +166,7 @@ export const PROGRAMS_CONTENT = {
     ],
 
     format: "Monthly or bi-weekly sessions, 60–90 minutes per session. In-person or virtual.",
-    investment: "Pricing based on group size, session count, and customization. Typical range: $5,000–$20,000 per program.",
+    investment: "Starting at $10,000 for a 12-week Leadership Rhythm engagement.",
     cta: "Discuss Leadership Program"
   },
 
@@ -227,7 +229,7 @@ export const PROGRAMS_CONTENT = {
     ],
 
     format: "Customized engagement. Typically 3–12 months with multiple touchpoints.",
-    investment: "Partnership-based pricing. Typical range: $20,000–$100,000+ depending on scope and organization size.",
+    investment: "Starting at $7,500 for a 12-week pilot. Full-company partnerships are custom quoted.",
     cta: "Start A Corporate Partnership Conversation"
   },
 
@@ -287,7 +289,7 @@ export const PROGRAMS_CONTENT = {
     ],
 
     format: "Subscription model. Web and mobile app. Accessible 24/7.",
-    investment: "Team-based pricing starting at launch. Beta access available to Founding Partner clients.",
+    investment: "Included with select pilot, leadership, and custom corporate engagements. Broader access is custom quoted.",
     cta: "Request Platform Preview"
   },
 
