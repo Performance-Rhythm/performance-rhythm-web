@@ -204,8 +204,10 @@ function formatDateForSession(dateObj) {
   let parsed = dateObj;
   if (typeof parsed.getFullYear !== 'function') {
     const text = String(parsed).trim();
+    const iso = text.match(/^(\d{4})-(\d{2})-(\d{2})$/);
     const mdy = text.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
-    if (mdy) parsed = new Date(Number(mdy[3]), Number(mdy[1]) - 1, Number(mdy[2]));
+    if (iso) parsed = new Date(Number(iso[1]), Number(iso[2]) - 1, Number(iso[3]));
+    else if (mdy) parsed = new Date(Number(mdy[3]), Number(mdy[1]) - 1, Number(mdy[2]));
     else parsed = new Date(text);
   }
   if (!parsed || typeof parsed.getFullYear !== 'function' || isNaN(parsed.getTime())) return null;
@@ -743,8 +745,6 @@ function doGet(e) {
 function doPost(e) {
   try {
     const request = JSON.parse(String(e && e.postData && e.postData.contents || '{}'));
-    if (request.action !== 'createWorkshop') return workshopApiJson_({ok: false, error: 'Unsupported action.'});
-
     const expectedToken = PropertiesService.getScriptProperties().getProperty('WORKSHOP_API_KEY');
     if (!expectedToken || !constantTimeEquals_(String(request.authorizationToken || ''), expectedToken)) {
       return workshopApiJson_({ok: false, error: 'Not authorized.'});
@@ -754,6 +754,13 @@ function doPost(e) {
     if (!configuredSpreadsheetId || String(request.spreadsheetId || '') !== configuredSpreadsheetId) {
       return workshopApiJson_({ok: false, error: 'Survey workspace mismatch.'});
     }
+
+    if (request.action === 'healthCheck') {
+      const healthSpreadsheet = getSurveySpreadsheet_();
+      workshopPublicUrls_(healthSpreadsheet);
+      return workshopApiJson_({ok: true, service: 'workshop-surveys'});
+    }
+    if (request.action !== 'createWorkshop') return workshopApiJson_({ok: false, error: 'Unsupported action.'});
 
     const company = cleanWorkshopApiText_(request.company, 120, 'company');
     const sessionName = cleanWorkshopApiText_(request.sessionName, 160, 'session name');
@@ -770,9 +777,21 @@ function doPost(e) {
     const displayTime = workshopApiDisplayTime_(startTime);
     const sessionId = createSessionKey(workshopDate, displayTime);
     if (!sessionId) throw new Error('Unable to create the workshop session ID.');
-    registerWorkshopName_(ss, sessionId, company, sessionName);
-
     const urls = workshopPublicUrls_(ss);
+    if (request.validateOnly === true) {
+      return workshopApiJson_({
+        ok: true,
+        workshop: {
+          id: sessionId,
+          preSurveyUrl: urls.preSurveyUrl,
+          postSurveyUrl: urls.postSurveyUrl,
+          liveDashboardUrl: urls.liveDashboardUrl
+        },
+        validatedOnly: true
+      });
+    }
+
+    registerWorkshopName_(ss, sessionId, company, sessionName);
     return workshopApiJson_({
       ok: true,
       workshop: {

@@ -44,7 +44,19 @@ export async function POST(request: Request) {
       return json({ ok: false, error: "The survey service is temporarily unavailable." }, 502);
     }
 
-    const workshop = normalizeWorkshopResponse(await backendResponse.json(), input);
+    const responseText = await backendResponse.text();
+    let backendBody: unknown;
+    try {
+      backendBody = JSON.parse(responseText);
+    } catch {
+      console.error("Workshop survey service returned a non-JSON response", {
+        status: backendResponse.status,
+        contentType: backendResponse.headers.get("content-type")
+      });
+      return json({ ok: false, error: "The survey service returned an unexpected response. Please try again." }, 502);
+    }
+
+    const workshop = normalizeWorkshopResponse(backendBody, input);
     return json({ ok: true, workshop }, 201);
   } catch (error) {
     const message = error instanceof Error ? error.message : "Unable to create the workshop.";
