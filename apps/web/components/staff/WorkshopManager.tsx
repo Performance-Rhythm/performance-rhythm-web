@@ -7,6 +7,14 @@ import type { CreateWorkshopResponse, WorkshopLinks } from "@/lib/workshop-surve
 
 const fieldClass = "mt-2 w-full rounded-xl border border-primary/15 bg-white px-4 py-3 text-primary shadow-subtle outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/20";
 const actionClass = "inline-flex min-h-11 items-center justify-center rounded-full px-5 py-2.5 text-sm font-bold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2";
+const workshopStartTimes = Array.from({ length: 76 }, (_, index) => {
+  const totalMinutes = 5 * 60 + index * 15;
+  const hour = Math.floor(totalMinutes / 60);
+  const minute = totalMinutes % 60;
+  const value = `${String(hour).padStart(2, "0")}:${String(minute).padStart(2, "0")}`;
+  const label = `${hour % 12 || 12}:${String(minute).padStart(2, "0")} ${hour < 12 ? "AM" : "PM"}`;
+  return { value, label };
+});
 
 function SurveyCard({ label, url, filename }: { label: string; url: string; filename: string }) {
   const [qrDataUrl, setQrDataUrl] = useState("");
@@ -95,7 +103,10 @@ export function WorkshopManager() {
             <input className={fieldClass} name="workshopDate" type="date" required />
           </label>
           <label className="text-sm font-bold text-primary">Start time
-            <input className={fieldClass} name="startTime" type="time" step={900} required />
+            <select className={fieldClass} name="startTime" defaultValue="" required>
+              <option value="" disabled>Select a start time</option>
+              {workshopStartTimes.map((time) => <option key={time.value} value={time.value}>{time.label}</option>)}
+            </select>
           </label>
         </div>
         <button disabled={submitting} className={`${actionClass} mt-7 bg-accent px-7 text-white shadow-md hover:bg-secondary disabled:cursor-wait disabled:opacity-60`}>
