@@ -777,7 +777,7 @@ function doPost(e) {
     const displayTime = workshopApiDisplayTime_(startTime);
     const sessionId = createSessionKey(workshopDate, displayTime);
     if (!sessionId) throw new Error('Unable to create the workshop session ID.');
-    const urls = workshopPublicUrls_(ss);
+    const urls = workshopPrefilledUrls_(ss, workshopDate, displayTime);
     if (request.validateOnly === true) {
       return workshopApiJson_({
         ok: true,
@@ -870,6 +870,40 @@ function workshopPublicUrls_(ss) {
     postSurveyUrl: postSurveyUrl,
     liveDashboardUrl: ss.getUrl() + '#gid=' + dashboard.getSheetId()
   };
+}
+
+function workshopPrefilledUrls_(ss, workshopDate, displayTime) {
+  const urls = workshopPublicUrls_(ss);
+  return {
+    preSurveyUrl: prefilledWorkshopFormUrl_(ss, 'pre', workshopDate, displayTime),
+    postSurveyUrl: prefilledWorkshopFormUrl_(ss, 'post', workshopDate, displayTime),
+    liveDashboardUrl: urls.liveDashboardUrl
+  };
+}
+
+function prefilledWorkshopFormUrl_(ss, surveyType, workshopDate, displayTime) {
+  const names = surveyType === 'pre'
+    ? ['Pre Responses', 'Form Responses 1']
+    : ['Post Responses', 'Form Responses 2'];
+  const responseSheet = names.map(name => ss.getSheetByName(name)).find(Boolean);
+  const formUrl = responseSheet && responseSheet.getFormUrl();
+  if (!formUrl) throw new Error('The ' + surveyType + '-workshop form is not linked to its response sheet.');
+
+  const form = FormApp.openByUrl(formUrl);
+  const dateItem = form.getItems(FormApp.ItemType.DATE)
+    .map(item => item.asDateItem())
+    .find(item => item.getTitle() === 'What date did this workshop start?');
+  const timeItem = form.getItems(FormApp.ItemType.LIST)
+    .map(item => item.asListItem())
+    .find(item => item.getTitle() === 'What time did this workshop start?');
+  if (!dateItem || !timeItem) throw new Error('Workshop date or time fields were not found on the ' + surveyType + '-workshop form.');
+
+  const parts = workshopDate.split('-').map(Number);
+  const localDate = new Date(parts[0], parts[1] - 1, parts[2]);
+  return form.createResponse()
+    .withItemResponse(dateItem.createResponse(localDate))
+    .withItemResponse(timeItem.createResponse(displayTime))
+    .toPrefilledUrl();
 }
 
 function getFollowupPayload(token) {
