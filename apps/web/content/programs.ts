@@ -5,7 +5,7 @@ export const programs = [
   {
     title: "Signature Workshops",
     description:
-      "45–90 minute experiences introducing the Human Operating System, stress and resilience fundamentals, guided regulation, and practical integration.",
+      "60–90 minute experiences introducing the Human Operating System, stress and resilience fundamentals, guided regulation, and practical integration.",
     slug: "workshops"
   },
   {
@@ -33,7 +33,7 @@ export const PROGRAMS_CONTENT = {
   hero: {
     eyebrow: "PERFORMANCE RHYTHM PROGRAMS",
     headline: "Designed for Organizations That Believe People Drive Performance",
-    intro: "We don't offer one-off events. We offer pathways to lasting change—combining workshops, leadership development, corporate partnerships, and future platform access into a coordinated system of support.",
+    intro: "A workshop can be a valuable starting point. We design it as the first step in a practical path that can extend into leadership development, corporate partnerships, and ongoing reinforcement.",
     cta: "Book A Discovery Conversation"
   },
 
@@ -47,7 +47,7 @@ export const PROGRAMS_CONTENT = {
       },
       {
         title: "Reinforcement: Practice",
-        description: "Insight without practice is entertainment. We embed practical tools—breathing, grounding, visualization, meditation—into every program so people leave with tools they can use immediately."
+        description: "Insight becomes more useful through practice. We embed practical tools—breathing, grounding, visualization, and meditation—into every program so people leave with options they can apply in real situations."
       },
       {
         title: "Integration: Rhythm",
@@ -105,7 +105,7 @@ export const PROGRAMS_CONTENT = {
     ],
 
     format: "In-person or virtual delivery. Supports 10 to 500+ participants.",
-    investment: "Pricing based on group size and duration. Starting at $1,000–$2,500. ",
+    investment: "Pricing based on group size and duration. Typical range: $750–$2,000.",
     cta: "Explore Workshop Options"
   },
 
@@ -117,7 +117,7 @@ export const PROGRAMS_CONTENT = {
     duration: "4–8 sessions over 8–12 weeks",
     audience: "Leadership teams, senior leaders, department heads",
     
-    overview: "Leadership programs are multi-session engagements designed for leaders who want to develop deeper capacity for presence, clarity, resilience, and influence. We go beyond awareness into skill-building and integration—creating leaders who are regulated, clear, and able to influence their teams' capacity as well.",
+    overview: "Leadership programs are multi-session engagements for leaders who want to develop deeper capacity for presence, clarity, resilience, and influence. The work moves from awareness into skill-building and integration, helping leaders practice more intentional responses under pressure and consider how their behavior shapes team conditions.",
     
     sections: [
       {
@@ -152,19 +152,19 @@ export const PROGRAMS_CONTENT = {
         ]
       },
       {
-        title: "Outcomes",
+        title: "Intended Outcomes",
         items: [
-          "Leaders have a stable personal practice (10–20 min daily)",
-          "Leaders are more present and regulated in high-stakes situations",
-          "Leadership communication and presence improves (visible to teams)",
+          "Leaders establish a realistic personal practice",
+          "Leaders build options for responding in high-stakes situations",
+          "Leadership communication and presence become explicit areas of practice",
           "Leaders develop clarity on how their state influences team performance",
-          "Teams report improved trust, safety, and leadership presence"
+          "Teams have opportunities to provide feedback on trust, safety, and leadership presence"
         ]
       }
     ],
 
     format: "Monthly or bi-weekly sessions, 60–90 minutes per session. In-person or virtual.",
-    investment: "Pricing based on group size and session count. Typical range: $5,000–$15,000 per leader.",
+    investment: "Pricing based on group size, session count, and customization. Typical range: $5,000–$20,000 per program.",
     cta: "Discuss Leadership Program"
   },
 
@@ -213,15 +213,15 @@ export const PROGRAMS_CONTENT = {
         ]
       },
       {
-        title: "Outcomes",
+        title: "Potential Measures and Outcomes",
         items: [
-          "Measurable improvements in employee engagement and retention",
-          "Reduced stress and burnout across teams",
-          "Improved decision-making quality and speed",
-          "Stronger psychological safety and trust",
-          "Better cross-functional collaboration",
-          "Visible leadership presence and influence",
-          "Foundation for sustainable performance culture"
+          "Participant-reported changes in stress, calm, clarity, and perceived capacity",
+          "Employee engagement, retention, and recovery indicators chosen with the organization",
+          "Decision-making and communication behaviors in defined work contexts",
+          "Psychological safety and trust measures",
+          "Cross-functional collaboration measures",
+          "Leadership presence and behavior feedback",
+          "A practical foundation for more sustainable performance"
         ]
       }
     ],
@@ -257,8 +257,8 @@ export const PROGRAMS_CONTENT = {
       {
         title: "Why Platform Matters",
         items: [
-          "Workshops create awareness. Platforms create consistency.",
-          "One workshop helps in the moment. Consistent practice changes your baseline.",
+          "Workshops create awareness. A reinforcement platform can support consistency.",
+          "One workshop introduces the tools. Continued practice helps people apply them over time.",
           "Mobile access means tools are available when people need them most.",
           "Company-specific content makes it relevant to your organization's context.",
           "Aggregate data helps you see organizational patterns and progress."
@@ -275,13 +275,13 @@ export const PROGRAMS_CONTENT = {
         ]
       },
       {
-        title: "Expected Outcomes",
+        title: "Designed to Support",
         items: [
-          "Sustained practice and behavioral change over months and years",
-          "Improved employee engagement and retention",
-          "Reduced stress and burnout across the organization",
-          "Culture shift toward proactive self-care and regulation",
-          "Measurable improvements in performance metrics"
+          "Continued practice and skill reinforcement",
+          "Accessible tools for stress, focus, and recovery",
+          "A shared language for regulation and sustainable performance",
+          "Aggregate engagement and self-reported progress measures",
+          "Organization-specific learning paths and content"
         ]
       }
     ],
@@ -340,17 +340,17 @@ export const PROGRAMS_CONTENT = {
       {
         situation: "Our leadership team wants to develop deeper capacity for resilience and presence.",
         recommendation: "Engage in a Leadership Program",
-        why: "Multi-session engagement creates sustainable change in how leaders show up. Impacts team culture through leadership modeling."
+        why: "A multi-session engagement creates time to practice, reflect, and apply the work to real leadership situations."
       },
       {
         situation: "We're ready for organizational transformation and want comprehensive engagement.",
         recommendation: "Partner in a Corporate Program",
-        why: "Longer engagement allows us to work with multiple levels of your organization, align leadership, and create cultural shifts that stick."
+        why: "A longer engagement allows work across multiple levels, with shared goals, reinforcement, and measurement."
       },
       {
         situation: "We've done workshops/programs and want ongoing reinforcement.",
         recommendation: "Combine programs with Platform access",
-        why: "Platform keeps the practice alive, prevents knowledge atrophy, and scales access across the organization."
+        why: "A platform can make practice resources easier to revisit and scale across the organization."
       },
       {
         situation: "We want to partner long-term and shape the future of Performance Rhythm.",
@@ -366,11 +366,11 @@ export const PROGRAMS_CONTENT = {
     faqs: [
       {
         question: "How long does it take to see results?",
-        answer: "Awareness (Notice) is immediate — people can feel the shift in a single workshop. Reset tools work within 3–5 minutes. Strengthen benefits compound over weeks and months of consistent practice. Organizational culture shifts typically become visible after 3–6 months of engagement. The longer you invest, the deeper the change."
+        answer: "Some participants notice a state shift during a guided practice, while durable skill and organizational change take repetition, supportive working conditions, and time. We set measures appropriate to the engagement instead of promising a universal timeline."
       },
       {
         question: "Can this work for remote/distributed teams?",
-        answer: "Absolutely. All programs are delivered virtually or hybrid. The platform (launching soon) makes practice accessible 24/7, which is ideal for distributed teams. We also design content for async participation when needed."
+        answer: "Yes. Programs can be delivered in person, virtually, or in a hybrid format. As the platform develops, it will add on-demand resources that can support distributed teams between live sessions."
       },
       {
         question: "What if only some leaders are interested?",
@@ -382,7 +382,7 @@ export const PROGRAMS_CONTENT = {
       },
       {
         question: "What's the difference between your workshops and generic meditation/wellness workshops?",
-        answer: "We're not teaching relaxation — we're teaching nervous system literacy and building leadership capacity. Our approach is grounded in neuroscience, focused on business performance, and designed for leaders managing real pressure. We're also explicit about the science, practical about time constraints, and intentional about linking personal regulation to organizational outcomes."
+        answer: "Performance Rhythm is a human-capacity and leadership offering, not a general wellness event. We teach nervous-system literacy and practical regulation skills in the context of real work, communicate the evidence and its limits, and connect individual practice with the organizational conditions that shape sustainable performance."
       },
       {
         question: "Can we customize programs for our organization?",

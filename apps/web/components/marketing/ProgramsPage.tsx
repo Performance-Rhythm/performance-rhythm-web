@@ -19,7 +19,7 @@ export default function ProgramsPage() {
   } = PROGRAMS_CONTENT;
 
   return (
-    <main className="bg-white">
+    <div className="bg-white">
       {/* IMMERSIVE HERO SECTION */}
       <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#FAFAF8] via-white to-[#FAFAF8]">
         {/* Subtle background pattern */}
@@ -598,6 +598,6 @@ export default function ProgramsPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

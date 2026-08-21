@@ -109,3 +109,13 @@ The website should not feel:
 - Fitness-app aggressive
 - Dark-theme default
 - Generic SaaS cluttered
+
+---
+
+# Current Audit and Completion Work
+
+The active page-by-page quality audit, completed fixes, and prioritized remaining work are maintained in:
+
+- `10 Product Platform/08 Website Audit and To-Do.md`
+
+The highest-priority remaining items are the eight Method-page image placeholders, qualified legal review, public pricing approval, and validation of future-platform promises.

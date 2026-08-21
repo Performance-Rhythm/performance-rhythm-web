@@ -3,9 +3,30 @@
 import { RESEARCH_CONTENT } from "@/content/research";
 import { routes } from "@/lib/routes";
 
+function getResourceTypeLabel(type: string) {
+  switch (type) {
+    case "meta-analysis":
+      return "Meta-Analysis";
+    case "systematic-review":
+      return "Systematic Review";
+    case "study":
+      return "Research Study";
+    case "review":
+      return "Research Review";
+    case "survey":
+      return "Workforce Survey";
+    case "framework":
+      return "Action Framework";
+    case "policy-brief":
+      return "Policy Brief";
+    default:
+      return "Research Resource";
+  }
+}
+
 export default function ResearchPage() {
   return (
-    <main className="bg-white">
+    <div className="bg-white">
       {/* Hero Section */}
       <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#FAFAF8] via-white to-[#FAFAF8]">
         <div className="absolute inset-0 opacity-[0.03]">
@@ -115,13 +136,7 @@ export default function ResearchPage() {
                       {/* Footer: Type & Link */}
                       <div className="flex items-center justify-between pt-4 border-t border-[#A7BBC6] border-opacity-20">
                         <span className="text-xs font-bold text-[#5E8AA8] uppercase tracking-wide">
-                          {article.type === "peer-reviewed"
-                            ? "Research Study"
-                            : article.type === "article"
-                            ? "Educational Article"
-                            : article.type === "report"
-                            ? "Report"
-                            : "Research"}
+                          {getResourceTypeLabel(article.type)}
                         </span>
                         <a
                           href={article.url}
@@ -129,7 +144,7 @@ export default function ResearchPage() {
                           rel="noopener noreferrer"
                           className="inline-flex items-center gap-2 font-bold text-[#D97742] hover:text-[#5E8AA8] transition duration-200"
                         >
-                          Read Full Resource →
+                          View Source →
                         </a>
                       </div>
                     </div>
@@ -140,6 +155,14 @@ export default function ResearchPage() {
           </div>
         </section>
       ))}
+
+      <aside className="border-b border-[#A7BBC6] border-opacity-20 bg-[#0B1D2A] py-10 text-white">
+        <div className="container mx-auto max-w-5xl px-6 text-center">
+          <p className="text-base leading-relaxed text-white/85">
+            {RESEARCH_CONTENT.evidenceNote}
+          </p>
+        </div>
+      </aside>
 
       {/* Future Section */}
       <section className="py-24 bg-gradient-to-r from-[#D97742] to-[#5E8AA8]">
@@ -158,7 +181,7 @@ export default function ResearchPage() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full font-bold transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 bg-[#D97742] text-white shadow-md hover:bg-[#5E8AA8] hover:shadow-lg focus-visible:ring-[#D97742] px-7 py-4 text-base sm:text-lg bg-white hover:bg-[#ECE7DF] text-[#D97742] font-bold shadow-lg"
           >
-            Schedule a Conversation
+            {RESEARCH_CONTENT.futureSection.cta}
           </a>
         </div>
       </section>
@@ -172,33 +195,33 @@ export default function ResearchPage() {
                 Why This Research Matters
               </h2>
               <p className="text-xl text-gray-700 leading-relaxed max-w-2xl mx-auto">
-                The research is clear: nervous system regulation, resilience training, and recovery practices directly improve leadership, team culture, and organizational performance.
+                The evidence supports a practical, measured approach: help people understand stress, teach accessible regulation and attention practices, and improve the working conditions that shape capacity. Direct organizational outcomes depend on context, implementation, and sustained support.
               </p>
             </div>
 
             <div className="grid lg:grid-cols-3 gap-8">
               <div className="space-y-4">
                 <h3 className="text-2xl font-bold text-[#0B1D2A]">
-                  🧠 Neuroscience
+                  Stress & Cognition
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  The nervous system isn&apos;t mysterious. We understand how stress activates it, how regulation tools calm it, and how consistent practice rewires it.
+                  Stress can influence attention, working memory, cognitive flexibility, and decisions. These effects vary across people, tasks, and timing.
                 </p>
               </div>
               <div className="space-y-4">
                 <h3 className="text-2xl font-bold text-[#0B1D2A]">
-                  📊 Organizational Data
+                  Work Design & Leadership
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Companies investing in resilience training see measurable improvements in retention, engagement, performance, and psychological safety.
+                  Burnout prevention is not an individual-only responsibility. Job demands, resources, recovery, leadership, and psychological safety all matter.
                 </p>
               </div>
               <div className="space-y-4">
                 <h3 className="text-2xl font-bold text-[#0B1D2A]">
-                  ⚡ Practical Application
+                  Responsible Application
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  The science informs our method. Everything we teach is grounded in evidence and designed to work in real workplace environments.
+                  Research informs our method, but it does not justify universal promises. We translate findings into practical tools and measure what changes in each setting.
                 </p>
               </div>
             </div>
@@ -227,6 +250,6 @@ export default function ResearchPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

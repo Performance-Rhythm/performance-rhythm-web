@@ -6,7 +6,7 @@ export const HOMEPAGE_CONTENT = {
   // A. Opening Section - Internal Balance. External Performance.
   opening: {
     headline: "Internal Balance. External Performance.",
-    blurb: "We offer science-based, evidence-informed wellness workshops and practical tools for organizations committed to supporting the whole employee—not just their productivity at work, but their genuine wellbeing at home and the recovery that creates sustainable performance."
+    blurb: "We offer science-informed human-capacity workshops and practical tools for organizations committed to sustainable performance—helping people navigate pressure, recover more effectively, and bring greater clarity to work and life."
   },
 
   // B. Hero Section - Ancient Biology. Modern Workplace.
@@ -14,7 +14,7 @@ export const HOMEPAGE_CONTENT = {
     eyebrow1: "ANCIENT BIOLOGY.",
     eyebrow2: "MODERN WORKPLACE.",
     headline: "Your Ancient Wiring in a Modern World",
-    body: "Your nervous system evolved over millions of years to protect you from tigers. Today, it treats difficult emails, competing deadlines, and performance pressure the same way—as threats. The result: stress doesn't stay at work. It travels home in your body, your attention, and your relationships. It travels back to work in how you think, lead, and communicate. We help organizations understand this biology and implement science-backed, practical tools that lower stress, regulate the nervous system, and build sustainable wellness into the workweek. These aren't theoretical practices. They're designed to fit real work—between meetings, during difficult conversations, and throughout the recovery and resilience that performance requires.",
+    body: "Your nervous system evolved over millions of years to protect you from danger. Today, difficult emails, competing deadlines, conflict, and performance pressure can recruit some of the same protective systems—even though a workplace challenge is not a tiger. The result: stress doesn't always stay at work. It can travel home in your body, attention, and relationships, then return to work in how you think, lead, and communicate. We help organizations understand this biology and use practical, evidence-informed tools that support regulation, recovery, and sustainable performance. The practices are designed to fit real work—between meetings, during difficult conversations, and throughout demanding workdays.",
     cta: "Book a Discovery Conversation",
     secondaryCta: "See How It Works",
     image: "Regulated woman with coffee..png",
@@ -24,7 +24,7 @@ export const HOMEPAGE_CONTENT = {
   // C. Recognition Section
   recognition: {
     eyebrow: "THE HIDDEN PERFORMANCE PROBLEM",
-    headline: "Stress does not stay inside one person, it is contagious. It changes how the workplace operates.",
+    headline: "Stress rarely stays inside one person. Under sustained pressure, its effects can spread through communication, decisions, and team dynamics.",
     body: "Under sustained pressure, capable people can become more reactive, less flexible, and slower to recover. That can show up in communication, decision-making, leadership, engagement, retention, and the consistency of execution.",
     outcomes: [
       {
@@ -61,7 +61,7 @@ export const HOMEPAGE_CONTENT = {
   // E. The Shift
   shift: {
     headline: "Same Person. Different Access to Clarity, Choice, and Leadership.",
-    body: "When the nervous system predicts threat, the body mobilizes, attention narrows, and familiar protective reactions can gain influence. Regulation does not remove the pressure. Our tools help to restore access to listening, perspective, planning, empathy, and intentional action through awareness, breathwork, meditation and practice. The goal is not to eliminate stress, it's to bring us back from stress with more resilience.",
+    body: "When the nervous system predicts threat, the body mobilizes, attention narrows, and familiar protective reactions can gain influence. Regulation does not remove the pressure. Our tools support a return to listening, perspective, planning, empathy, and intentional action through awareness, breathwork, meditation, and practice. The goal is not to eliminate stress; it is to recover from it more effectively and build resilience over time.",
     image: "Two Versions.png",
     imageAlt: "Activated state versus regulated state comparison"
   },

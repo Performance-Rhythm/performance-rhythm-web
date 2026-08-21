@@ -28,7 +28,7 @@ export const ABOUT_CONTENT = {
       {
         subtitle: "Why Performance Rhythm Was Created",
         content:
-          "Performance Rhythm was created from a single conviction: the future of organizational performance requires helping people regulate their internal conditions. Not through wellness clichés or motivational speaking, but through grounded science, practical tools, and sustained practice.\n\nOrganizations that help their people develop nervous system regulation, resilience, and recovery capacity don't just see happier employees. They see better decisions, stronger communication, greater psychological safety, reduced turnover, and more sustainable performance."
+          "Performance Rhythm was created from a single conviction: sustainable organizational performance requires attention to the human systems behind the work. Not through wellness clichés or motivational speaking, but through grounded science, practical tools, and sustained practice.\n\nWhen organizations pair individual skills with supportive working conditions, they create a stronger foundation for clear decisions, communication, psychological safety, recovery, and sustainable performance."
       }
     ]
   },
@@ -47,7 +47,7 @@ export const ABOUT_CONTENT = {
       {
         title: "Internal Balance Drives External Performance",
         description:
-          "A person's internal state—their stress level, presence, clarity, and resilience—directly influences their external performance, communication, decisions, and leadership."
+          "A person's internal state—their stress level, presence, clarity, and resilience—can influence performance, communication, decisions, and leadership."
       },
       {
         title: "Recovery Is a Performance Requirement",
@@ -76,12 +76,12 @@ export const ABOUT_CONTENT = {
       {
         challenge: "Burnout Is Rising",
         reality:
-          "60% of global workers report burnout. It's not a motivation problem. It's a capacity problem caused by insufficient recovery."
+          "Burnout is an occupational phenomenon shaped by chronic workplace stress that has not been successfully managed. Workload, resources, leadership, recovery, and organizational conditions all matter."
       },
       {
         challenge: "Traditional Leadership Programs Miss the Root",
         reality:
-          "Most leadership training focuses on skills and mindset. Few address the nervous system state that actually determines whether those skills show up in high-pressure moments."
+          "Leadership skills can be harder to apply under sustained pressure. Nervous-system literacy adds a practical layer: recognizing state and creating enough space to respond intentionally."
       },
       {
         challenge: "Wellness Programs Don't Go Deep Enough",
@@ -91,7 +91,7 @@ export const ABOUT_CONTENT = {
       {
         challenge: "Recovery Is Invisible",
         reality:
-          "Organizations celebrate productivity but punish recovery. Leaders working 60-hour weeks are seen as committed, not burned out."
+          "Recovery is often less visible than output. When long hours become the default, organizations can overlook the capacity costs that accumulate over time."
       }
     ]
   },
@@ -112,7 +112,7 @@ export const ABOUT_CONTENT = {
         step: 2,
         title: "Practical Tools",
         description:
-          "Teach evidence-based practices (breathwork, grounding, meditation) that work in 3–10 minutes during real work situations."
+          "Teach evidence-informed practices—including breathing, grounding, and meditation—that can be adapted to brief, real-work situations."
       },
       {
         step: 3,
@@ -133,17 +133,17 @@ export const ABOUT_CONTENT = {
     eyebrow: "OUR VISION",
     title: "The Future We're Building Toward",
     statement:
-      "We believe organizations that consciously develop human capacity will outcompete those that don't.",
+      "We believe organizations that consciously develop human capacity are better positioned for sustainable performance.",
     outcomes: [
       {
         title: "Leaders Who Lead With Presence",
         description:
-          "Leaders who are regulated, clear, and emotionally present create teams that perform, innovate, and stay."
+          "Leaders who are clear and emotionally present can create better conditions for teams to perform, learn, and contribute."
       },
       {
         title: "Cultures of Psychological Safety",
         description:
-          "When people feel safe and supported, they take bigger risks, communicate more honestly, and collaborate more effectively."
+          "Psychological safety supports speaking up, honest communication, learning behavior, and collaboration."
       },
       {
         title: "Sustainable High Performance",
@@ -153,7 +153,7 @@ export const ABOUT_CONTENT = {
       {
         title: "Reduced Turnover and Stronger Retention",
         description:
-          "People stay with organizations where they can grow and thrive, not just where they can make a paycheck."
+          "Growth, support, meaningful work, and healthy working conditions can all contribute to retention."
       }
     ]
   },
@@ -184,7 +184,7 @@ export const ABOUT_CONTENT = {
       {
         title: "Scientifically Grounded",
         description:
-          "We don't teach theory. We teach what works, backed by neuroscience, psychology, leadership research, and organizational data."
+          "We translate research from psychology, occupational health, leadership, and stress science into practical tools—and stay clear about evidence limits and context."
       },
       {
         title: "Practically Focused",

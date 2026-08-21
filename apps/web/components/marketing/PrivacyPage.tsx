@@ -6,7 +6,7 @@ export default function PrivacyPage() {
   const { hero, sections, finalNote } = PRIVACY_CONTENT;
 
   return (
-    <main className="bg-white">
+    <div className="bg-white">
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-br from-[#FAFAF8] via-white to-[#FAFAF8]">
         <div className="container mx-auto px-6 max-w-4xl text-center space-y-6">
@@ -74,6 +74,6 @@ export default function PrivacyPage() {
           </p>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

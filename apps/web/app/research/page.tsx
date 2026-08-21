@@ -4,7 +4,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "Research",
   path: "/research",
-  description: "Science-backed research on stress, burnout, breathwork, meditation, leadership, and workplace wellness programs. Evidence-informed insights for organizational performance."
+  description: "A curated evidence library on stress and cognition, burnout and work design, breathing, mindfulness, leadership, psychological safety, and current workforce research."
 });
 
 export default function Page() {

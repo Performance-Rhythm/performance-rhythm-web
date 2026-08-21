@@ -41,13 +41,13 @@ export const CONTACT_CONTENT = {
   },
 
   whatThisIsNot: {
-    title: "What This Is NOT",
+    title: "What This Conversation Is Not",
     items: [
       "Not a high-pressure sales call",
       "Not a generic wellness conversation",
       "Not a clinical consultation",
       "Not a one-size-fits-all pitch",
-      "Not a waste of your time"
+      "Not a scripted sales pitch"
     ]
   },
 
@@ -96,7 +96,7 @@ export const CONTACT_CONTENT = {
       {
         icon: "📞",
         title: "Call Directly",
-        description: "Prefer to speak with Shane directly? Call anytime to start a conversation.",
+        description: "Prefer to speak with Shane directly? Call to start a conversation.",
         cta: "801-673-7395",
         href: "tel:801-673-7395"
       },
@@ -111,8 +111,8 @@ export const CONTACT_CONTENT = {
         icon: "📝",
         title: "Send a Note First",
         description: "Prefer to introduce yourself in writing? Send a quick note and we'll follow up.",
-        cta: "Send Message",
-        href: "#contact-form"
+        cta: "contact@performancerhythm.com",
+        href: "mailto:contact@performancerhythm.com"
       }
     ]
   },
@@ -171,7 +171,7 @@ export const CONTACT_CONTENT = {
   finalCTA: {
     title: "Ready to Start the Conversation?",
     subtitle:
-      "Whether you book a call, send an email, or fill out the form, we're excited to learn about your organization and explore how Performance Rhythm can help.",
+      "Whether you book a call or send an email, we're ready to learn about your organization and explore whether Performance Rhythm can help.",
     buttonText: "Book a Discovery Conversation",
     buttonHref: "https://cal.com/shane-curtis/30min"
   },
@@ -180,7 +180,7 @@ export const CONTACT_CONTENT = {
     {
       question: "What if we're not sure if Performance Rhythm is a fit?",
       answer:
-        "That's exactly what a discovery conversation is for. We'll have an honest discussion about whether it makes sense to continue. If it doesn't, we'll tell you—no games."
+        "That's exactly what a discovery conversation is for. We'll have an honest discussion about whether it makes sense to continue. If it doesn't, we'll say so directly."
     },
     {
       question: "How long does the conversation take?",
@@ -195,7 +195,7 @@ export const CONTACT_CONTENT = {
     {
       question: "Do you require a commitment?",
       answer:
-        "No. A discovery conversation has zero obligation. It's an exploratory conversation. You'll walk away with clarity and options, but no pressure to commit to anything."
+        "No. A discovery conversation has no obligation. It's exploratory, and there is no pressure to commit to anything."
     },
     {
       question: "What if we want to start with something small?",

@@ -19,7 +19,7 @@ export const PRIVACY_CONTENT = {
         {
           subtitle: "2.1 Information You Provide Directly",
           content: [
-            "Contact Form: When you submit our discovery conversation inquiry form, we collect your name, email address, company name, role, organization size, areas of interest, and any message you include.",
+            "Direct Inquiries: When you contact us by email or phone, we collect the information you choose to provide so we can respond.",
             "Booking Information: When you schedule a discovery conversation through cal.com, we collect your name, email address, and calendar preferences.",
             "Email Communications: When you email us directly, we collect your email address and the contents of your message.",
             "Workshop Participation: When you attend a Performance Rhythm workshop or program, we may collect your name, company, role, and feedback about your experience."

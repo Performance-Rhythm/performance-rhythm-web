@@ -1,379 +1,378 @@
 export const researchTopics = [
   {
-    title: "Stress and Human Performance",
-    category: "Stress Physiology",
+    title: "Stress, Cognition, and Decision-Making",
+    category: "Stress Science",
     description:
-      "How chronic stress influences attention, recovery, emotional regulation, leadership, and execution."
+      "How acute and sustained stress can shape attention, working memory, cognitive flexibility, and decisions."
   },
   {
-    title: "Burnout and Capacity",
-    category: "Burnout Research",
+    title: "Burnout, Recovery, and Work Design",
+    category: "Organizational Health",
     description:
-      "Burnout is often a capacity problem, not a motivation problem. Recovery is a performance requirement."
+      "Why burnout is an occupational issue influenced by job demands, resources, recovery, and organizational conditions."
   },
   {
-    title: "Breathwork and Regulation",
-    category: "Regulation Tools",
+    title: "Breathing and Autonomic Regulation",
+    category: "Regulation Practices",
     description:
-      "Breathing practices can support nervous system regulation when framed as practical performance tools."
+      "What controlled-breathing research suggests—and what it does not yet establish—about stress and physiological arousal."
   },
   {
-    title: "Leadership Under Pressure",
-    category: "Leadership Science",
+    title: "Leadership and Psychological Safety",
+    category: "Team Performance",
     description:
-      "A leader's internal state influences communication, trust, decision-making, and team culture."
+      "Evidence connecting leadership behavior, stress, psychological safety, learning, and team effectiveness."
   }
 ] as const;
 
 export interface ResearchArticle {
   title: string;
   source: string;
-  year?: string;
+  year: string;
   category: string;
   description: string;
   url: string;
-  type: "article" | "report" | "study" | "research";
-  credibility: "peer-reviewed" | "institutional" | "nonprofit" | "expert";
+  type:
+    | "meta-analysis"
+    | "systematic-review"
+    | "study"
+    | "review"
+    | "survey"
+    | "framework"
+    | "policy-brief";
+  credibility: "peer-reviewed" | "institutional";
 }
 
 export const RESEARCH_CONTENT = {
   hero: {
     eyebrow: "RESEARCH & EVIDENCE",
-    title: "Science-Backed Insights Into Performance, Resilience, and Human Capacity",
+    title: "Evidence for Human Capacity at Work",
     intro:
-      "Performance Rhythm is grounded in research from stress physiology, burnout prevention, breathwork science, meditation, leadership development, and organizational performance. We've curated a collection of credible, peer-reviewed, and institutional research that informs how we help organizations develop human capacity."
+      "Performance Rhythm draws from stress science, occupational health, controlled-breathing research, mindfulness research, and organizational psychology. This curated library prioritizes peer-reviewed studies and current guidance from recognized public institutions—and describes the evidence without promising more than the research supports."
   },
 
   sections: [
     {
-      id: "stress-physiology",
-      eyebrow: "THE SCIENCE OF STRESS",
-      title: "Understanding Nervous System Activation",
+      id: "stress-cognition",
+      eyebrow: "STRESS SCIENCE",
+      title: "Stress, Cognition, and Decision-Making",
       description:
-        "Chronic workplace stress doesn't just feel bad—it affects how people think, decide, communicate, and perform. Understanding the neuroscience of stress is foundational to building resilience.",
+        "Stress does not affect every person or task in the same way. Across reviews, however, acute and occupational stress can influence working memory, cognitive flexibility, attention, and decision-making—capacities that matter in complex work.",
       articles: [
         {
-          title: "Stress, appraisal, and coping in chronic disease",
-          source: "PubMed Central - NIH",
-          year: "1984",
-          category: "Stress Physiology",
+          title: "The Effects of Acute Stress on Core Executive Functions: A Meta-Analysis and Comparison with Cortisol",
+          source: "Neuroscience & Biobehavioral Reviews",
+          year: "2016",
+          category: "Executive Function",
           description:
-            "Foundational research on stress appraisal and how coping mechanisms affect health outcomes and performance.",
-          url: "https://pubmed.ncbi.nlm.nih.gov/6571428/",
-          type: "study",
+            "A meta-analysis finding that acute stress impaired working memory and cognitive flexibility, while effects on inhibition varied with timing and cortisol response.",
+          url: "https://pubmed.ncbi.nlm.nih.gov/27371161/",
+          type: "meta-analysis",
           credibility: "peer-reviewed"
         },
         {
-          title: "Chronic stress leads to a moderate increase in effort-related decision-making and altered risk sensitivity",
-          source: "PubMed - Nature Neuroscience",
+          title: "Decision Making Under Stress: A Selective Review",
+          source: "Neuroscience & Biobehavioral Reviews",
+          year: "2012",
+          category: "Decision-Making",
+          description:
+            "A review showing that stress can alter decision processes, with outcomes depending on the task, context, timing, and characteristics of the decision-maker.",
+          url: "https://pubmed.ncbi.nlm.nih.gov/22342781/",
+          type: "review",
+          credibility: "peer-reviewed"
+        },
+        {
+          title: "The Effects of Work on Cognitive Functions: A Systematic Review",
+          source: "Frontiers in Psychology",
+          year: "2024",
+          category: "Occupational Stress",
+          description:
+            "A systematic review of longitudinal evidence examining how occupational exposures—including stress, shift work, and long hours—relate to cognitive functioning over time.",
+          url: "https://pubmed.ncbi.nlm.nih.gov/38784613/",
+          type: "systematic-review",
+          credibility: "peer-reviewed"
+        },
+        {
+          title: "The Brain on Stress: Toward an Integrative Approach to Brain, Body, and Behavior",
+          source: "Perspectives on Psychological Science",
           year: "2014",
-          category: "Stress Physiology",
+          category: "Allostatic Load",
           description:
-            "Research on how chronic stress affects decision-making, risk assessment, and executive function in the workplace.",
-          url: "https://pubmed.ncbi.nlm.nih.gov/24509428/",
-          type: "study",
-          credibility: "peer-reviewed"
-        },
-        {
-          title: "Job stress, depression, and substance abuse at work",
-          source: "PubMed - Journal of Occupational Health Psychology",
-          year: "2006",
-          category: "Stress Physiology",
-          description:
-            "Research linking workplace stress to cognitive impairment, emotional dysregulation, and performance decline.",
-          url: "https://pubmed.ncbi.nlm.nih.gov/16834472/",
-          type: "study",
-          credibility: "peer-reviewed"
-        },
-        {
-          title: "The effects of occupational stress on cognitive performance and mood in healthcare workers",
-          source: "PubMed Central - PMC",
-          year: "2019",
-          category: "Stress Physiology",
-          description:
-            "Study demonstrating how workplace stress directly impairs attention, decision-making, and emotional regulation.",
-          url: "https://pubmed.ncbi.nlm.nih.gov/31749591/",
-          type: "study",
+            "An integrative review of allostasis and allostatic load, explaining how repeated stress exposure can affect the brain and body across time.",
+          url: "https://pubmed.ncbi.nlm.nih.gov/25221612/",
+          type: "review",
           credibility: "peer-reviewed"
         }
       ]
     },
 
     {
-      id: "burnout",
-      eyebrow: "PREVENTING BURNOUT",
-      title: "Burnout as a Capacity Problem",
+      id: "burnout-recovery",
+      eyebrow: "OCCUPATIONAL HEALTH",
+      title: "Burnout, Recovery, and Work Design",
       description:
-        "Burnout isn't a personal weakness—it's a systemic issue caused by chronic stress, insufficient recovery, and depleted capacity. Research shows that recovery and resilience training directly reduce burnout risk.",
+        "Burnout is not a medical diagnosis or a simple measure of personal toughness. The strongest guidance treats it as an occupational phenomenon and pairs individual support with changes to working conditions, job demands, resources, and recovery opportunities.",
       articles: [
         {
-          title: "Burnout: Definition and Assessment",
+          title: "Burn-out an Occupational Phenomenon: International Classification of Diseases",
           source: "World Health Organization",
           year: "2019",
-          category: "Burnout Research",
+          category: "Burnout Definition",
           description:
-            "WHO's official ICD-11 classification of burnout as an occupational phenomenon with measurable dimensions.",
+            "WHO's ICD-11 explanation defines burnout as an occupational phenomenon resulting from chronic workplace stress that has not been successfully managed—not as a medical condition.",
           url: "https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases",
-          type: "article",
+          type: "framework",
           credibility: "institutional"
         },
         {
-          title: "A systematic review of stress-reduction interventions for healthcare workers",
-          source: "PubMed - Nursing Outlook",
-          year: "2021",
-          category: "Burnout Research",
-          description:
-            "Meta-analysis showing interventions targeting stress reduction and recovery prevent and reduce burnout.",
-          url: "https://pubmed.ncbi.nlm.nih.gov/33541732/",
-          type: "study",
-          credibility: "peer-reviewed"
-        },
-        {
-          title: "The relationship between emotional exhaustion and organizational citizenship behavior",
-          source: "PubMed - Journal of Applied Psychology",
-          year: "2009",
-          category: "Burnout Research",
-          description:
-            "Research demonstrating burnout as a capacity depletion issue affecting engagement and performance.",
-          url: "https://pubmed.ncbi.nlm.nih.gov/19494618/",
-          type: "study",
-          credibility: "peer-reviewed"
-        },
-        {
-          title: "Recovery experiences buffer against the negative effects of demanding work contexts on fatigue",
-          source: "PubMed - Applied Psychology: An International Review",
-          year: "2010",
-          category: "Burnout Research",
-          description:
-            "Evidence that recovery practices and adequate downtime directly reduce burnout risk and restore capacity.",
-          url: "https://pubmed.ncbi.nlm.nih.gov/21725405/",
-          type: "study",
-          credibility: "peer-reviewed"
-        }
-      ]
-    },
-
-    {
-      id: "breathwork",
-      eyebrow: "BREATHWORK & NERVOUS SYSTEM",
-      title: "How Breathing Practices Regulate Performance",
-      description:
-        "Breathing is the only autonomic nervous system function we can consciously control. Research shows intentional breathing practices can activate the parasympathetic system, reduce stress hormones, and improve focus and resilience.",
-      articles: [
-        {
-          title: "Voluntary activation of the parasympathetic nervous system through controlled breathing",
-          source: "PubMed - Biological Psychology",
-          year: "2017",
-          category: "Breathwork",
-          description:
-            "Research demonstrating how slow breathing activates parasympathetic tone and improves heart rate variability.",
-          url: "https://pubmed.ncbi.nlm.nih.gov/27932168/",
-          type: "study",
-          credibility: "peer-reviewed"
-        },
-        {
-          title: "Controlled breathing reduces anxiety and improves exercise tolerance",
-          source: "PubMed Central - PMC",
-          year: "2020",
-          category: "Breathwork",
-          description:
-            "Study showing structured breathing protocols reduce cortisol and anxiety while improving performance under pressure.",
-          url: "https://pubmed.ncbi.nlm.nih.gov/32211738/",
-          type: "study",
-          credibility: "peer-reviewed"
-        },
-        {
-          title: "Breathing techniques for stress management: A critical review",
-          source: "PubMed - Complementary Therapies in Medicine",
-          year: "2019",
-          category: "Breathwork",
-          description:
-            "Systematic review of evidence showing breathing techniques effectively reduce stress and improve resilience.",
-          url: "https://pubmed.ncbi.nlm.nih.gov/31126459/",
-          type: "study",
-          credibility: "peer-reviewed"
-        },
-        {
-          title: "The relationship between autonomic function and attention: Heart rate variability and cognitive performance",
-          source: "PubMed - Psychophysiology",
+          title: "Understanding the Burnout Experience: Recent Research and Its Implications for Psychiatry",
+          source: "World Psychiatry",
           year: "2016",
-          category: "Breathwork",
+          category: "Burnout Research",
           description:
-            "Research linking vagal tone (nervous system regulation) to attention, decision-making, and leadership presence.",
-          url: "https://pubmed.ncbi.nlm.nih.gov/26877393/",
-          type: "study",
-          credibility: "peer-reviewed"
-        }
-      ]
-    },
-
-    {
-      id: "meditation",
-      eyebrow: "MEDITATION & MINDFULNESS",
-      title: "Measurable Benefits of Contemplative Practice",
-      description:
-        "Decades of research show meditation and mindfulness practices strengthen attention, emotional regulation, and resilience. In the workplace, these practices correlate with reduced stress, improved decision-making, and better team collaboration.",
-      articles: [
-        {
-          title: "A randomized controlled trial of mindfulness-based stress reduction for anxiety and depression",
-          source: "PubMed - JAMA Psychiatry",
-          year: "2022",
-          category: "Meditation",
-          description:
-            "Large RCT showing mindfulness training reduces anxiety and depression with outcomes equivalent to pharmaceutical interventions.",
-          url: "https://pubmed.ncbi.nlm.nih.gov/35293641/",
-          type: "study",
+            "A review of the burnout construct, its relationship with work, and the importance of addressing mismatches between people and their work environment.",
+          url: "https://pubmed.ncbi.nlm.nih.gov/27265691/",
+          type: "review",
           credibility: "peer-reviewed"
         },
         {
-          title: "Meditation experience is associated with differences in default mode network activity and connectivity",
-          source: "PubMed Central - PNAS",
+          title: "Safety at Work: A Meta-Analytic Investigation of the Link Between Job Demands, Job Resources, Burnout, Engagement, and Safety Outcomes",
+          source: "Journal of Applied Psychology",
           year: "2011",
-          category: "Meditation",
+          category: "Job Demands and Resources",
           description:
-            "Neuroimaging research showing meditation practitioners have structural and functional brain changes associated with attention and emotional regulation.",
-          url: "https://pubmed.ncbi.nlm.nih.gov/21245339/",
-          type: "study",
+            "A meta-analysis linking job demands and resources with burnout and engagement, reinforcing the need to examine working conditions alongside individual practices.",
+          url: "https://pubmed.ncbi.nlm.nih.gov/21171732/",
+          type: "meta-analysis",
           credibility: "peer-reviewed"
         },
         {
-          title: "Effects of mindfulness-based stress reduction training on employee well-being and performance",
-          source: "PubMed - Journal of Occupational and Organizational Psychology",
-          year: "2015",
-          category: "Meditation",
-          description:
-            "Research showing workplace mindfulness programs reduce stress, improve job satisfaction, and enhance team communication.",
-          url: "https://pubmed.ncbi.nlm.nih.gov/25898900/",
-          type: "study",
-          credibility: "peer-reviewed"
-        },
-        {
-          title: "National Center for Complementary and Integrative Health - Meditation: In Depth",
-          source: "National Institutes of Health (NIH/NCCIH)",
-          year: "2023",
-          category: "Meditation",
-          description:
-            "NIH comprehensive resource on meditation research, evidence base, and applications for health and performance.",
-          url: "https://www.nccih.nih.gov/health/meditation-in-depth",
-          type: "article",
-          credibility: "institutional"
-        }
-      ]
-    },
-
-    {
-      id: "leadership",
-      eyebrow: "LEADERSHIP & PERFORMANCE",
-      title: "How Internal State Drives Leadership Effectiveness",
-      description:
-        "A leader's nervous system state—their level of stress, presence, and clarity—directly influences their decision-making, communication, emotional intelligence, and ability to create psychological safety on their teams.",
-      articles: [
-        {
-          title: "Emotional intelligence and leadership effectiveness: A meta-analytic review",
-          source: "PubMed - Leadership Quarterly",
-          year: "2010",
-          category: "Leadership",
-          description:
-            "Meta-analysis showing leaders with high emotional intelligence drive greater engagement, retention, and organizational performance.",
-          url: "https://pubmed.ncbi.nlm.nih.gov/21742833/",
-          type: "study",
-          credibility: "peer-reviewed"
-        },
-        {
-          title: "The relationship between leader emotional regulation and team psychological safety",
-          source: "PubMed - Journal of Applied Psychology",
-          year: "2016",
-          category: "Leadership",
-          description:
-            "Research showing leaders who demonstrate calm presence and emotional regulation create psychologically safe teams.",
-          url: "https://pubmed.ncbi.nlm.nih.gov/26389574/",
-          type: "study",
-          credibility: "peer-reviewed"
-        },
-        {
-          title: "Stress and decision-making in leadership: The role of attention and emotional regulation",
-          source: "PubMed Central - Stress and Health",
-          year: "2018",
-          category: "Leadership",
-          description:
-            "Study demonstrating how a leader's nervous system state directly affects decision quality, communication, and team culture.",
-          url: "https://pubmed.ncbi.nlm.nih.gov/29280356/",
-          type: "study",
-          credibility: "peer-reviewed"
-        },
-        {
-          title: "NeuroLeadership Institute - Research Base",
-          source: "NeuroLeadership Institute",
-          year: "2023",
-          category: "Leadership",
-          description:
-            "Institutional research hub on neuroscience-informed leadership, including nervous system regulation and performance.",
-          url: "https://neuroleadership.com/research/",
-          type: "article",
-          credibility: "institutional"
-        }
-      ]
-    },
-
-    {
-      id: "workplace-wellness",
-      eyebrow: "WORKPLACE WELLNESS PROGRAMS",
-      title: "ROI and Effectiveness of Corporate Wellness",
-      description:
-        "Organizations investing in employee wellness, stress management, and resilience training see measurable returns through reduced turnover, improved engagement, lower healthcare costs, and stronger performance.",
-      articles: [
-        {
-          title: "A systematic review of the effectiveness of workplace health promotion interventions",
-          source: "PubMed - American Journal of Health Promotion",
-          year: "2014",
-          category: "Wellness",
-          description:
-            "Comprehensive review showing well-designed workplace wellness programs improve health, engagement, and organizational outcomes.",
-          url: "https://pubmed.ncbi.nlm.nih.gov/24861511/",
-          type: "study",
-          credibility: "peer-reviewed"
-        },
-        {
-          title: "Workplace stress reduction interventions: A meta-analysis of their relative efficacy",
-          source: "PubMed - Journal of Occupational Health Psychology",
+          title: "A Meta-Analysis on Antecedents and Outcomes of Detachment from Work",
+          source: "Frontiers in Psychology",
           year: "2017",
-          category: "Wellness",
+          category: "Recovery",
           description:
-            "Meta-analysis showing stress reduction and resilience training programs reduce burnout and improve performance metrics.",
-          url: "https://pubmed.ncbi.nlm.nih.gov/28541119/",
-          type: "study",
+            "A meta-analysis of 86 publications connecting psychological detachment from work with lower exhaustion and better well-being, sleep, and several performance-related outcomes.",
+          url: "https://pubmed.ncbi.nlm.nih.gov/28133454/",
+          type: "meta-analysis",
           credibility: "peer-reviewed"
         },
         {
-          title: "The relationship between wellness program participation and employee engagement and retention",
-          source: "PubMed Central - PMC",
-          year: "2019",
-          category: "Wellness",
-          description:
-            "Research demonstrating organizations with comprehensive wellness programs see measurable improvements in retention and engagement.",
-          url: "https://pubmed.ncbi.nlm.nih.gov/30627366/",
-          type: "study",
-          credibility: "peer-reviewed"
-        },
-        {
-          title: "CDC - Workplace Health Promotion",
-          source: "Centers for Disease Control and Prevention",
+          title: "Organizational Interventions and Occupational Burnout: A Meta-Analysis with Focus on Exhaustion",
+          source: "International Archives of Occupational and Environmental Health",
           year: "2023",
-          category: "Wellness",
+          category: "Organizational Intervention",
           description:
-            "CDC resources and evidence base on workplace health promotion, wellness program design, and documented outcomes.",
-          url: "https://www.cdc.gov/workplacehealthpromotion/",
-          type: "report",
+            "A meta-analysis finding a small reduction in exhaustion from organizational interventions, while rating the overall evidence very low in quality and calling for stronger studies.",
+          url: "https://pubmed.ncbi.nlm.nih.gov/37758838/",
+          type: "meta-analysis",
+          credibility: "peer-reviewed"
+        }
+      ]
+    },
+
+    {
+      id: "breathing-regulation",
+      eyebrow: "REGULATION PRACTICES",
+      title: "Breathing and Autonomic Regulation",
+      description:
+        "Controlled breathing is a practical way to influence respiratory patterns and physiological arousal. Current evidence is promising for stress reduction and vagally mediated heart-rate variability, but study quality and protocols vary.",
+      articles: [
+        {
+          title: "Effects of Voluntary Slow Breathing on Heart Rate and Heart Rate Variability: A Systematic Review and Meta-Analysis",
+          source: "Neuroscience & Biobehavioral Reviews",
+          year: "2022",
+          category: "Slow Breathing and HRV",
+          description:
+            "A review of 223 studies finding increases in vagally mediated heart-rate variability during slow breathing, immediately after a session, and after repeated practice.",
+          url: "https://pubmed.ncbi.nlm.nih.gov/35623448/",
+          type: "meta-analysis",
+          credibility: "peer-reviewed"
+        },
+        {
+          title: "Brief Structured Respiration Practices Enhance Mood and Reduce Physiological Arousal",
+          source: "Cell Reports Medicine",
+          year: "2023",
+          category: "Brief Breathing Practice",
+          description:
+            "A randomized remote study comparing five minutes of daily structured breathing with mindfulness meditation over one month; exhale-focused cyclic sighing showed the strongest improvement in mood and respiratory rate.",
+          url: "https://pubmed.ncbi.nlm.nih.gov/36630953/",
+          type: "study",
+          credibility: "peer-reviewed"
+        },
+        {
+          title: "Effect of Breathwork on Stress and Mental Health: A Meta-Analysis of Randomised-Controlled Trials",
+          source: "Scientific Reports",
+          year: "2023",
+          category: "Breathwork Outcomes",
+          description:
+            "A meta-analysis reporting small-to-medium improvements in self-reported stress, anxiety, and depression, while emphasizing moderate risk of bias and the need for cautious interpretation.",
+          url: "https://pubmed.ncbi.nlm.nih.gov/36624160/",
+          type: "meta-analysis",
+          credibility: "peer-reviewed"
+        }
+      ]
+    },
+
+    {
+      id: "mindfulness-workplace",
+      eyebrow: "ATTENTION & AWARENESS",
+      title: "Mindfulness and Workplace Stress",
+      description:
+        "Mindfulness programs have evidence for modest improvements in several stress-related outcomes. Evidence for direct changes in job performance, burnout, or organizational results is less consistent and should be communicated carefully.",
+      articles: [
+        {
+          title: "Meditation Programs for Psychological Stress and Well-Being: A Systematic Review and Meta-Analysis",
+          source: "JAMA Internal Medicine",
+          year: "2014",
+          category: "Meditation Evidence",
+          description:
+            "A widely cited review finding moderate evidence for improvements in anxiety, depression, and pain, with smaller or insufficient evidence for several other outcomes.",
+          url: "https://pubmed.ncbi.nlm.nih.gov/24395196/",
+          type: "meta-analysis",
+          credibility: "peer-reviewed"
+        },
+        {
+          title: "A Systematic Review and Meta-Analysis of Workplace Mindfulness Training Randomized Controlled Trials",
+          source: "Journal of Occupational Health Psychology",
+          year: "2019",
+          category: "Workplace Mindfulness",
+          description:
+            "A review finding benefits for stress, anxiety, psychological distress, well-being, and sleep, while finding insufficient evidence for burnout and work-performance outcomes.",
+          url: "https://pubmed.ncbi.nlm.nih.gov/30714811/",
+          type: "meta-analysis",
+          credibility: "peer-reviewed"
+        },
+        {
+          title: "Mindfulness-Based and Mindfulness-Informed Interventions at the Workplace: A Systematic Review and Meta-Regression Analysis of Randomised Controlled Trials",
+          source: "Work & Stress",
+          year: "2023",
+          category: "Employee Health",
+          description:
+            "A large review of workplace randomized trials examining employee health outcomes and the substantial variation across intervention designs and study results.",
+          url: "https://pubmed.ncbi.nlm.nih.gov/37362186/",
+          type: "meta-analysis",
+          credibility: "peer-reviewed"
+        }
+      ]
+    },
+
+    {
+      id: "leadership-psychological-safety",
+      eyebrow: "LEADERSHIP & TEAMS",
+      title: "Leadership, Psychological Safety, and Team Performance",
+      description:
+        "Leadership behavior shapes how pressure is experienced and discussed at work. Research connects leadership with follower stress and well-being, while psychological safety supports learning, voice, and team effectiveness.",
+      articles: [
+        {
+          title: "Leadership and Stress: A Meta-Analytic Review",
+          source: "The Leadership Quarterly",
+          year: "2017",
+          category: "Leadership and Stress",
+          description:
+            "A meta-analysis examining the relationship between leadership and stress, including how leader behavior can function as either a resource or a demand for followers.",
+          url: "https://doi.org/10.1016/j.leaqua.2016.10.006",
+          type: "meta-analysis",
+          credibility: "peer-reviewed"
+        },
+        {
+          title: "Leadership, Followers' Mental Health and Job Performance in Organizations: A Comprehensive Meta-Analysis",
+          source: "Journal of Organizational Behavior",
+          year: "2017",
+          category: "Leadership and Well-Being",
+          description:
+            "A meta-analysis connecting constructive and destructive leadership styles with follower mental health and job performance outcomes.",
+          url: "https://doi.org/10.1002/job.2124",
+          type: "meta-analysis",
+          credibility: "peer-reviewed"
+        },
+        {
+          title: "Psychological Safety: A Meta-Analytic Review and Extension",
+          source: "Personnel Psychology",
+          year: "2017",
+          category: "Psychological Safety",
+          description:
+            "A meta-analysis synthesizing evidence on the antecedents and outcomes of psychological safety across individuals, teams, and organizations.",
+          url: "https://doi.org/10.1111/peps.12183",
+          type: "meta-analysis",
+          credibility: "peer-reviewed"
+        },
+        {
+          title: "Psychological Safety and Learning Behavior in Work Teams",
+          source: "Administrative Science Quarterly",
+          year: "1999",
+          category: "Team Learning",
+          description:
+            "A foundational field study connecting team psychological safety with learning behavior and showing how leader coaching and context contribute to it.",
+          url: "https://doi.org/10.2307/2666999",
+          type: "study",
+          credibility: "peer-reviewed"
+        }
+      ]
+    },
+
+    {
+      id: "workforce-guidance",
+      eyebrow: "CURRENT WORKFORCE EVIDENCE",
+      title: "Workforce Surveys and Action Frameworks",
+      description:
+        "Current workforce surveys help organizations understand employee experience, while public-health frameworks translate evidence into actions leaders can take. Survey findings describe populations and should not be treated as diagnoses of any one organization.",
+      articles: [
+        {
+          title: "State of the Global Workplace: 2026 Report",
+          source: "Gallup",
+          year: "2026",
+          category: "Global Workforce Survey",
+          description:
+            "Gallup's current global report, based on 2025 data, tracks employee engagement, life evaluation, daily emotions, and labor-market experiences across countries and regions.",
+          url: "https://www.gallup.com/workplace/349484/state-of-the-global-workplace.aspx",
+          type: "survey",
+          credibility: "institutional"
+        },
+        {
+          title: "2025 Work in America Survey: Working in a Time of Change",
+          source: "American Psychological Association",
+          year: "2025",
+          category: "U.S. Workforce Survey",
+          description:
+            "A national survey of more than 2,000 U.S. working adults examining organizational change, workplace mental health, trust, and gaps between leadership and frontline experience.",
+          url: "https://www.apa.org/pubs/reports/work-in-america/2025/full-report-working-times-change",
+          type: "survey",
+          credibility: "institutional"
+        },
+        {
+          title: "Framework for Workplace Mental Health & Well-Being",
+          source: "U.S. Surgeon General",
+          year: "2022",
+          category: "Workplace Framework",
+          description:
+            "A practical framework organized around five essentials: protection from harm, connection and community, work-life harmony, mattering at work, and opportunity for growth.",
+          url: "https://www.hhs.gov/surgeongeneral/reports-and-publications/workplace-well-being/index.html",
+          type: "framework",
+          credibility: "institutional"
+        },
+        {
+          title: "Mental Health at Work: Policy Brief",
+          source: "World Health Organization and International Labour Organization",
+          year: "2022",
+          category: "Policy Guidance",
+          description:
+            "Evidence-informed guidance for governments, employers, workers, and their organizations on preventing risks, protecting mental health, and supporting participation at work.",
+          url: "https://www.who.int/publications-detail-redirect/9789240057944",
+          type: "policy-brief",
           credibility: "institutional"
         }
       ]
     }
   ],
 
+  evidenceNote:
+    "Research findings vary by population, context, intervention, and study quality. This library is educational and is not medical advice. Performance Rhythm uses the evidence to inform program design—not to guarantee individual or organizational outcomes.",
+
   futureSection: {
-    title: "Expanding the Research Library",
+    title: "Turn Evidence Into Practical Action",
     description:
-      "This research hub is a living resource. As our platform and programs evolve, we'll add new studies, case studies, and downloadable guides focused on the science of human capacity, nervous system regulation, and sustainable performance.",
-    cta: "Sign up for research updates"
+      "The research is most useful when it is paired with the realities of your people, roles, workload, and culture. We can help you identify an appropriate starting point and define what responsible measurement should look like.",
+    cta: "Schedule a Conversation"
   }
 };

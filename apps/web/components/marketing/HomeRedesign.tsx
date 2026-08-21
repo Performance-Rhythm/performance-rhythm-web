@@ -20,7 +20,7 @@ export default function HomeRedesign() {
   } = HOMEPAGE_CONTENT;
 
   return (
-    <main className="bg-white">
+    <div className="bg-white">
       {/* A. OPENING SECTION - Internal Balance. External Performance. */}
       <section className="py-16 lg:py-24 bg-white border-b border-[#A7BBC6] border-opacity-20">
         <div className="container mx-auto px-6 max-w-5xl">
@@ -525,6 +525,6 @@ export default function HomeRedesign() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

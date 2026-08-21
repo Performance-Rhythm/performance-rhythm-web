@@ -5,7 +5,7 @@ import { routes } from "@/lib/routes";
 
 export default function ContactPage() {
   return (
-    <main className="bg-white">
+    <div className="bg-white">
       {/* Hero Section */}
       <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#FAFAF8] via-white to-[#FAFAF8]">
         <div className="absolute inset-0 opacity-[0.03]">
@@ -249,6 +249,6 @@ export default function ContactPage() {
           </a>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

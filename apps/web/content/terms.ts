@@ -106,7 +106,7 @@ export const TERMS_CONTENT = {
           ]
         },
         {
-          subtitle: "5.1 No Guarantee of Results",
+          subtitle: "5.2 No Guarantee of Results",
           content: [
             "While we are committed to providing high-quality programming, Performance Rhythm does not guarantee specific outcomes or results from participation in workshops or programs. Individual results vary based on personal commitment, prior experience, individual circumstances, and many other factors beyond our control.",
             "Success in applying nervous system regulation and resilience practices depends on your individual engagement and implementation."
