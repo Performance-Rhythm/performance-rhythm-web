@@ -35,12 +35,12 @@ export const METHOD_CONTENT = {
     
     images: [
       {
-        src: "maya-morning-meeting.png",
-        alt: "Maya in her morning meeting, noticing tension in her shoulders as her manager criticizes a process"
+        src: "/images/method/notice-meeting-awareness.webp",
+        alt: "Maya pauses during a morning meeting as she notices tension building before responding"
       },
       {
-        src: "maya-physical-signals.png",
-        alt: "Close-up showing physical signs: jaw tension, shallow breathing, hands gripping the desk"
+        src: "/images/method/notice-physical-signals.webp",
+        alt: "Maya notices a set jaw, raised shoulders, and tension in her hands during a workplace conversation"
       }
     ],
 
@@ -77,12 +77,12 @@ The key: **Maya's body is giving her information.** Physical sensations, changes
     
     images: [
       {
-        src: "maya-breathing-bathroom.png",
-        alt: "Maya in a quiet moment, hand on her belly, taking a slow deliberate breath"
+        src: "/images/method/reset-practical-pause.webp",
+        alt: "Maya takes a quiet breathing pause after a difficult workplace meeting"
       },
       {
-        src: "maya-grounded-moment.png",
-        alt: "Maya sitting down, feet on floor, shoulders relaxed, facial expression settling"
+        src: "/images/method/reset-grounded-return.webp",
+        alt: "Maya returns to her desk with her feet grounded and posture relaxed"
       }
     ],
 
@@ -124,12 +124,12 @@ The Reset is not about "feeling positive." It's about shifting your nervous syst
     
     images: [
       {
-        src: "maya-meditation-practice.png",
-        alt: "Maya in morning meditation practice, calm and focused, at her desk before the day begins"
+        src: "/images/method/strengthen-morning-practice.webp",
+        alt: "Maya begins a calm morning breathwork practice at her desk before work"
       },
       {
-        src: "maya-week-of-practice.png",
-        alt: "Calendar showing Maya's consistent practice across the week, building resilience"
+        src: "/images/method/strengthen-consistent-practice.webp",
+        alt: "Maya sits peacefully at her desk after completing her familiar morning practice"
       }
     ],
 
@@ -173,12 +173,12 @@ Same principle here. Consistent practice reshapes your capacity for regulation, 
     
     images: [
       {
-        src: "maya-full-day-rhythm.png",
-        alt: "Maya's day showing multiple moments: morning practice, reset before meetings, evening reflection"
+        src: "/images/method/repeat-workday-rhythm.webp",
+        alt: "Maya repeats her rhythm through morning practice, a pre-meeting pause, and the end of her workday"
       },
       {
-        src: "maya-team-impact.png",
-        alt: "Maya leading her team with more presence, clarity, and calm—the ripple effect of consistent practice"
+        src: "/images/method/repeat-leadership-ripple.webp",
+        alt: "Maya leads an everyday team conversation with calm, clarity, and attentive coworkers"
       }
     ],
 

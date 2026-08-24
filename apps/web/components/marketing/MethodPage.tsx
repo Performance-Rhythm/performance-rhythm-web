@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { METHOD_CONTENT } from '@/content/method';
 import { Button } from '@/components/ui/Button';
 import { routes } from '@/lib/routes';
@@ -118,14 +119,16 @@ export default function MethodPage() {
             {/* Images Grid */}
             <div className="grid lg:grid-cols-2 gap-8">
               {step1Notice.images.map((image, idx) => (
-                <div key={idx} className="relative h-96 lg:h-full">
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#D97742] to-[#5E8AA8] opacity-10 rounded-lg" />
-                  <div className="absolute inset-0 flex items-center justify-center rounded-lg border-2 border-dashed border-[#A7BBC6] border-opacity-40">
-                    <div className="text-center">
-                      <p className="text-gray-600 font-medium">{image.alt}</p>
-                      <p className="text-sm text-gray-500 mt-2">[Placeholder Image {idx + 1}]</p>
-                    </div>
-                  </div>
+                <div key={idx} className="relative aspect-[3/2] overflow-hidden rounded-lg border border-[#A7BBC6]/20 bg-white shadow-sm">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    sizes="(min-width: 1024px) 50vw, 100vw"
+                    className="object-cover"
+                    priority={idx === 0}
+                  />
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#0B1D2A]/10 via-transparent to-transparent" />
                 </div>
               ))}
             </div>
@@ -193,14 +196,15 @@ export default function MethodPage() {
             {/* Images Grid */}
             <div className="grid lg:grid-cols-2 gap-8">
               {step2Reset.images.map((image, idx) => (
-                <div key={idx} className="relative h-96 lg:h-full">
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#D97742] to-[#5E8AA8] opacity-10 rounded-lg" />
-                  <div className="absolute inset-0 flex items-center justify-center rounded-lg border-2 border-dashed border-[#A7BBC6] border-opacity-40">
-                    <div className="text-center">
-                      <p className="text-gray-600 font-medium">{image.alt}</p>
-                      <p className="text-sm text-gray-500 mt-2">[Placeholder Image {idx + 1}]</p>
-                    </div>
-                  </div>
+                <div key={idx} className="relative aspect-[3/2] overflow-hidden rounded-lg border border-[#A7BBC6]/20 bg-white shadow-sm">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    sizes="(min-width: 1024px) 50vw, 100vw"
+                    className="object-cover"
+                  />
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#0B1D2A]/10 via-transparent to-transparent" />
                 </div>
               ))}
             </div>
@@ -272,14 +276,15 @@ export default function MethodPage() {
             {/* Images Grid */}
             <div className="grid lg:grid-cols-2 gap-8">
               {step3Strengthen.images.map((image, idx) => (
-                <div key={idx} className="relative h-96 lg:h-full">
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#D97742] to-[#5E8AA8] opacity-10 rounded-lg" />
-                  <div className="absolute inset-0 flex items-center justify-center rounded-lg border-2 border-dashed border-[#A7BBC6] border-opacity-40">
-                    <div className="text-center">
-                      <p className="text-gray-600 font-medium">{image.alt}</p>
-                      <p className="text-sm text-gray-500 mt-2">[Placeholder Image {idx + 1}]</p>
-                    </div>
-                  </div>
+                <div key={idx} className="relative aspect-[3/2] overflow-hidden rounded-lg border border-[#A7BBC6]/20 bg-white shadow-sm">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    sizes="(min-width: 1024px) 50vw, 100vw"
+                    className="object-cover"
+                  />
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#0B1D2A]/10 via-transparent to-transparent" />
                 </div>
               ))}
             </div>
@@ -351,14 +356,15 @@ export default function MethodPage() {
             {/* Images Grid */}
             <div className="grid lg:grid-cols-2 gap-8">
               {step4Repeat.images.map((image, idx) => (
-                <div key={idx} className="relative h-96 lg:h-full">
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#D97742] to-[#5E8AA8] opacity-10 rounded-lg" />
-                  <div className="absolute inset-0 flex items-center justify-center rounded-lg border-2 border-dashed border-[#A7BBC6] border-opacity-40">
-                    <div className="text-center">
-                      <p className="text-gray-600 font-medium">{image.alt}</p>
-                      <p className="text-sm text-gray-500 mt-2">[Placeholder Image {idx + 1}]</p>
-                    </div>
-                  </div>
+                <div key={idx} className="relative aspect-[3/2] overflow-hidden rounded-lg border border-[#A7BBC6]/20 bg-white shadow-sm">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    sizes="(min-width: 1024px) 50vw, 100vw"
+                    className="object-cover"
+                  />
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#0B1D2A]/10 via-transparent to-transparent" />
                 </div>
               ))}
             </div>
