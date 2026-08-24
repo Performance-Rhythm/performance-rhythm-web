@@ -77,11 +77,11 @@ The key: **Maya's body is giving her information.** Physical sensations, changes
     
     images: [
       {
-        src: "/images/method/reset-practical-pause.webp",
-        alt: "Maya takes a quiet breathing pause after a difficult workplace meeting"
+        src: "/images/method/reset-practical-pause-v3.webp",
+        alt: "Maya practices slow breathing with one hand on her chest and one on her stomach"
       },
       {
-        src: "/images/method/reset-grounded-return.webp",
+        src: "/images/method/reset-grounded-return-v2.webp",
         alt: "Maya returns to her desk with her feet grounded and posture relaxed"
       }
     ],
