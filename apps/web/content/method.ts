@@ -39,8 +39,8 @@ export const METHOD_CONTENT = {
         alt: "Maya pauses during a morning meeting as she notices tension building before responding"
       },
       {
-        src: "/images/method/notice-physical-signals.webp",
-        alt: "Maya notices a set jaw, raised shoulders, and tension in her hands during a workplace conversation"
+        src: "/images/method/notice-reflective-pause-v2.webp",
+        alt: "Maya briefly closes her eyes during a meeting as she notices her thoughts and physical tension"
       }
     ],
 
@@ -77,7 +77,7 @@ The key: **Maya's body is giving her information.** Physical sensations, changes
     
     images: [
       {
-        src: "/images/method/reset-practical-pause-v3.webp",
+        src: "/images/method/reset-practical-pause-v4.webp",
         alt: "Maya practices slow breathing with one hand on her chest and one on her stomach"
       },
       {
@@ -124,8 +124,8 @@ The Reset is not about "feeling positive." It's about shifting your nervous syst
     
     images: [
       {
-        src: "/images/method/strengthen-morning-practice.webp",
-        alt: "Maya begins a calm morning breathwork practice at her desk before work"
+        src: "/images/method/strengthen-home-breathwork-v2.webp",
+        alt: "Maya practices breathwork at home on a mat with an eye mask, one hand on her chest and one on her stomach"
       },
       {
         src: "/images/method/strengthen-consistent-practice.webp",

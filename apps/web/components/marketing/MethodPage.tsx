@@ -1,9 +1,79 @@
 'use client';
 
+import { Fragment, type ReactNode } from 'react';
 import Image from 'next/image';
 import { METHOD_CONTENT } from '@/content/method';
 import { Button } from '@/components/ui/Button';
 import { routes } from '@/lib/routes';
+
+function renderInlineFormatting(text: string, keyPrefix: string) {
+  return text.split(/(\*\*[^*]+\*\*)/g).filter(Boolean).map((part, idx) => {
+    const key = `${keyPrefix}-${idx}`;
+
+    if (part.startsWith('**') && part.endsWith('**')) {
+      return (
+        <strong key={key} className="font-semibold text-[#0B1D2A]">
+          {part.slice(2, -2)}
+        </strong>
+      );
+    }
+
+    return <Fragment key={key}>{part}</Fragment>;
+  });
+}
+
+function FormattedScienceText({ content }: { content: string }) {
+  const blocks: ReactNode[] = [];
+  let paragraph: string[] = [];
+  let list: string[] = [];
+
+  const flushParagraph = () => {
+    if (paragraph.length === 0) return;
+
+    const text = paragraph.join(' ');
+    blocks.push(
+      <p key={`paragraph-${blocks.length}`} className="leading-relaxed">
+        {renderInlineFormatting(text, `paragraph-${blocks.length}`)}
+      </p>
+    );
+    paragraph = [];
+  };
+
+  const flushList = () => {
+    if (list.length === 0) return;
+
+    blocks.push(
+      <ul key={`list-${blocks.length}`} className="space-y-2 pl-5 list-disc marker:text-[#5E8AA8]">
+        {list.map((item, idx) => (
+          <li key={idx} className="leading-relaxed pl-1">
+            {renderInlineFormatting(item, `list-${blocks.length}-${idx}`)}
+          </li>
+        ))}
+      </ul>
+    );
+    list = [];
+  };
+
+  content.trim().split('\n').forEach((rawLine) => {
+    const line = rawLine.trim();
+
+    if (!line) {
+      flushParagraph();
+      flushList();
+    } else if (line.startsWith('- ')) {
+      flushParagraph();
+      list.push(line.slice(2));
+    } else {
+      flushList();
+      paragraph.push(line);
+    }
+  });
+
+  flushParagraph();
+  flushList();
+
+  return <div className="space-y-4">{blocks}</div>;
+}
 
 export default function MethodPage() {
   const {
@@ -136,12 +206,8 @@ export default function MethodPage() {
             {/* Scientific Explanation */}
             <div className="bg-white rounded-lg border border-[#A7BBC6] border-opacity-20 p-8 lg:p-12">
               <h3 className="text-2xl font-bold text-[#0B1D2A] mb-6">The Science Behind Notice</h3>
-              <div className="prose prose-sm max-w-none text-gray-700 space-y-4">
-                {step1Notice.scientificExplanation.split('\n\n').map((paragraph, idx) => (
-                  <p key={idx} className="leading-relaxed">
-                    {paragraph.trim()}
-                  </p>
-                ))}
+              <div className="prose prose-sm max-w-none text-gray-700">
+                <FormattedScienceText content={step1Notice.scientificExplanation} />
               </div>
             </div>
 
@@ -212,12 +278,8 @@ export default function MethodPage() {
             {/* Scientific Explanation */}
             <div className="bg-[#FAFAF8] rounded-lg border border-[#A7BBC6] border-opacity-20 p-8 lg:p-12">
               <h3 className="text-2xl font-bold text-[#0B1D2A] mb-6">The Science Behind Reset</h3>
-              <div className="prose prose-sm max-w-none text-gray-700 space-y-4">
-                {step2Reset.scientificExplanation.split('\n\n').map((paragraph, idx) => (
-                  <p key={idx} className="leading-relaxed">
-                    {paragraph.trim()}
-                  </p>
-                ))}
+              <div className="prose prose-sm max-w-none text-gray-700">
+                <FormattedScienceText content={step2Reset.scientificExplanation} />
               </div>
             </div>
 
@@ -292,12 +354,8 @@ export default function MethodPage() {
             {/* Scientific Explanation */}
             <div className="bg-white rounded-lg border border-[#A7BBC6] border-opacity-20 p-8 lg:p-12">
               <h3 className="text-2xl font-bold text-[#0B1D2A] mb-6">The Science Behind Strengthen</h3>
-              <div className="prose prose-sm max-w-none text-gray-700 space-y-4">
-                {step3Strengthen.scientificExplanation.split('\n\n').map((paragraph, idx) => (
-                  <p key={idx} className="leading-relaxed">
-                    {paragraph.trim()}
-                  </p>
-                ))}
+              <div className="prose prose-sm max-w-none text-gray-700">
+                <FormattedScienceText content={step3Strengthen.scientificExplanation} />
               </div>
             </div>
 
@@ -372,12 +430,8 @@ export default function MethodPage() {
             {/* Scientific Explanation */}
             <div className="bg-[#FAFAF8] rounded-lg border border-[#A7BBC6] border-opacity-20 p-8 lg:p-12">
               <h3 className="text-2xl font-bold text-[#0B1D2A] mb-6">The Science Behind Repeat</h3>
-              <div className="prose prose-sm max-w-none text-gray-700 space-y-4">
-                {step4Repeat.scientificExplanation.split('\n\n').map((paragraph, idx) => (
-                  <p key={idx} className="leading-relaxed">
-                    {paragraph.trim()}
-                  </p>
-                ))}
+              <div className="prose prose-sm max-w-none text-gray-700">
+                <FormattedScienceText content={step4Repeat.scientificExplanation} />
               </div>
             </div>
 
