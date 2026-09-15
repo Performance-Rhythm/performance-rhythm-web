@@ -21,9 +21,9 @@ export const programs = [
     slug: "corporate-programs"
   },
   {
-    title: "Subscription Platform",
+    title: "Future Digital Reinforcement",
     description:
-      "A reinforcement layer with breathwork sessions, meditation content, educational trainings, learning paths, and company-specific libraries.",
+      "A longer-term product direction for supporting practice between live workshops and programs. No platform or beta is currently available.",
     slug: "platform"
   }
 ] as const;
@@ -189,7 +189,7 @@ export const PROGRAMS_CONTENT = {
           "All-hands workshop — Introducing the framework to the entire organization",
           "Department programs — Tailored multi-session engagement for key teams",
           "Individual coaching — Optional support for selected leaders",
-          "Reinforcement layer — Monthly check-in sessions or platform access",
+          "Reinforcement layer — Monthly check-in sessions and practical follow-up resources",
           "Review & measurement — Assessing impact on engagement, retention, performance"
         ]
       },
@@ -208,10 +208,10 @@ export const PROGRAMS_CONTENT = {
         title: "Integration Options",
         items: [
           "Monthly reinforcement sessions for all participants",
-          "Access to future subscription platform",
-          "Custom content libraries for organization-specific scenarios",
+          "Practical follow-up resources between live sessions",
+          "Custom workshop materials for organization-specific scenarios",
           "Ongoing coaching and support",
-          "Executive dashboards and engagement metrics"
+          "Aggregate workshop measurement and review"
         ]
       },
       {
@@ -235,17 +235,17 @@ export const PROGRAMS_CONTENT = {
 
   // Program 4: Platform
   platformProgram: {
-    title: "Subscription Platform",
+    title: "Future Digital Reinforcement",
     slug: "platform",
-    eyebrow: "CONTINUOUS REINFORCEMENT",
-    duration: "Ongoing",
-    audience: "Organizations seeking consistent, scalable reinforcement",
+    eyebrow: "LONG-TERM PRODUCT DIRECTION",
+    duration: "Concept stage",
+    audience: "Not currently available as a product or beta",
     
-    overview: "The future subscription platform is the reinforcement layer that extends Performance Rhythm beyond workshops and programs into daily practice. It provides breathwork sessions, meditation content, educational trainings, learning paths, and company-specific content libraries that keep the method alive between programs and after workshops.",
+    overview: "Performance Rhythm is exploring how future digital tools could reinforce learning between workshops and programs. The concepts below describe a possible direction, not an existing product, committed feature set, launch date, or beta program.",
     
     sections: [
       {
-        title: "Platform Capabilities (Coming Soon)",
+        title: "Ideas Under Consideration",
         items: [
           "Guided breathwork sessions (3–10 minutes for specific contexts)",
           "Meditation library organized by need (stress, focus, sleep, etc.)",
@@ -257,17 +257,17 @@ export const PROGRAMS_CONTENT = {
         ]
       },
       {
-        title: "Why Platform Matters",
+        title: "Why Digital Reinforcement Could Help",
         items: [
           "Workshops create awareness. A reinforcement platform can support consistency.",
           "One workshop introduces the tools. Continued practice helps people apply them over time.",
-          "Mobile access means tools are available when people need them most.",
-          "Company-specific content makes it relevant to your organization's context.",
-          "Aggregate data helps you see organizational patterns and progress."
+          "On-demand access could make tools easier to revisit when people need them.",
+          "Company-specific content could make practice more relevant to an organization's context.",
+          "Aggregate reporting could help organizations review participation and self-reported progress."
         ]
       },
       {
-        title: "Perfect For",
+        title: "Potential Future Use Cases",
         items: [
           "Organizations wanting continuous reinforcement after programs",
           "Remote or distributed teams needing scalable access",
@@ -288,9 +288,9 @@ export const PROGRAMS_CONTENT = {
       }
     ],
 
-    format: "Subscription model. Web and mobile app. Accessible 24/7.",
-    investment: "Included with select pilot, leadership, and custom corporate engagements. Broader access is custom quoted.",
-    cta: "Request Platform Preview"
+    format: "Concept only. There is currently no platform, customer login, dashboard, mobile app, or beta access.",
+    investment: "Not currently available or priced.",
+    cta: "Discuss Future Reinforcement"
   },
 
   // Founding Partner Section
@@ -301,15 +301,15 @@ export const PROGRAMS_CONTENT = {
     benefits: [
       {
         title: "Preferred Pricing",
-        description: "Significant discounts on all programs and first access to platform pricing."
+        description: "Preferred pricing on eligible workshops and programs, defined in the engagement proposal."
       },
       {
         title: "Direct Access to Founders",
         description: "Direct relationships with Shane and Jordan for strategic conversations and customized engagement."
       },
       {
-        title: "Early Platform Access",
-        description: "First access to the subscription platform as it launches, with input on features and content."
+        title: "Product Feedback",
+        description: "Opportunities to share feedback on future resources and product concepts without implying beta access or a launch commitment."
       },
       {
         title: "Shape the Future",
@@ -351,13 +351,13 @@ export const PROGRAMS_CONTENT = {
       },
       {
         situation: "We've done workshops/programs and want ongoing reinforcement.",
-        recommendation: "Combine programs with Platform access",
-        why: "A platform can make practice resources easier to revisit and scale across the organization."
+        recommendation: "Add live reinforcement sessions and follow-up resources",
+        why: "Ongoing touchpoints can help participants revisit the practices while future digital options remain in development."
       },
       {
         situation: "We want to partner long-term and shape the future of Performance Rhythm.",
         recommendation: "Explore Founding Partner Program",
-        why: "Preferred pricing, direct founder access, early platform launch, and ability to influence how Performance Rhythm evolves."
+        why: "Preferred program pricing, direct founder access, and opportunities to provide feedback as Performance Rhythm evolves."
       }
     ]
   },
@@ -372,7 +372,7 @@ export const PROGRAMS_CONTENT = {
       },
       {
         question: "Can this work for remote/distributed teams?",
-        answer: "Yes. Programs can be delivered in person, virtually, or in a hybrid format. As the platform develops, it will add on-demand resources that can support distributed teams between live sessions."
+        answer: "Yes. Programs can be delivered in person, virtually, or in a hybrid format. Live follow-up sessions and practical resources can support distributed teams between sessions; a digital platform remains only a future concept."
       },
       {
         question: "What if only some leaders are interested?",

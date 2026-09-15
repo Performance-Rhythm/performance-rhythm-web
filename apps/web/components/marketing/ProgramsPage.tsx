@@ -280,17 +280,17 @@ export default function ProgramsPage() {
             {/* Left: Headline & Description */}
             <div className="space-y-6">
               <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
-                Future Platform Preview
+                Future Digital Concept
               </p>
               <h2 className="text-4xl lg:text-5xl font-bold text-[#0B1D2A] leading-tight">
-                Built For Continuous Reinforcement
+                Exploring Digital Reinforcement
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed font-light">
-                Performance Rhythm is being designed as a consulting plus platform: high-trust human development experiences supported by digital infrastructure that helps organizations reinforce learning over time.
+                Performance Rhythm is exploring how future digital tools might support high-trust, human-led development experiences and help organizations reinforce learning over time.
               </p>
               <div className="bg-white rounded-lg border border-[#A7BBC6] border-opacity-20 p-6">
                 <p className="text-sm font-bold text-gray-700">
-                  Conceptual preview only. Phase 1 does not include login, dashboards, assignments, progress tracking, or platform functionality.
+                  Illustrative concept only. No platform, customer login, dashboard, mobile app, or beta program currently exists.
                 </p>
               </div>
             </div>
@@ -300,7 +300,7 @@ export default function ProgramsPage() {
               {/* Manager Insights Preview */}
               <div className="bg-white rounded-lg border border-[#A7BBC6] border-opacity-20 overflow-hidden shadow-md">
                 <div className="bg-gradient-to-r from-[#D97742] to-[#5E8AA8] px-6 py-4">
-                  <h3 className="text-lg font-bold text-white">Manager Insights</h3>
+                  <h3 className="text-lg font-bold text-white">Manager Insights Concept</h3>
                 </div>
                 <div className="p-6 space-y-6 max-h-96 overflow-y-auto">
                   {/* Team Header */}
@@ -351,7 +351,7 @@ export default function ProgramsPage() {
               {/* Company Dashboard Preview */}
               <div className="bg-white rounded-lg border border-[#A7BBC6] border-opacity-20 overflow-hidden shadow-md">
                 <div className="bg-gradient-to-r from-[#D97742] to-[#5E8AA8] px-6 py-4">
-                  <h3 className="text-lg font-bold text-white">Company Dashboard</h3>
+                  <h3 className="text-lg font-bold text-white">Dashboard Concept</h3>
                 </div>
                 <div className="p-6 space-y-6 max-h-96 overflow-y-auto">
                   {/* Top Stats */}

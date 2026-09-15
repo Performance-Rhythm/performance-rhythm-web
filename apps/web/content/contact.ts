@@ -153,7 +153,7 @@ export const CONTACT_CONTENT = {
           "Leadership Program",
           "Corporate Program",
           "Founding Partner Program",
-          "Future Platform",
+          "Future Digital Reinforcement Ideas",
           "Not sure yet"
         ]
       },

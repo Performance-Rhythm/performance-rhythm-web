@@ -71,7 +71,7 @@ export const PRIVACY_CONTENT = {
       content: [
         "Health Records: We do not collect or store medical, psychiatric, or clinical health information unless you voluntarily provide it in written communication.",
         "Biometric Data: We do not collect biometric data, fingerprints, or facial recognition information.",
-        "Invasive Monitoring: Our platform does not include invasive employee monitoring, surveillance, or individual behavioral scoring systems.",
+        "Invasive Monitoring: We do not currently operate a customer platform, and we do not use invasive employee monitoring, surveillance, or individual behavioral scoring systems.",
         "Sensitive Categories: We do not seek sensitive personal information such as racial or ethnic origin, religious beliefs, political opinions, or union membership unless you choose to share it."
       ]
     },

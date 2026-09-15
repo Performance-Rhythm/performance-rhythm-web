@@ -19,10 +19,8 @@ export function SiteFooter() {
           </div>
         </div>
         <div>
-          <h2 className="text-sm font-bold uppercase tracking-[0.18em] text-primary">Platform</h2>
+          <h2 className="text-sm font-bold uppercase tracking-[0.18em] text-primary">Company</h2>
           <div className="mt-4 grid gap-3 text-sm font-bold text-primary/75">
-            <Link href={routes.login}>Login — Coming Soon</Link>
-            <Link href={routes.dashboard}>Dashboard — Coming Soon</Link>
             <Link href={routes.privacy}>Privacy</Link>
             <Link href={routes.terms}>Terms</Link>
           </div>
