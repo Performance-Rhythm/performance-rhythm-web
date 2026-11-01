@@ -229,7 +229,7 @@ export const PROGRAMS_CONTENT = {
     ],
 
     format: "Customized engagement. Typically 3–12 months with multiple touchpoints.",
-    investment: "Starting at $7,500 for a 12-week pilot. Full-company partnerships are custom quoted.",
+    investment: "12-Week Rhythm Mastery Program. Contact us for pricing. Full-company partnerships are custom quoted.",
     cta: "Start A Corporate Partnership Conversation"
   },
 
