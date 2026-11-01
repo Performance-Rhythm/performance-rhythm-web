@@ -401,7 +401,7 @@ export default function HomeRedesign() {
                 />
                 
                 {/* Experience Card - Extra Large Desktop: Overlay, Otherwise: Below Image */}
-                <div className="2xl:absolute 2xl:bottom-0 2xl:left-4 2xl:right-4 mt-6 2xl:mt-0 bg-black bg-opacity-30 backdrop-blur-md rounded-lg border border-white border-opacity-20 p-8 space-y-6">
+                <div className="2xl:absolute 2xl:bottom-0 2xl:left-4 2xl:right-4 mt-6 2xl:mt-0 bg-[#0B1D2A] 2xl:bg-black/30 backdrop-blur-md rounded-lg border border-white border-opacity-20 p-8 space-y-6">
                   {/* Years & Title */}
                   <div className="space-y-2">
                     <h2 className="text-4xl 2xl:text-6xl font-bold text-white">
