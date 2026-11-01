@@ -41,7 +41,7 @@ export default function ResearchPage() {
         </div>
 
         <div className="relative z-10 container mx-auto px-6 py-24 max-w-6xl text-center space-y-8">
-          <p className="text-sm lg:text-base font-bold tracking-widest text-[#D97742] uppercase">
+          <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
             {RESEARCH_CONTENT.hero.eyebrow}
           </p>
           <h1 className="text-5xl lg:text-7xl xl:text-8xl font-bold leading-tight text-[#0B1D2A]">
@@ -66,7 +66,7 @@ export default function ResearchPage() {
               {/* Section Header */}
               <div className="space-y-6">
                 <div className="space-y-3">
-                  <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
+                  <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                     {section.eyebrow}
                   </p>
                   <h2 className="text-5xl lg:text-6xl font-bold text-[#0B1D2A]">

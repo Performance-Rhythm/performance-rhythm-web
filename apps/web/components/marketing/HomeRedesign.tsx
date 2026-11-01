@@ -237,7 +237,7 @@ export default function HomeRedesign() {
           <div className="max-w-4xl mx-auto space-y-16">
             {/* Header */}
             <div className="text-center space-y-4">
-              <span className="text-sm font-bold tracking-widest text-[#D97742]">
+              <span className="text-[19px] leading-snug font-bold tracking-widest text-accent">
                 {method.eyebrow}
               </span>
               <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">

@@ -20,7 +20,7 @@ export default function AboutPage() {
         </div>
 
         <div className="relative z-10 container mx-auto px-6 py-24 max-w-6xl text-center space-y-8">
-          <p className="text-sm lg:text-base font-bold tracking-widest text-[#D97742] uppercase">
+          <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
             {ABOUT_CONTENT.hero.eyebrow}
           </p>
           <h1 className="text-5xl lg:text-7xl xl:text-8xl font-bold leading-tight text-[#0B1D2A]">
@@ -37,7 +37,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="space-y-12">
             <div className="space-y-3">
-              <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
+              <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                 {ABOUT_CONTENT.founderStory.eyebrow}
               </p>
               <h2 className="text-5xl lg:text-6xl font-bold text-[#0B1D2A]">
@@ -68,7 +68,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="space-y-12">
             <div className="space-y-6 max-w-3xl">
-              <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
+              <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                 {ABOUT_CONTENT.philosophy.eyebrow}
               </p>
               <h2 className="text-5xl lg:text-6xl font-bold text-[#0B1D2A]">
@@ -103,7 +103,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="space-y-12">
             <div className="space-y-6 max-w-3xl">
-              <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
+              <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                 {ABOUT_CONTENT.theProblem.eyebrow}
               </p>
               <h2 className="text-5xl lg:text-6xl font-bold text-[#0B1D2A]">
@@ -138,7 +138,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="space-y-12">
             <div className="space-y-6 max-w-3xl">
-              <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
+              <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                 {ABOUT_CONTENT.theSolution.eyebrow}
               </p>
               <h2 className="text-5xl lg:text-6xl font-bold text-[#0B1D2A]">
@@ -182,7 +182,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="space-y-12">
             <div className="space-y-6 max-w-3xl">
-              <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
+              <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                 {ABOUT_CONTENT.vision.eyebrow}
               </p>
               <h2 className="text-5xl lg:text-6xl font-bold text-[#0B1D2A]">
@@ -217,7 +217,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="space-y-12">
             <div className="space-y-3">
-              <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
+              <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                 {ABOUT_CONTENT.team.eyebrow}
               </p>
               <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
@@ -255,7 +255,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="space-y-12">
             <div className="space-y-3">
-              <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
+              <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                 {ABOUT_CONTENT.values.eyebrow}
               </p>
               <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">

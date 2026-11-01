@@ -104,7 +104,7 @@ export default function MethodPage() {
         <div className="relative z-10 container mx-auto px-6 py-24 max-w-6xl text-center space-y-8">
           {/* Eyebrow */}
           <div className="space-y-2">
-            <p className="text-sm lg:text-base font-bold tracking-widest text-[#D97742] uppercase">
+            <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
               {hero.eyebrow}
             </p>
           </div>
@@ -174,7 +174,7 @@ export default function MethodPage() {
             {/* Step Header */}
             <div className="space-y-6">
               <div className="space-y-4">
-                <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
+                <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                   {step1Notice.eyebrow}
                 </p>
                 <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
@@ -247,7 +247,7 @@ export default function MethodPage() {
             {/* Step Header */}
             <div className="space-y-6">
               <div className="space-y-4">
-                <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
+                <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                   {step2Reset.eyebrow}
                 </p>
                 <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
@@ -323,7 +323,7 @@ export default function MethodPage() {
             {/* Step Header */}
             <div className="space-y-6">
               <div className="space-y-4">
-                <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
+                <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                   {step3Strengthen.eyebrow}
                 </p>
                 <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
@@ -399,7 +399,7 @@ export default function MethodPage() {
             {/* Step Header */}
             <div className="space-y-6">
               <div className="space-y-4">
-                <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
+                <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                   {step4Repeat.eyebrow}
                 </p>
                 <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">

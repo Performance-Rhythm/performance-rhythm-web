@@ -31,7 +31,7 @@ export default function ProgramsPage() {
         </div>
 
         <div className="relative z-10 container mx-auto px-6 py-24 max-w-6xl text-center space-y-8">
-          <p className="text-sm lg:text-base font-bold tracking-widest text-[#D97742] uppercase">
+          <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
             {hero.eyebrow}
           </p>
 
@@ -81,7 +81,7 @@ export default function ProgramsPage() {
           <div className="space-y-12">
             <div className="space-y-6">
               <div className="space-y-3">
-                <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
+                <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                   {workshopProgram.eyebrow}
                 </p>
                 <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
@@ -147,7 +147,7 @@ export default function ProgramsPage() {
           <div className="space-y-12">
             <div className="space-y-6">
               <div className="space-y-3">
-                <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
+                <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                   {leadershipProgram.eyebrow}
                 </p>
                 <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
@@ -213,7 +213,7 @@ export default function ProgramsPage() {
           <div className="space-y-12">
             <div className="space-y-6">
               <div className="space-y-3">
-                <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
+                <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                   {corporateProgram.eyebrow}
                 </p>
                 <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
@@ -279,7 +279,7 @@ export default function ProgramsPage() {
           <div className="grid lg:grid-cols-[1fr_1.3fr] gap-12 items-start">
             {/* Left: Headline & Description */}
             <div className="space-y-6">
-              <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
+              <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                 Future Digital Concept
               </p>
               <h2 className="text-4xl lg:text-5xl font-bold text-[#0B1D2A] leading-tight">
@@ -417,7 +417,7 @@ export default function ProgramsPage() {
           <div className="space-y-12">
             <div className="space-y-6">
               <div className="space-y-3">
-                <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
+                <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                   {platformProgram.eyebrow}
                 </p>
                 <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
