@@ -443,7 +443,7 @@ export default function HomeRedesign() {
               
               {/* Repeated Pattern Box - Below Image */}
               <div className="mt-6 bg-[#0B1D2A] rounded-lg p-8 space-y-3 text-white">
-                <p className="text-xs font-bold uppercase tracking-widest text-[#D97742]">
+                <p className="text-[19px] leading-snug font-bold uppercase tracking-widest text-[#D97742]">
                   Repeated Pattern
                 </p>
                 <p className="text-lg font-bold leading-relaxed">
