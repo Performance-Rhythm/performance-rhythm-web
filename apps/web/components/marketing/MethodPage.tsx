@@ -216,7 +216,7 @@ export default function MethodPage() {
               <h3 className="text-2xl font-bold text-[#0B1D2A] mb-6">In Your Work: {step1Notice.practicalExample.time}</h3>
               <div className="space-y-6">
                 <div>
-                  <p className="text-sm font-bold text-[#D97742] uppercase tracking-wide mb-2">The Moment</p>
+                  <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">The Moment</p>
                   <p className="text-lg text-gray-700 leading-relaxed">{step1Notice.practicalExample.scenario}</p>
                 </div>
                 <div>
@@ -224,7 +224,7 @@ export default function MethodPage() {
                   <p className="text-lg text-gray-700 leading-relaxed">{step1Notice.practicalExample.whatNoticeMeans}</p>
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-[#D97742] uppercase tracking-wide mb-2">Why It Matters</p>
+                  <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">Why It Matters</p>
                   <p className="text-lg text-gray-700 leading-relaxed">{step1Notice.practicalExample.whyItMatters}</p>
                 </div>
               </div>
@@ -288,7 +288,7 @@ export default function MethodPage() {
               <h3 className="text-2xl font-bold text-[#0B1D2A] mb-6">In Your Work: {step2Reset.practicalExample.time}</h3>
               <div className="space-y-6">
                 <div>
-                  <p className="text-sm font-bold text-[#D97742] uppercase tracking-wide mb-2">The Moment</p>
+                  <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">The Moment</p>
                   <p className="text-lg text-gray-700 leading-relaxed">{step2Reset.practicalExample.scenario}</p>
                 </div>
                 <div>
@@ -296,7 +296,7 @@ export default function MethodPage() {
                   <p className="text-lg text-gray-700 leading-relaxed">{step2Reset.practicalExample.whatResetMeans}</p>
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-[#D97742] uppercase tracking-wide mb-2">Why It Matters</p>
+                  <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">Why It Matters</p>
                   <p className="text-lg text-gray-700 leading-relaxed">{step2Reset.practicalExample.whyItMatters}</p>
                 </div>
                 <div>
@@ -364,7 +364,7 @@ export default function MethodPage() {
               <h3 className="text-2xl font-bold text-[#0B1D2A] mb-6">In Your Work: {step3Strengthen.practicalExample.time}</h3>
               <div className="space-y-6">
                 <div>
-                  <p className="text-sm font-bold text-[#D97742] uppercase tracking-wide mb-2">The Moment</p>
+                  <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">The Moment</p>
                   <p className="text-lg text-gray-700 leading-relaxed">{step3Strengthen.practicalExample.scenario}</p>
                 </div>
                 <div>
@@ -372,7 +372,7 @@ export default function MethodPage() {
                   <p className="text-lg text-gray-700 leading-relaxed">{step3Strengthen.practicalExample.whatStrengthenMeans}</p>
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-[#D97742] uppercase tracking-wide mb-2">Why It Matters</p>
+                  <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">Why It Matters</p>
                   <p className="text-lg text-gray-700 leading-relaxed">{step3Strengthen.practicalExample.whyItMatters}</p>
                 </div>
                 <div>
@@ -440,7 +440,7 @@ export default function MethodPage() {
               <h3 className="text-2xl font-bold text-[#0B1D2A] mb-6">In Your Work: {step4Repeat.practicalExample.time}</h3>
               <div className="space-y-6">
                 <div>
-                  <p className="text-sm font-bold text-[#D97742] uppercase tracking-wide mb-2">The Moment</p>
+                  <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">The Moment</p>
                   <p className="text-lg text-gray-700 leading-relaxed">{step4Repeat.practicalExample.scenario}</p>
                 </div>
                 <div>
@@ -448,7 +448,7 @@ export default function MethodPage() {
                   <p className="text-lg text-gray-700 leading-relaxed">{step4Repeat.practicalExample.whatRepeatMeans}</p>
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-[#D97742] uppercase tracking-wide mb-2">Why It Matters</p>
+                  <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">Why It Matters</p>
                   <p className="text-lg text-gray-700 leading-relaxed">{step4Repeat.practicalExample.whyItMatters}</p>
                 </div>
                 <div>

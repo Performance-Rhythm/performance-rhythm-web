@@ -121,7 +121,7 @@ export default function ProgramsPage() {
 
             <div className="grid lg:grid-cols-2 gap-8 border-t border-[#A7BBC6] border-opacity-20 pt-8">
               <div>
-                <p className="text-sm font-bold text-[#D97742] uppercase tracking-wide mb-2">Format</p>
+                <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">Format</p>
                 <p className="text-lg text-gray-700">{workshopProgram.format}</p>
               </div>
               <div>
@@ -187,7 +187,7 @@ export default function ProgramsPage() {
 
             <div className="grid lg:grid-cols-2 gap-8 border-t border-[#A7BBC6] border-opacity-20 pt-8">
               <div>
-                <p className="text-sm font-bold text-[#D97742] uppercase tracking-wide mb-2">Format</p>
+                <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">Format</p>
                 <p className="text-lg text-gray-700">{leadershipProgram.format}</p>
               </div>
               <div>
@@ -355,14 +355,14 @@ export default function ProgramsPage() {
                 </div>
                 <div className="p-6 space-y-6 max-h-96 overflow-y-auto">
                   {/* Top Stats */}
-                  <div className="grid grid-cols-3 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-4">
                     <div className="text-center space-y-1">
                       <p className="text-3xl font-bold text-[#0B1D2A]">84</p>
                       <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide">Active Members</p>
                     </div>
                     <div className="text-center space-y-1">
                       <p className="text-3xl font-bold text-[#0B1D2A]">71%</p>
-                      <p className="text-xs font-bold uppercase text-[#D97742] tracking-wide">Content Engagement</p>
+                      <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide">Content Engagement</p>
                     </div>
                     <div className="text-center space-y-1">
                       <p className="text-3xl font-bold text-[#0B1D2A]">3</p>
@@ -372,7 +372,7 @@ export default function ProgramsPage() {
 
                   {/* Current Focus Box */}
                   <div className="bg-[#0B1D2A] rounded-lg p-6 text-white space-y-2">
-                    <p className="text-xs font-bold uppercase tracking-widest text-[#D97742]">Current Focus</p>
+                    <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-widest">Current Focus</p>
                     <h4 className="text-2xl font-bold leading-tight">Sustainable Performance Foundations</h4>
                   </div>
 
@@ -457,7 +457,7 @@ export default function ProgramsPage() {
 
             <div className="grid lg:grid-cols-2 gap-8 border-t border-[#A7BBC6] border-opacity-20 pt-8">
               <div>
-                <p className="text-sm font-bold text-[#D97742] uppercase tracking-wide mb-2">Format</p>
+                <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">Format</p>
                 <p className="text-lg text-gray-700">{platformProgram.format}</p>
               </div>
               <div>
@@ -528,7 +528,7 @@ export default function ProgramsPage() {
                 <div key={idx} className="bg-[#FAFAF8] rounded-lg border border-[#A7BBC6] border-opacity-20 p-8">
                   <div className="grid lg:grid-cols-3 gap-6">
                     <div className="lg:col-span-1">
-                      <p className="text-sm font-bold text-[#D97742] uppercase tracking-wide mb-2">Your Situation</p>
+                      <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">Your Situation</p>
                       <p className="text-lg font-bold text-[#0B1D2A]">{scenario.situation}</p>
                     </div>
                     <div className="lg:col-span-1">
