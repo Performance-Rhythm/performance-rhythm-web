@@ -47,7 +47,7 @@ export default function ProgramsPage() {
             <Button 
               href={routes.bookDiscovery}
               size="lg"
-              className="bg-[#D97742] hover:bg-[#C86A37] text-white font-bold shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-[#D97742] hover:bg-[#C86A37] text-[#0B1D2A] font-bold shadow-lg hover:shadow-xl transition-all duration-300"
             >
               {hero.cta}
             </Button>
@@ -133,7 +133,7 @@ export default function ProgramsPage() {
             <Button 
               href={routes.bookDiscovery}
               size="lg"
-              className="w-full bg-[#D97742] hover:bg-[#C86A37] text-white font-bold"
+              className="w-full bg-[#D97742] hover:bg-[#C86A37] text-[#0B1D2A] font-bold"
             >
               {workshopProgram.cta}
             </Button>
@@ -220,7 +220,7 @@ export default function ProgramsPage() {
             <Button 
               href={routes.bookDiscovery}
               size="lg"
-              className="w-full bg-[#D97742] hover:bg-[#C86A37] text-white font-bold"
+              className="w-full bg-[#D97742] hover:bg-[#C86A37] text-[#0B1D2A] font-bold"
             >
               {corporateProgram.cta}
             </Button>
@@ -286,7 +286,7 @@ export default function ProgramsPage() {
             <Button 
               href={routes.bookDiscovery}
               size="lg"
-              className="w-full bg-[#D97742] hover:bg-[#C86A37] text-white font-bold"
+              className="w-full bg-[#D97742] hover:bg-[#C86A37] text-[#0B1D2A] font-bold"
             >
               {leadershipProgram.cta}
             </Button>
@@ -321,7 +321,7 @@ export default function ProgramsPage() {
               {/* Manager Insights Preview */}
               <div className="bg-white rounded-lg border border-[#A7BBC6] border-opacity-20 overflow-hidden shadow-md">
                 <div className="bg-gradient-to-r from-[#D97742] to-[#5E8AA8] px-6 py-4">
-                  <h3 className="text-lg font-bold text-white">Manager Insights Concept</h3>
+                  <h3 className="text-lg font-bold text-[#0B1D2A]">Manager Insights Concept</h3>
                 </div>
                 <div className="p-6 space-y-6 max-h-96 overflow-y-auto">
                   {/* Team Header */}
@@ -372,7 +372,7 @@ export default function ProgramsPage() {
               {/* Company Dashboard Preview */}
               <div className="bg-white rounded-lg border border-[#A7BBC6] border-opacity-20 overflow-hidden shadow-md">
                 <div className="bg-gradient-to-r from-[#D97742] to-[#5E8AA8] px-6 py-4">
-                  <h3 className="text-lg font-bold text-white">Dashboard Concept</h3>
+                  <h3 className="text-lg font-bold text-[#0B1D2A]">Dashboard Concept</h3>
                 </div>
                 <div className="p-6 space-y-6 max-h-96 overflow-y-auto">
                   {/* Top Stats */}
@@ -490,7 +490,7 @@ export default function ProgramsPage() {
             <Button 
               href={routes.bookDiscovery}
               size="lg"
-              className="w-full bg-[#D97742] hover:bg-[#C86A37] text-white font-bold"
+              className="w-full bg-[#D97742] hover:bg-[#C86A37] text-[#0B1D2A] font-bold"
             >
               {platformProgram.cta}
             </Button>
@@ -604,14 +604,14 @@ export default function ProgramsPage() {
               <Button 
                 href={routes.bookDiscovery}
                 size="lg"
-                className="bg-[#D97742] hover:bg-[#C86A37] text-white font-bold"
+                className="bg-[#D97742] hover:bg-[#C86A37] text-[#0B1D2A] font-bold"
               >
                 {finalCta.primaryCta}
               </Button>
               <Button 
                 href={routes.bookFoundingPartner}
                 size="lg"
-                className="bg-[#5E8AA8] hover:!bg-[#0B1D2A] text-white font-bold"
+                className="bg-[#5E8AA8] hover:!bg-[#0B1D2A] hover:text-white text-[#0B1D2A] font-bold"
               >
                 {finalCta.secondaryCta}
               </Button>

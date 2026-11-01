@@ -133,7 +133,7 @@ export default function MethodPage() {
             <Button 
               href={routes.bookDiscovery}
               size="lg"
-              className="bg-[#D97742] hover:bg-[#C86A37] text-white font-bold shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-[#D97742] hover:bg-[#C86A37] text-[#0B1D2A] font-bold shadow-lg hover:shadow-xl transition-all duration-300"
             >
               {hero.cta}
             </Button>
@@ -232,7 +232,7 @@ export default function MethodPage() {
 
             {/* Key Takeaway */}
             <div className="bg-gradient-to-r from-[#D97742] to-[#5E8AA8] rounded-lg p-8 lg:p-12">
-              <p className="text-white text-xl lg:text-2xl font-bold leading-relaxed">
+              <p className="text-[#0B1D2A] text-xl lg:text-2xl font-bold leading-relaxed">
                 💡 {step1Notice.keyTakeaway}
               </p>
             </div>
@@ -308,7 +308,7 @@ export default function MethodPage() {
 
             {/* Key Takeaway */}
             <div className="bg-gradient-to-r from-[#D97742] to-[#5E8AA8] rounded-lg p-8 lg:p-12">
-              <p className="text-white text-xl lg:text-2xl font-bold leading-relaxed">
+              <p className="text-[#0B1D2A] text-xl lg:text-2xl font-bold leading-relaxed">
                 💡 {step2Reset.keyTakeaway}
               </p>
             </div>
@@ -384,7 +384,7 @@ export default function MethodPage() {
 
             {/* Key Takeaway */}
             <div className="bg-gradient-to-r from-[#D97742] to-[#5E8AA8] rounded-lg p-8 lg:p-12">
-              <p className="text-white text-xl lg:text-2xl font-bold leading-relaxed">
+              <p className="text-[#0B1D2A] text-xl lg:text-2xl font-bold leading-relaxed">
                 💡 {step3Strengthen.keyTakeaway}
               </p>
             </div>
@@ -460,7 +460,7 @@ export default function MethodPage() {
 
             {/* Key Takeaway */}
             <div className="bg-gradient-to-r from-[#D97742] to-[#5E8AA8] rounded-lg p-8 lg:p-12">
-              <p className="text-white text-xl lg:text-2xl font-bold leading-relaxed">
+              <p className="text-[#0B1D2A] text-xl lg:text-2xl font-bold leading-relaxed">
                 💡 {step4Repeat.keyTakeaway}
               </p>
             </div>
@@ -524,7 +524,7 @@ export default function MethodPage() {
             </div>
 
             <div className="bg-gradient-to-r from-[#D97742] to-[#5E8AA8] rounded-lg p-8 lg:p-12">
-              <p className="text-white text-lg lg:text-xl font-bold leading-relaxed">
+              <p className="text-[#0B1D2A] text-lg lg:text-xl font-bold leading-relaxed">
                 {scienceSection.conclusion}
               </p>
             </div>
@@ -548,7 +548,7 @@ export default function MethodPage() {
               <Button 
                 href={routes.bookDiscovery}
                 size="lg"
-                className="bg-[#D97742] hover:bg-[#C86A37] text-white font-bold shadow-lg hover:shadow-xl transition-all duration-300"
+                className="bg-[#D97742] hover:bg-[#C86A37] text-[#0B1D2A] font-bold shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 {finalCta.cta}
               </Button>

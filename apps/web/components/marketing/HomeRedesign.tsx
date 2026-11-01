@@ -90,14 +90,14 @@ export default function HomeRedesign() {
               <Button 
                 href={routes.bookDiscovery} 
                 size="lg" 
-                className="bg-[#D97742] hover:bg-[#c86a37] text-white font-bold shadow-md hover:shadow-lg transition-all"
+                className="bg-[#D97742] hover:bg-[#c86a37] text-[#0B1D2A] font-bold shadow-md hover:shadow-lg transition-all"
               >
                 {hero.cta}
               </Button>
               <Button 
                 href={routes.method}
                 size="lg" 
-                className="bg-[#5E8AA8] hover:!bg-[#0B1D2A] text-white font-bold shadow-md hover:shadow-lg transition-all"
+                className="bg-[#5E8AA8] hover:!bg-[#0B1D2A] hover:text-white text-[#0B1D2A] font-bold shadow-md hover:shadow-lg transition-all"
               >
                 {hero.secondaryCta}
               </Button>
@@ -256,7 +256,7 @@ export default function HomeRedesign() {
 
                   <div className="relative space-y-4">
                     {/* Number circle */}
-                    <div className="w-12 h-12 rounded-full bg-[#5E8AA8] text-white flex items-center justify-center font-bold text-lg">
+                    <div className="w-12 h-12 rounded-full bg-[#5E8AA8] text-[#0B1D2A] flex items-center justify-center font-bold text-lg">
                       {idx + 1}
                     </div>
 
@@ -278,7 +278,7 @@ export default function HomeRedesign() {
               <Button 
                 href={routes.method} 
                 size="lg" 
-                className="bg-[#5E8AA8] hover:!bg-[#0B1D2A] text-white font-bold shadow-md hover:shadow-lg transition-all"
+                className="bg-[#5E8AA8] hover:!bg-[#0B1D2A] hover:text-white text-[#0B1D2A] font-bold shadow-md hover:shadow-lg transition-all"
               >
                 {method.cta}
               </Button>
@@ -325,14 +325,14 @@ export default function HomeRedesign() {
                 <Button 
                   href={routes.bookDiscovery} 
                   size="lg" 
-                  className="bg-[#D97742] hover:bg-[#c86a37] text-white font-bold shadow-md hover:shadow-lg transition-all"
+                  className="bg-[#D97742] hover:bg-[#c86a37] text-[#0B1D2A] font-bold shadow-md hover:shadow-lg transition-all"
                 >
                   {offer.cta}
                 </Button>
                 <Button 
                   href={routes.programs}
                   size="lg"
-                  className="bg-[#5E8AA8] hover:!bg-[#0B1D2A] text-white font-bold shadow-md hover:shadow-lg transition-all"
+                  className="bg-[#5E8AA8] hover:!bg-[#0B1D2A] hover:text-white text-[#0B1D2A] font-bold shadow-md hover:shadow-lg transition-all"
                 >
                   {offer.secondaryCta}
                 </Button>
@@ -366,7 +366,7 @@ export default function HomeRedesign() {
               {engagement.steps.map((step, idx) => (
                 <div key={idx} className="flex gap-6 items-start">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-10 w-10 rounded-full bg-[#D97742] text-white font-bold text-lg">
+                    <div className="flex items-center justify-center h-10 w-10 rounded-full bg-[#D97742] text-[#0B1D2A] font-bold text-lg">
                       {step.number}
                     </div>
                   </div>
@@ -488,7 +488,7 @@ export default function HomeRedesign() {
               <Button 
                 href={routes.bookDiscovery} 
                 size="lg" 
-                className="bg-[#D97742] hover:bg-[#C86A37] text-white font-bold shadow-md hover:shadow-lg transition-all inline-block"
+                className="bg-[#D97742] hover:bg-[#C86A37] text-[#0B1D2A] font-bold shadow-md hover:shadow-lg transition-all inline-block"
               >
                 {founder.cta}
               </Button>
@@ -513,7 +513,7 @@ export default function HomeRedesign() {
               <Button 
                 href={routes.bookDiscovery} 
                 size="lg" 
-                className="bg-[#D97742] hover:bg-[#c86a37] text-white font-bold shadow-md hover:shadow-lg transition-all"
+                className="bg-[#D97742] hover:bg-[#c86a37] text-[#0B1D2A] font-bold shadow-md hover:shadow-lg transition-all"
               >
                 {finalCta.cta}
               </Button>

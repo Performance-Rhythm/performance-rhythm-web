@@ -243,7 +243,7 @@ export default function ResearchPage() {
               href={routes.bookDiscovery}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full font-bold transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 bg-[#D97742] text-white shadow-md hover:bg-[#C86A37] hover:shadow-lg focus-visible:ring-[#D97742] px-7 py-4 text-base sm:text-lg bg-[#D97742] text-white font-bold"
+              className="inline-flex items-center justify-center rounded-full font-bold transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 bg-[#D97742] text-[#0B1D2A] shadow-md hover:bg-[#C86A37] hover:shadow-lg focus-visible:ring-[#D97742] px-7 py-4 text-base sm:text-lg bg-[#D97742] text-[#0B1D2A] font-bold"
             >
               Book A Discovery Conversation
             </a>
