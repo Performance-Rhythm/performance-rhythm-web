@@ -41,13 +41,13 @@ export default function ResearchPage() {
         </div>
 
         <div className="relative z-10 container mx-auto px-6 py-24 max-w-6xl text-center space-y-8">
-          <p className="text-sm lg:text-base font-bold tracking-widest text-[#5E8AA8] uppercase">
+          <p className="text-sm lg:text-base font-bold tracking-widest text-[#D97742] uppercase">
             {RESEARCH_CONTENT.hero.eyebrow}
           </p>
-          <h1 className="text-5xl lg:text-7xl xl:text-8xl font-bold leading-tight bg-gradient-to-r from-[#D97742] via-[#E5A464] to-[#5E8AA8] bg-clip-text text-transparent">
+          <h1 className="text-5xl lg:text-7xl xl:text-8xl font-bold leading-tight text-[#0B1D2A]">
             {RESEARCH_CONTENT.hero.title}
           </h1>
-          <p className="text-xl lg:text-2xl text-gray-700 leading-relaxed max-w-3xl mx-auto font-light">
+          <p className="text-xl lg:text-2xl text-gray-700 leading-relaxed max-w-3xl mx-auto font-normal">
             {RESEARCH_CONTENT.hero.intro}
           </p>
         </div>
@@ -69,7 +69,7 @@ export default function ResearchPage() {
                   <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
                     {section.eyebrow}
                   </p>
-                  <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
+                  <h2 className="text-5xl lg:text-6xl font-bold text-[#0B1D2A]">
                     {section.title}
                   </h2>
                 </div>
@@ -115,8 +115,8 @@ export default function ResearchPage() {
                         </div>
 
                         {/* Source & Year */}
-                        <div className="flex flex-wrap gap-4 text-sm text-gray-600">
-                          <span className="font-semibold text-[#0B1D2A]">
+                        <div className="flex flex-wrap gap-4 text-sm text-muted">
+                          <span className="font-bold text-[#0B1D2A]">
                             {article.source}
                           </span>
                           {article.year && (
@@ -179,7 +179,7 @@ export default function ResearchPage() {
             href={routes.bookDiscovery}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-full font-bold transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 bg-[#D97742] text-white shadow-md hover:bg-[#5E8AA8] hover:shadow-lg focus-visible:ring-[#D97742] px-7 py-4 text-base sm:text-lg bg-white hover:bg-[#ECE7DF] text-[#D97742] font-bold shadow-lg"
+            className="inline-flex items-center justify-center rounded-full font-bold transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 bg-[#D97742] text-white shadow-md hover:shadow-lg focus-visible:ring-[#D97742] px-7 py-4 text-base sm:text-lg bg-white hover:bg-[#ECE7DF] text-[#D97742] font-bold shadow-lg"
           >
             {RESEARCH_CONTENT.futureSection.cta}
           </a>
@@ -191,7 +191,7 @@ export default function ResearchPage() {
         <div className="container mx-auto px-6 max-w-5xl">
           <div className="space-y-12">
             <div className="text-center space-y-4">
-              <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent leading-tight">
+              <h2 className="text-4xl lg:text-5xl font-bold text-[#0B1D2A] leading-tight">
                 Why This Research Matters
               </h2>
               <p className="text-xl text-gray-700 leading-relaxed max-w-2xl mx-auto">
@@ -232,7 +232,7 @@ export default function ResearchPage() {
       {/* Final CTA */}
       <section className="py-24 bg-gradient-to-b from-white to-[#FAFAF8]">
         <div className="container mx-auto px-6 max-w-4xl text-center space-y-8">
-          <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent leading-tight">
+          <h2 className="text-4xl lg:text-5xl font-bold text-[#0B1D2A] leading-tight">
             Ready to Bring Science-Backed Resilience to Your Organization?
           </h2>
           <p className="text-xl text-gray-700 leading-relaxed max-w-2xl mx-auto">
@@ -243,7 +243,7 @@ export default function ResearchPage() {
               href={routes.bookDiscovery}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full font-bold transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 bg-[#D97742] text-white shadow-md hover:bg-[#5E8AA8] hover:shadow-lg focus-visible:ring-[#D97742] px-7 py-4 text-base sm:text-lg bg-[#D97742] hover:bg-[#5E8AA8] text-white font-bold"
+              className="inline-flex items-center justify-center rounded-full font-bold transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 bg-[#D97742] text-white shadow-md hover:bg-[#C86A37] hover:shadow-lg focus-visible:ring-[#D97742] px-7 py-4 text-base sm:text-lg bg-[#D97742] text-white font-bold"
             >
               Book A Discovery Conversation
             </a>

@@ -97,7 +97,7 @@ export default function HomeRedesign() {
               <Button 
                 href={routes.method}
                 size="lg" 
-                className="bg-[#5E8AA8] hover:bg-[#4a7089] text-white font-bold shadow-md hover:shadow-lg transition-all"
+                className="bg-[#5E8AA8] hover:!bg-[#0B1D2A] text-white font-bold shadow-md hover:shadow-lg transition-all"
               >
                 {hero.secondaryCta}
               </Button>
@@ -134,7 +134,7 @@ export default function HomeRedesign() {
             {/* Content */}
             <div className="space-y-8">
               <div className="space-y-6">
-                <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent leading-tight">
+                <h2 className="text-4xl lg:text-5xl font-bold text-[#0B1D2A] leading-tight">
                   {recognition.eyebrow}
                 </h2>
                 <h3 className="text-2xl lg:text-3xl font-bold text-[#0B1D2A] leading-relaxed">
@@ -153,7 +153,7 @@ export default function HomeRedesign() {
                     <h3 className="font-bold text-[#0B1D2A] text-lg">
                       {outcome.title}
                     </h3>
-                    <p className="text-sm text-gray-600">
+                    <p className="text-sm text-muted">
                       {outcome.description}
                     </p>
                   </div>
@@ -170,7 +170,7 @@ export default function HomeRedesign() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Content */}
             <div className="space-y-6 order-2 lg:order-1">
-              <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent leading-tight">
+              <h2 className="text-4xl lg:text-5xl font-bold text-[#0B1D2A] leading-tight">
                 {biology.headline}
               </h2>
 
@@ -180,10 +180,10 @@ export default function HomeRedesign() {
 
               {/* Brain Education Section */}
               <div className="p-6 bg-white rounded-lg border-l-4 border-[#D97742] space-y-4">
-                <p className="text-sm text-gray-700 leading-relaxed font-medium">
+                <p className="text-sm text-gray-700 leading-relaxed font-normal">
                   {biology.brainEducation}
                 </p>
-                <p className="text-xs text-gray-600 italic border-t border-gray-200 pt-3">
+                <p className="text-xs text-muted italic border-t border-gray-200 pt-3">
                   {biology.scientific}
                 </p>
               </div>
@@ -219,7 +219,7 @@ export default function HomeRedesign() {
 
             {/* Content */}
             <div className="space-y-6 order-2 lg:order-2">
-              <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent leading-tight">
+              <h2 className="text-4xl lg:text-5xl font-bold text-[#0B1D2A] leading-tight">
                 {shift.headline}
               </h2>
 
@@ -237,7 +237,7 @@ export default function HomeRedesign() {
           <div className="max-w-4xl mx-auto space-y-16">
             {/* Header */}
             <div className="text-center space-y-4">
-              <span className="text-sm font-bold tracking-widest text-[#5E8AA8]">
+              <span className="text-sm font-bold tracking-widest text-[#D97742]">
                 {method.eyebrow}
               </span>
               <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
@@ -264,7 +264,7 @@ export default function HomeRedesign() {
                       <h3 className="font-bold text-lg text-[#0B1D2A]">
                         {step.title}
                       </h3>
-                      <p className="text-sm text-gray-600 leading-relaxed">
+                      <p className="text-sm text-muted leading-relaxed">
                         {step.description}
                       </p>
                     </div>
@@ -278,7 +278,7 @@ export default function HomeRedesign() {
               <Button 
                 href={routes.method} 
                 size="lg" 
-                className="bg-[#5E8AA8] hover:bg-[#4a7089] text-white font-bold shadow-md hover:shadow-lg transition-all"
+                className="bg-[#5E8AA8] hover:!bg-[#0B1D2A] text-white font-bold shadow-md hover:shadow-lg transition-all"
               >
                 {method.cta}
               </Button>
@@ -295,7 +295,7 @@ export default function HomeRedesign() {
             <div className="space-y-12">
               {/* Header */}
               <div className="space-y-4">
-                <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
+                <h2 className="text-4xl lg:text-5xl font-bold text-[#0B1D2A]">
                   {offer.headline}
                 </h2>
                 <p className="text-xl text-gray-700">
@@ -332,7 +332,7 @@ export default function HomeRedesign() {
                 <Button 
                   href={routes.programs}
                   size="lg"
-                  className="bg-[#5E8AA8] hover:bg-[#4a7089] text-white font-bold shadow-md hover:shadow-lg transition-all"
+                  className="bg-[#5E8AA8] hover:!bg-[#0B1D2A] text-white font-bold shadow-md hover:shadow-lg transition-all"
                 >
                   {offer.secondaryCta}
                 </Button>
@@ -357,7 +357,7 @@ export default function HomeRedesign() {
       <section className="py-20 lg:py-32 bg-[#FAFAF8]">
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="space-y-16">
-            <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent text-center">
+            <h2 className="text-4xl lg:text-5xl font-bold text-[#0B1D2A] text-center">
               {engagement.headline}
             </h2>
 
@@ -456,7 +456,7 @@ export default function HomeRedesign() {
             <div className="space-y-8">
               {/* Main Content */}
               <div className="space-y-4">
-                <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent leading-tight">
+                <h2 className="text-4xl lg:text-5xl font-bold text-[#0B1D2A] leading-tight">
                   Founder Story: Why Shane Built Performance Rhythm
                 </h2>
               </div>
@@ -488,7 +488,7 @@ export default function HomeRedesign() {
               <Button 
                 href={routes.bookDiscovery} 
                 size="lg" 
-                className="bg-[#D97742] hover:bg-[#5E8AA8] text-white font-bold shadow-md hover:shadow-lg transition-all inline-block"
+                className="bg-[#D97742] hover:bg-[#C86A37] text-white font-bold shadow-md hover:shadow-lg transition-all inline-block"
               >
                 {founder.cta}
               </Button>
@@ -501,7 +501,7 @@ export default function HomeRedesign() {
       <section className="py-20 lg:py-32 bg-gradient-to-b from-white to-[#FAFAF8]">
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="text-center space-y-8">
-            <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent leading-tight">
+            <h2 className="text-4xl lg:text-5xl font-bold text-[#0B1D2A] leading-tight">
               {finalCta.headline}
             </h2>
 
@@ -519,7 +519,7 @@ export default function HomeRedesign() {
               </Button>
             </div>
 
-            <p className="text-sm text-gray-600 pt-4">
+            <p className="text-sm text-muted pt-4">
               {finalCta.supportingText}
             </p>
           </div>

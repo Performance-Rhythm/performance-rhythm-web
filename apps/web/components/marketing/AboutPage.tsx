@@ -23,10 +23,10 @@ export default function AboutPage() {
           <p className="text-sm lg:text-base font-bold tracking-widest text-[#D97742] uppercase">
             {ABOUT_CONTENT.hero.eyebrow}
           </p>
-          <h1 className="text-5xl lg:text-7xl xl:text-8xl font-bold leading-tight bg-gradient-to-r from-[#D97742] via-[#E5A464] to-[#5E8AA8] bg-clip-text text-transparent">
+          <h1 className="text-5xl lg:text-7xl xl:text-8xl font-bold leading-tight text-[#0B1D2A]">
             {ABOUT_CONTENT.hero.title}
           </h1>
-          <p className="text-xl lg:text-2xl text-gray-700 leading-relaxed max-w-3xl mx-auto font-light">
+          <p className="text-xl lg:text-2xl text-gray-700 leading-relaxed max-w-3xl mx-auto font-normal">
             {ABOUT_CONTENT.hero.intro}
           </p>
         </div>
@@ -40,7 +40,7 @@ export default function AboutPage() {
               <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
                 {ABOUT_CONTENT.founderStory.eyebrow}
               </p>
-              <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
+              <h2 className="text-5xl lg:text-6xl font-bold text-[#0B1D2A]">
                 {ABOUT_CONTENT.founderStory.title}
               </h2>
             </div>
@@ -71,7 +71,7 @@ export default function AboutPage() {
               <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
                 {ABOUT_CONTENT.philosophy.eyebrow}
               </p>
-              <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
+              <h2 className="text-5xl lg:text-6xl font-bold text-[#0B1D2A]">
                 {ABOUT_CONTENT.philosophy.title}
               </h2>
               <p className="text-2xl font-bold text-[#0B1D2A] leading-relaxed">
@@ -106,7 +106,7 @@ export default function AboutPage() {
               <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
                 {ABOUT_CONTENT.theProblem.eyebrow}
               </p>
-              <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
+              <h2 className="text-5xl lg:text-6xl font-bold text-[#0B1D2A]">
                 {ABOUT_CONTENT.theProblem.title}
               </h2>
               <p className="text-xl text-gray-700 leading-relaxed">
@@ -141,7 +141,7 @@ export default function AboutPage() {
               <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
                 {ABOUT_CONTENT.theSolution.eyebrow}
               </p>
-              <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
+              <h2 className="text-5xl lg:text-6xl font-bold text-[#0B1D2A]">
                 {ABOUT_CONTENT.theSolution.title}
               </h2>
               <p className="text-xl text-gray-700 leading-relaxed">
@@ -185,7 +185,7 @@ export default function AboutPage() {
               <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
                 {ABOUT_CONTENT.vision.eyebrow}
               </p>
-              <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
+              <h2 className="text-5xl lg:text-6xl font-bold text-[#0B1D2A]">
                 {ABOUT_CONTENT.vision.title}
               </h2>
               <p className="text-2xl font-bold text-[#0B1D2A] leading-relaxed">
@@ -285,7 +285,7 @@ export default function AboutPage() {
       {/* Final CTA */}
       <section className="py-24 bg-gradient-to-b from-white to-[#FAFAF8]">
         <div className="container mx-auto px-6 max-w-4xl text-center space-y-8">
-          <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent leading-tight">
+          <h2 className="text-4xl lg:text-5xl font-bold text-[#0B1D2A] leading-tight">
             {ABOUT_CONTENT.finalCTA.title}
           </h2>
           <p className="text-xl text-gray-700 leading-relaxed max-w-2xl mx-auto">
@@ -295,7 +295,7 @@ export default function AboutPage() {
             href={routes.bookDiscovery}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-full font-bold transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 bg-[#D97742] text-white shadow-md hover:bg-[#5E8AA8] hover:shadow-lg focus-visible:ring-[#D97742] px-7 py-4 text-base sm:text-lg"
+            className="inline-flex items-center justify-center rounded-full font-bold transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 bg-[#D97742] text-white shadow-md hover:bg-[#C86A37] hover:shadow-lg focus-visible:ring-[#D97742] px-7 py-4 text-base sm:text-lg"
           >
             {ABOUT_CONTENT.finalCTA.buttonText}
           </a>

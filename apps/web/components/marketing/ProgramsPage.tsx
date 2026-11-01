@@ -35,11 +35,11 @@ export default function ProgramsPage() {
             {hero.eyebrow}
           </p>
 
-          <h1 className="text-5xl lg:text-7xl xl:text-8xl font-bold leading-tight bg-gradient-to-r from-[#D97742] via-[#E5A464] to-[#5E8AA8] bg-clip-text text-transparent">
+          <h1 className="text-5xl lg:text-7xl xl:text-8xl font-bold leading-tight text-[#0B1D2A]">
             {hero.headline}
           </h1>
 
-          <p className="text-xl lg:text-2xl text-gray-700 leading-relaxed max-w-3xl mx-auto font-light">
+          <p className="text-xl lg:text-2xl text-gray-700 leading-relaxed max-w-3xl mx-auto font-normal">
             {hero.intro}
           </p>
 
@@ -47,7 +47,7 @@ export default function ProgramsPage() {
             <Button 
               href={routes.bookDiscovery}
               size="lg"
-              className="bg-[#D97742] hover:bg-[#5E8AA8] text-white font-bold shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-[#D97742] hover:bg-[#C86A37] text-white font-bold shadow-lg hover:shadow-xl transition-all duration-300"
             >
               {hero.cta}
             </Button>
@@ -59,7 +59,7 @@ export default function ProgramsPage() {
       <section className="py-24 bg-white border-t border-b border-[#A7BBC6] border-opacity-20">
         <div className="container mx-auto px-6 max-w-5xl">
           <div className="space-y-12">
-            <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent text-center leading-tight">
+            <h2 className="text-4xl lg:text-5xl font-bold text-[#0B1D2A] text-center leading-tight">
               {openingContext.headline}
             </h2>
 
@@ -133,7 +133,7 @@ export default function ProgramsPage() {
             <Button 
               href={routes.bookDiscovery}
               size="lg"
-              className="w-full bg-[#D97742] hover:bg-[#5E8AA8] text-white font-bold"
+              className="w-full bg-[#D97742] hover:bg-[#C86A37] text-white font-bold"
             >
               {workshopProgram.cta}
             </Button>
@@ -147,7 +147,7 @@ export default function ProgramsPage() {
           <div className="space-y-12">
             <div className="space-y-6">
               <div className="space-y-3">
-                <p className="text-sm font-bold tracking-widest text-[#5E8AA8] uppercase">
+                <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
                   {leadershipProgram.eyebrow}
                 </p>
                 <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
@@ -199,7 +199,7 @@ export default function ProgramsPage() {
             <Button 
               href={routes.bookDiscovery}
               size="lg"
-              className="w-full bg-[#D97742] hover:bg-[#5E8AA8] text-white font-bold"
+              className="w-full bg-[#D97742] hover:bg-[#C86A37] text-white font-bold"
             >
               {leadershipProgram.cta}
             </Button>
@@ -265,7 +265,7 @@ export default function ProgramsPage() {
             <Button 
               href={routes.bookDiscovery}
               size="lg"
-              className="w-full bg-[#D97742] hover:bg-[#5E8AA8] text-white font-bold"
+              className="w-full bg-[#D97742] hover:bg-[#C86A37] text-white font-bold"
             >
               {corporateProgram.cta}
             </Button>
@@ -285,7 +285,7 @@ export default function ProgramsPage() {
               <h2 className="text-4xl lg:text-5xl font-bold text-[#0B1D2A] leading-tight">
                 Exploring Digital Reinforcement
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed font-light">
+              <p className="text-lg text-gray-700 leading-relaxed font-normal">
                 Performance Rhythm is exploring how future digital tools might support high-trust, human-led development experiences and help organizations reinforce learning over time.
               </p>
               <div className="bg-white rounded-lg border border-[#A7BBC6] border-opacity-20 p-6">
@@ -384,7 +384,7 @@ export default function ProgramsPage() {
                       <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#5E8AA8] mt-2"></div>
                       <div>
                         <p className="font-bold text-[#0B1D2A]">Leadership Resilience Path</p>
-                        <p className="text-xs text-gray-600 font-bold">01</p>
+                        <p className="text-xs text-muted font-bold">01</p>
                       </div>
                     </div>
 
@@ -392,7 +392,7 @@ export default function ProgramsPage() {
                       <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#5E8AA8] mt-2"></div>
                       <div>
                         <p className="font-bold text-[#0B1D2A]">Customer Success Team</p>
-                        <p className="text-xs text-gray-600 font-bold">02</p>
+                        <p className="text-xs text-muted font-bold">02</p>
                       </div>
                     </div>
 
@@ -400,7 +400,7 @@ export default function ProgramsPage() {
                       <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#5E8AA8] mt-2"></div>
                       <div>
                         <p className="font-bold text-[#0B1D2A]">Organization Signals</p>
-                        <p className="text-xs text-gray-600 font-bold">03</p>
+                        <p className="text-xs text-muted font-bold">03</p>
                       </div>
                     </div>
                   </div>
@@ -417,7 +417,7 @@ export default function ProgramsPage() {
           <div className="space-y-12">
             <div className="space-y-6">
               <div className="space-y-3">
-                <p className="text-sm font-bold tracking-widest text-[#5E8AA8] uppercase">
+                <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
                   {platformProgram.eyebrow}
                 </p>
                 <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
@@ -469,7 +469,7 @@ export default function ProgramsPage() {
             <Button 
               href={routes.bookDiscovery}
               size="lg"
-              className="w-full bg-[#D97742] hover:bg-[#5E8AA8] text-white font-bold"
+              className="w-full bg-[#D97742] hover:bg-[#C86A37] text-white font-bold"
             >
               {platformProgram.cta}
             </Button>
@@ -536,7 +536,7 @@ export default function ProgramsPage() {
                       <p className="text-lg font-bold text-[#0B1D2A]">{scenario.recommendation}</p>
                     </div>
                     <div className="lg:col-span-1">
-                      <p className="text-sm font-bold text-gray-600 uppercase tracking-wide mb-2">Why</p>
+                      <p className="text-sm font-bold text-muted uppercase tracking-wide mb-2">Why</p>
                       <p className="text-gray-700 leading-relaxed">{scenario.why}</p>
                     </div>
                   </div>
@@ -571,7 +571,7 @@ export default function ProgramsPage() {
       <section className="py-24 bg-gradient-to-b from-white to-[#FAFAF8]">
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="text-center space-y-8">
-            <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent leading-tight">
+            <h2 className="text-4xl lg:text-5xl font-bold text-[#0B1D2A] leading-tight">
               {finalCta.headline}
             </h2>
 
@@ -583,7 +583,7 @@ export default function ProgramsPage() {
               <Button 
                 href={routes.bookDiscovery}
                 size="lg"
-                className="bg-[#D97742] hover:bg-[#5E8AA8] text-white font-bold"
+                className="bg-[#D97742] hover:bg-[#C86A37] text-white font-bold"
               >
                 {finalCta.primaryCta}
               </Button>

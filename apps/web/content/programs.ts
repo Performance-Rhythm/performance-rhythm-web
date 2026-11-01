@@ -304,8 +304,8 @@ export const PROGRAMS_CONTENT = {
         description: "Preferred pricing on eligible workshops and programs, defined in the engagement proposal."
       },
       {
-        title: "Direct Access to Founders",
-        description: "Direct relationships with Shane and Jordan for strategic conversations and customized engagement."
+        title: "Direct Access to Our Founder",
+        description: "A direct relationship with founder Shane Curtis for strategic conversations and customized engagement."
       },
       {
         title: "Product Feedback",
