@@ -102,7 +102,7 @@ export default function ResearchPage() {
                             </a>
                           </div>
                           <div className="flex gap-2 flex-wrap justify-end">
-                            <span className="px-3 py-1 bg-[#D97742] bg-opacity-10 rounded-full text-xs font-bold text-[#D97742] uppercase tracking-wide">
+                            <span className="px-3 py-1 bg-[#5E8AA8] bg-opacity-10 rounded-full text-xs font-bold text-[#5E8AA8] uppercase tracking-wide">
                               {article.credibility === "peer-reviewed"
                                 ? "Peer-Reviewed"
                                 : article.credibility === "institutional"
