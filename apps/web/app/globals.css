@@ -82,3 +82,13 @@ body {
     font-size: clamp(2.5rem, 0.75rem + 9vw, 3.75rem);
   }
 }
+
+/* WEB-39: gradient text (bg-clip-text) only paints inside the element box, so with
+   line-height: 1 (text-5xl and up) descenders (g, p, y, q) fall outside and vanish.
+   Extend the paint area below the baseline and cancel it with an equal negative margin,
+   so layout and spacing stay identical. !important is needed because space-y-* parents
+   set margin-bottom: 0 on children; elements with their own mb-* are left alone. */
+.bg-clip-text.text-transparent:not([class*="mb-"]) {
+  padding-bottom: 0.15em;
+  margin-bottom: -0.15em !important;
+}

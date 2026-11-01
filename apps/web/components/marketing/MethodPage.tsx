@@ -12,7 +12,7 @@ function renderInlineFormatting(text: string, keyPrefix: string) {
 
     if (part.startsWith('**') && part.endsWith('**')) {
       return (
-        <strong key={key} className="font-semibold text-[#0B1D2A]">
+        <strong key={key} className="font-bold text-[#0B1D2A]">
           {part.slice(2, -2)}
         </strong>
       );
@@ -104,7 +104,7 @@ export default function MethodPage() {
         <div className="relative z-10 container mx-auto px-6 py-24 max-w-6xl text-center space-y-8">
           {/* Eyebrow */}
           <div className="space-y-2">
-            <p className="text-sm lg:text-base font-bold tracking-widest text-[#D97742] uppercase">
+            <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
               {hero.eyebrow}
             </p>
           </div>
@@ -119,12 +119,12 @@ export default function MethodPage() {
           </h1>
 
           {/* Description */}
-          <p className="text-xl lg:text-2xl text-gray-700 leading-relaxed max-w-3xl mx-auto font-light">
+          <p className="text-xl lg:text-2xl text-gray-700 leading-relaxed max-w-3xl mx-auto font-normal">
             {hero.intro}
           </p>
 
           {/* Subheadline */}
-          <p className="text-lg lg:text-xl text-gray-600 italic max-w-2xl mx-auto">
+          <p className="text-lg lg:text-xl text-muted italic max-w-2xl mx-auto">
             {hero.subheadline}
           </p>
 
@@ -133,7 +133,7 @@ export default function MethodPage() {
             <Button 
               href={routes.bookDiscovery}
               size="lg"
-              className="bg-[#D97742] hover:bg-[#5E8AA8] text-white font-bold shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-[#D97742] hover:bg-[#C86A37] text-[#0B1D2A] font-bold shadow-lg hover:shadow-xl transition-all duration-300"
             >
               {hero.cta}
             </Button>
@@ -146,7 +146,7 @@ export default function MethodPage() {
         <div className="container mx-auto px-6 max-w-5xl">
           <div className="space-y-12">
             <div className="text-center space-y-6">
-              <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent leading-tight">
+              <h2 className="text-4xl lg:text-5xl font-bold text-[#0B1D2A] leading-tight">
                 {openingContext.headline}
               </h2>
               <p className="text-xl text-gray-700 leading-relaxed mx-auto max-w-3xl">
@@ -159,7 +159,7 @@ export default function MethodPage() {
               {openingContext.roles.map((role, idx) => (
                 <div key={idx} className="flex items-center gap-3 p-4 rounded-lg hover:bg-[#FAFAF8] transition-colors">
                   <div className="flex-shrink-0 w-2 h-2 rounded-full bg-gradient-to-r from-[#D97742] to-[#5E8AA8]" />
-                  <p className="text-gray-700 font-medium">{role}</p>
+                  <p className="text-gray-700 font-normal">{role}</p>
                 </div>
               ))}
             </div>
@@ -174,7 +174,7 @@ export default function MethodPage() {
             {/* Step Header */}
             <div className="space-y-6">
               <div className="space-y-4">
-                <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
+                <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                   {step1Notice.eyebrow}
                 </p>
                 <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
@@ -216,15 +216,15 @@ export default function MethodPage() {
               <h3 className="text-2xl font-bold text-[#0B1D2A] mb-6">In Your Work: {step1Notice.practicalExample.time}</h3>
               <div className="space-y-6">
                 <div>
-                  <p className="text-sm font-bold text-[#D97742] uppercase tracking-wide mb-2">The Moment</p>
+                  <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">The Moment</p>
                   <p className="text-lg text-gray-700 leading-relaxed">{step1Notice.practicalExample.scenario}</p>
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-[#5E8AA8] uppercase tracking-wide mb-2">What Notice Means</p>
+                  <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">What Notice Means</p>
                   <p className="text-lg text-gray-700 leading-relaxed">{step1Notice.practicalExample.whatNoticeMeans}</p>
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-[#D97742] uppercase tracking-wide mb-2">Why It Matters</p>
+                  <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">Why It Matters</p>
                   <p className="text-lg text-gray-700 leading-relaxed">{step1Notice.practicalExample.whyItMatters}</p>
                 </div>
               </div>
@@ -232,7 +232,7 @@ export default function MethodPage() {
 
             {/* Key Takeaway */}
             <div className="bg-gradient-to-r from-[#D97742] to-[#5E8AA8] rounded-lg p-8 lg:p-12">
-              <p className="text-white text-xl lg:text-2xl font-bold leading-relaxed">
+              <p className="text-[#0B1D2A] text-xl lg:text-2xl font-bold leading-relaxed">
                 💡 {step1Notice.keyTakeaway}
               </p>
             </div>
@@ -247,7 +247,7 @@ export default function MethodPage() {
             {/* Step Header */}
             <div className="space-y-6">
               <div className="space-y-4">
-                <p className="text-sm font-bold tracking-widest text-[#5E8AA8] uppercase">
+                <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                   {step2Reset.eyebrow}
                 </p>
                 <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
@@ -288,19 +288,19 @@ export default function MethodPage() {
               <h3 className="text-2xl font-bold text-[#0B1D2A] mb-6">In Your Work: {step2Reset.practicalExample.time}</h3>
               <div className="space-y-6">
                 <div>
-                  <p className="text-sm font-bold text-[#D97742] uppercase tracking-wide mb-2">The Moment</p>
+                  <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">The Moment</p>
                   <p className="text-lg text-gray-700 leading-relaxed">{step2Reset.practicalExample.scenario}</p>
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-[#5E8AA8] uppercase tracking-wide mb-2">What Reset Means</p>
+                  <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">What Reset Means</p>
                   <p className="text-lg text-gray-700 leading-relaxed">{step2Reset.practicalExample.whatResetMeans}</p>
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-[#D97742] uppercase tracking-wide mb-2">Why It Matters</p>
+                  <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">Why It Matters</p>
                   <p className="text-lg text-gray-700 leading-relaxed">{step2Reset.practicalExample.whyItMatters}</p>
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-[#5E8AA8] uppercase tracking-wide mb-2">Critical Note</p>
+                  <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">Critical Note</p>
                   <p className="text-lg text-gray-700 leading-relaxed italic">{step2Reset.practicalExample.timing}</p>
                 </div>
               </div>
@@ -308,7 +308,7 @@ export default function MethodPage() {
 
             {/* Key Takeaway */}
             <div className="bg-gradient-to-r from-[#D97742] to-[#5E8AA8] rounded-lg p-8 lg:p-12">
-              <p className="text-white text-xl lg:text-2xl font-bold leading-relaxed">
+              <p className="text-[#0B1D2A] text-xl lg:text-2xl font-bold leading-relaxed">
                 💡 {step2Reset.keyTakeaway}
               </p>
             </div>
@@ -323,7 +323,7 @@ export default function MethodPage() {
             {/* Step Header */}
             <div className="space-y-6">
               <div className="space-y-4">
-                <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
+                <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                   {step3Strengthen.eyebrow}
                 </p>
                 <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
@@ -364,19 +364,19 @@ export default function MethodPage() {
               <h3 className="text-2xl font-bold text-[#0B1D2A] mb-6">In Your Work: {step3Strengthen.practicalExample.time}</h3>
               <div className="space-y-6">
                 <div>
-                  <p className="text-sm font-bold text-[#D97742] uppercase tracking-wide mb-2">The Moment</p>
+                  <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">The Moment</p>
                   <p className="text-lg text-gray-700 leading-relaxed">{step3Strengthen.practicalExample.scenario}</p>
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-[#5E8AA8] uppercase tracking-wide mb-2">What Strengthen Means</p>
+                  <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">What Strengthen Means</p>
                   <p className="text-lg text-gray-700 leading-relaxed">{step3Strengthen.practicalExample.whatStrengthenMeans}</p>
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-[#D97742] uppercase tracking-wide mb-2">Why It Matters</p>
+                  <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">Why It Matters</p>
                   <p className="text-lg text-gray-700 leading-relaxed">{step3Strengthen.practicalExample.whyItMatters}</p>
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-[#5E8AA8] uppercase tracking-wide mb-2">Your Flexibility</p>
+                  <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">Your Flexibility</p>
                   <p className="text-lg text-gray-700 leading-relaxed">{step3Strengthen.practicalExample.practiceType}</p>
                 </div>
               </div>
@@ -384,7 +384,7 @@ export default function MethodPage() {
 
             {/* Key Takeaway */}
             <div className="bg-gradient-to-r from-[#D97742] to-[#5E8AA8] rounded-lg p-8 lg:p-12">
-              <p className="text-white text-xl lg:text-2xl font-bold leading-relaxed">
+              <p className="text-[#0B1D2A] text-xl lg:text-2xl font-bold leading-relaxed">
                 💡 {step3Strengthen.keyTakeaway}
               </p>
             </div>
@@ -399,7 +399,7 @@ export default function MethodPage() {
             {/* Step Header */}
             <div className="space-y-6">
               <div className="space-y-4">
-                <p className="text-sm font-bold tracking-widest text-[#5E8AA8] uppercase">
+                <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                   {step4Repeat.eyebrow}
                 </p>
                 <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
@@ -440,19 +440,19 @@ export default function MethodPage() {
               <h3 className="text-2xl font-bold text-[#0B1D2A] mb-6">In Your Work: {step4Repeat.practicalExample.time}</h3>
               <div className="space-y-6">
                 <div>
-                  <p className="text-sm font-bold text-[#D97742] uppercase tracking-wide mb-2">The Moment</p>
+                  <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">The Moment</p>
                   <p className="text-lg text-gray-700 leading-relaxed">{step4Repeat.practicalExample.scenario}</p>
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-[#5E8AA8] uppercase tracking-wide mb-2">What Repeat Means</p>
+                  <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">What Repeat Means</p>
                   <p className="text-lg text-gray-700 leading-relaxed">{step4Repeat.practicalExample.whatRepeatMeans}</p>
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-[#D97742] uppercase tracking-wide mb-2">Why It Matters</p>
+                  <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">Why It Matters</p>
                   <p className="text-lg text-gray-700 leading-relaxed">{step4Repeat.practicalExample.whyItMatters}</p>
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-[#5E8AA8] uppercase tracking-wide mb-2">The Ripple</p>
+                  <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">The Ripple</p>
                   <p className="text-lg text-gray-700 leading-relaxed italic">{step4Repeat.practicalExample.rippleEffect}</p>
                 </div>
               </div>
@@ -460,7 +460,7 @@ export default function MethodPage() {
 
             {/* Key Takeaway */}
             <div className="bg-gradient-to-r from-[#D97742] to-[#5E8AA8] rounded-lg p-8 lg:p-12">
-              <p className="text-white text-xl lg:text-2xl font-bold leading-relaxed">
+              <p className="text-[#0B1D2A] text-xl lg:text-2xl font-bold leading-relaxed">
                 💡 {step4Repeat.keyTakeaway}
               </p>
             </div>
@@ -473,7 +473,7 @@ export default function MethodPage() {
         <div className="container mx-auto px-6 max-w-5xl">
           <div className="space-y-12">
             <div className="text-center space-y-6">
-              <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent leading-tight">
+              <h2 className="text-4xl lg:text-5xl font-bold text-[#0B1D2A] leading-tight">
                 {outcomes.headline}
               </h2>
               <p className="text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
@@ -505,7 +505,7 @@ export default function MethodPage() {
         <div className="container mx-auto px-6 max-w-5xl">
           <div className="space-y-12">
             <div className="text-center space-y-6">
-              <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent leading-tight">
+              <h2 className="text-4xl lg:text-5xl font-bold text-[#0B1D2A] leading-tight">
                 {scienceSection.headline}
               </h2>
               <p className="text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
@@ -516,15 +516,15 @@ export default function MethodPage() {
             <div className="grid lg:grid-cols-2 gap-8">
               {scienceSection.frameworks.map((framework, idx) => (
                 <div key={idx} className="bg-[#FAFAF8] rounded-lg p-8 border border-[#A7BBC6] border-opacity-20">
-                  <h3 className="text-xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent mb-3">{framework.title}</h3>
+                  <h3 className="text-xl font-bold text-[#0B1D2A] mb-3">{framework.title}</h3>
                   <p className="text-gray-700 mb-4 leading-relaxed">{framework.description}</p>
-                  <p className="text-sm text-[#5E8AA8] font-medium italic">{framework.source}</p>
+                  <p className="text-sm text-[#5E8AA8] font-normal italic">{framework.source}</p>
                 </div>
               ))}
             </div>
 
             <div className="bg-gradient-to-r from-[#D97742] to-[#5E8AA8] rounded-lg p-8 lg:p-12">
-              <p className="text-white text-lg lg:text-xl font-bold leading-relaxed">
+              <p className="text-[#0B1D2A] text-lg lg:text-xl font-bold leading-relaxed">
                 {scienceSection.conclusion}
               </p>
             </div>
@@ -536,7 +536,7 @@ export default function MethodPage() {
       <section className="py-24 bg-gradient-to-b from-white to-[#FAFAF8]">
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="text-center space-y-8">
-            <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent leading-tight">
+            <h2 className="text-4xl lg:text-5xl font-bold text-[#0B1D2A] leading-tight">
               {finalCta.headline}
             </h2>
 
@@ -548,13 +548,13 @@ export default function MethodPage() {
               <Button 
                 href={routes.bookDiscovery}
                 size="lg"
-                className="bg-[#D97742] hover:bg-[#5E8AA8] text-white font-bold shadow-lg hover:shadow-xl transition-all duration-300"
+                className="bg-[#D97742] hover:bg-[#C86A37] text-[#0B1D2A] font-bold shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 {finalCta.cta}
               </Button>
             </div>
 
-            <p className="text-sm text-gray-600 italic">
+            <p className="text-sm text-muted italic">
               {finalCta.subtext}
             </p>
           </div>

@@ -172,7 +172,7 @@ export const HOMEPAGE_CONTENT = {
   // K. Founding Partner Program
   foundingPartner: {
     headline: "Founding Partner Program",
-    body: "Performance Rhythm is partnering with a select group of organizations to validate, refine, and evolve a new approach to leadership development, resilience, and sustainable performance.",
+    body: "Performance Rhythm is partnering with a select group of organizations to build, refine, and evolve a new approach to leadership development, resilience, and sustainable performance.",
     cta: "Start A Founding Partner Conversation",
     supportingText: "Explore an early partnership opportunity with Performance Rhythm."
   },

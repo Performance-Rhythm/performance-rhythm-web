@@ -31,15 +31,15 @@ export default function ProgramsPage() {
         </div>
 
         <div className="relative z-10 container mx-auto px-6 py-24 max-w-6xl text-center space-y-8">
-          <p className="text-sm lg:text-base font-bold tracking-widest text-[#D97742] uppercase">
+          <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
             {hero.eyebrow}
           </p>
 
-          <h1 className="text-5xl lg:text-7xl xl:text-8xl font-bold leading-tight bg-gradient-to-r from-[#D97742] via-[#E5A464] to-[#5E8AA8] bg-clip-text text-transparent">
+          <h1 className="text-5xl lg:text-7xl xl:text-8xl font-bold leading-tight text-[#0B1D2A]">
             {hero.headline}
           </h1>
 
-          <p className="text-xl lg:text-2xl text-gray-700 leading-relaxed max-w-3xl mx-auto font-light">
+          <p className="text-xl lg:text-2xl text-gray-700 leading-relaxed max-w-3xl mx-auto font-normal">
             {hero.intro}
           </p>
 
@@ -47,7 +47,7 @@ export default function ProgramsPage() {
             <Button 
               href={routes.bookDiscovery}
               size="lg"
-              className="bg-[#D97742] hover:bg-[#5E8AA8] text-white font-bold shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-[#D97742] hover:bg-[#C86A37] text-[#0B1D2A] font-bold shadow-lg hover:shadow-xl transition-all duration-300"
             >
               {hero.cta}
             </Button>
@@ -59,7 +59,7 @@ export default function ProgramsPage() {
       <section className="py-24 bg-white border-t border-b border-[#A7BBC6] border-opacity-20">
         <div className="container mx-auto px-6 max-w-5xl">
           <div className="space-y-12">
-            <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent text-center leading-tight">
+            <h2 className="text-4xl lg:text-5xl font-bold text-[#0B1D2A] text-center leading-tight">
               {openingContext.headline}
             </h2>
 
@@ -81,7 +81,7 @@ export default function ProgramsPage() {
           <div className="space-y-12">
             <div className="space-y-6">
               <div className="space-y-3">
-                <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
+                <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                   {workshopProgram.eyebrow}
                 </p>
                 <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
@@ -121,11 +121,11 @@ export default function ProgramsPage() {
 
             <div className="grid lg:grid-cols-2 gap-8 border-t border-[#A7BBC6] border-opacity-20 pt-8">
               <div>
-                <p className="text-sm font-bold text-[#D97742] uppercase tracking-wide mb-2">Format</p>
+                <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">Format</p>
                 <p className="text-lg text-gray-700">{workshopProgram.format}</p>
               </div>
               <div>
-                <p className="text-sm font-bold text-[#5E8AA8] uppercase tracking-wide mb-2">Investment</p>
+                <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">Investment</p>
                 <p className="text-lg text-gray-700">{workshopProgram.investment}</p>
               </div>
             </div>
@@ -133,7 +133,7 @@ export default function ProgramsPage() {
             <Button 
               href={routes.bookDiscovery}
               size="lg"
-              className="w-full bg-[#D97742] hover:bg-[#5E8AA8] text-white font-bold"
+              className="w-full bg-[#D97742] hover:bg-[#C86A37] text-[#0B1D2A] font-bold"
             >
               {workshopProgram.cta}
             </Button>
@@ -141,79 +141,13 @@ export default function ProgramsPage() {
         </div>
       </section>
 
-      {/* PROGRAM 2: LEADERSHIP */}
+      {/* PROGRAM 2: CORPORATE */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="space-y-12">
             <div className="space-y-6">
               <div className="space-y-3">
-                <p className="text-sm font-bold tracking-widest text-[#5E8AA8] uppercase">
-                  {leadershipProgram.eyebrow}
-                </p>
-                <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
-                  {leadershipProgram.title}
-                </h2>
-              </div>
-
-              <div className="flex flex-wrap gap-4 text-sm font-bold">
-                <div className="px-4 py-2 bg-[#FAFAF8] rounded-full border border-[#A7BBC6] border-opacity-30">
-                  {leadershipProgram.duration}
-                </div>
-                <div className="px-4 py-2 bg-[#FAFAF8] rounded-full border border-[#A7BBC6] border-opacity-30">
-                  {leadershipProgram.audience}
-                </div>
-              </div>
-
-              <p className="text-xl text-gray-700 leading-relaxed max-w-3xl">
-                {leadershipProgram.overview}
-              </p>
-            </div>
-
-            <div className="grid lg:grid-cols-2 gap-8">
-              {leadershipProgram.sections.map((section, idx) => (
-                <div key={idx} className="bg-[#FAFAF8] rounded-lg border border-[#A7BBC6] border-opacity-20 p-8">
-                  <h3 className="text-xl font-bold text-[#0B1D2A] mb-6">{section.title}</h3>
-                  <ul className="space-y-3">
-                    {section.items.map((item, itemIdx) => (
-                      <li key={itemIdx} className="flex gap-3">
-                        <span className="text-[#5E8AA8] font-bold flex-shrink-0">•</span>
-                        <span className="text-gray-700">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-
-            <div className="grid lg:grid-cols-2 gap-8 border-t border-[#A7BBC6] border-opacity-20 pt-8">
-              <div>
-                <p className="text-sm font-bold text-[#D97742] uppercase tracking-wide mb-2">Format</p>
-                <p className="text-lg text-gray-700">{leadershipProgram.format}</p>
-              </div>
-              <div>
-                <p className="text-sm font-bold text-[#5E8AA8] uppercase tracking-wide mb-2">Investment</p>
-                <p className="text-lg text-gray-700">{leadershipProgram.investment}</p>
-              </div>
-            </div>
-
-            <Button 
-              href={routes.bookDiscovery}
-              size="lg"
-              className="w-full bg-[#D97742] hover:bg-[#5E8AA8] text-white font-bold"
-            >
-              {leadershipProgram.cta}
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* PROGRAM 3: CORPORATE */}
-      <section className="py-24 bg-[#FAFAF8]">
-        <div className="container mx-auto px-6 max-w-6xl">
-          <div className="space-y-12">
-            <div className="space-y-6">
-              <div className="space-y-3">
-                <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
+                <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                   {corporateProgram.eyebrow}
                 </p>
                 <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
@@ -222,10 +156,10 @@ export default function ProgramsPage() {
               </div>
 
               <div className="flex flex-wrap gap-4 text-sm font-bold">
-                <div className="px-4 py-2 bg-white rounded-full border border-[#A7BBC6] border-opacity-30">
+                <div className="px-4 py-2 bg-[#FAFAF8] rounded-full border border-[#A7BBC6] border-opacity-30">
                   {corporateProgram.duration}
                 </div>
-                <div className="px-4 py-2 bg-white rounded-full border border-[#A7BBC6] border-opacity-30">
+                <div className="px-4 py-2 bg-[#FAFAF8] rounded-full border border-[#A7BBC6] border-opacity-30">
                   {corporateProgram.audience}
                 </div>
               </div>
@@ -235,9 +169,30 @@ export default function ProgramsPage() {
               </p>
             </div>
 
+            {/* FEATURED: 12-WEEK RHYTHM MASTERY PROGRAM */}
+            <div data-featured-program className="bg-white rounded-lg border-2 border-[#D97742] shadow-lg p-8 space-y-6">
+              <div className="space-y-3">
+                <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide">{corporateProgram.featured.label}</p>
+                <h3 className="text-3xl lg:text-4xl font-bold text-[#0B1D2A] leading-tight">{corporateProgram.featured.title}</h3>
+              </div>
+              <p className="text-xl text-gray-700 leading-relaxed max-w-3xl">{corporateProgram.featured.summary}</p>
+              <ul className="grid lg:grid-cols-2 gap-x-8 gap-y-3">
+                {corporateProgram.featured.details.map((item, itemIdx) => (
+                  <li key={itemIdx} className="flex gap-3">
+                    <span className="text-[#D97742] font-bold flex-shrink-0">•</span>
+                    <span className="text-gray-700">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="border-t border-[#A7BBC6] border-opacity-20 pt-6 space-y-2">
+                <p className="text-lg font-bold text-[#0B1D2A]">{corporateProgram.featured.flexibility}</p>
+                <p className="text-lg text-gray-700">{corporateProgram.featured.pricing}</p>
+              </div>
+            </div>
+
             <div className="grid lg:grid-cols-2 gap-8">
               {corporateProgram.sections.map((section, idx) => (
-                <div key={idx} className="bg-white rounded-lg border border-[#A7BBC6] border-opacity-20 p-8">
+                <div key={idx} className="bg-[#FAFAF8] rounded-lg border border-[#A7BBC6] border-opacity-20 p-8">
                   <h3 className="text-xl font-bold text-[#0B1D2A] mb-6">{section.title}</h3>
                   <ul className="space-y-3">
                     {section.items.map((item, itemIdx) => (
@@ -253,11 +208,11 @@ export default function ProgramsPage() {
 
             <div className="grid lg:grid-cols-2 gap-8 border-t border-[#A7BBC6] border-opacity-20 pt-8">
               <div>
-                <p className="text-sm font-bold text-[#D97742] uppercase tracking-wide mb-2">Format</p>
+                <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">Format</p>
                 <p className="text-lg text-gray-700">{corporateProgram.format}</p>
               </div>
               <div>
-                <p className="text-sm font-bold text-[#5E8AA8] uppercase tracking-wide mb-2">Investment</p>
+                <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">Investment</p>
                 <p className="text-lg text-gray-700">{corporateProgram.investment}</p>
               </div>
             </div>
@@ -265,9 +220,75 @@ export default function ProgramsPage() {
             <Button 
               href={routes.bookDiscovery}
               size="lg"
-              className="w-full bg-[#D97742] hover:bg-[#5E8AA8] text-white font-bold"
+              className="w-full bg-[#D97742] hover:bg-[#C86A37] text-[#0B1D2A] font-bold"
             >
               {corporateProgram.cta}
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* PROGRAM 3: LEADERSHIP */}
+      <section className="py-24 bg-[#FAFAF8]">
+        <div className="container mx-auto px-6 max-w-6xl">
+          <div className="space-y-12">
+            <div className="space-y-6">
+              <div className="space-y-3">
+                <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
+                  {leadershipProgram.eyebrow}
+                </p>
+                <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
+                  {leadershipProgram.title}
+                </h2>
+              </div>
+
+              <div className="flex flex-wrap gap-4 text-sm font-bold">
+                <div className="px-4 py-2 bg-white rounded-full border border-[#A7BBC6] border-opacity-30">
+                  {leadershipProgram.duration}
+                </div>
+                <div className="px-4 py-2 bg-white rounded-full border border-[#A7BBC6] border-opacity-30">
+                  {leadershipProgram.audience}
+                </div>
+              </div>
+
+              <p className="text-xl text-gray-700 leading-relaxed max-w-3xl">
+                {leadershipProgram.overview}
+              </p>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-8">
+              {leadershipProgram.sections.map((section, idx) => (
+                <div key={idx} className="bg-white rounded-lg border border-[#A7BBC6] border-opacity-20 p-8">
+                  <h3 className="text-xl font-bold text-[#0B1D2A] mb-6">{section.title}</h3>
+                  <ul className="space-y-3">
+                    {section.items.map((item, itemIdx) => (
+                      <li key={itemIdx} className="flex gap-3">
+                        <span className="text-[#5E8AA8] font-bold flex-shrink-0">•</span>
+                        <span className="text-gray-700">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-8 border-t border-[#A7BBC6] border-opacity-20 pt-8">
+              <div>
+                <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">Format</p>
+                <p className="text-lg text-gray-700">{leadershipProgram.format}</p>
+              </div>
+              <div>
+                <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">Investment</p>
+                <p className="text-lg text-gray-700">{leadershipProgram.investment}</p>
+              </div>
+            </div>
+
+            <Button 
+              href={routes.bookDiscovery}
+              size="lg"
+              className="w-full bg-[#D97742] hover:bg-[#C86A37] text-[#0B1D2A] font-bold"
+            >
+              {leadershipProgram.cta}
             </Button>
           </div>
         </div>
@@ -279,13 +300,13 @@ export default function ProgramsPage() {
           <div className="grid lg:grid-cols-[1fr_1.3fr] gap-12 items-start">
             {/* Left: Headline & Description */}
             <div className="space-y-6">
-              <p className="text-sm font-bold tracking-widest text-[#D97742] uppercase">
+              <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                 Future Digital Concept
               </p>
               <h2 className="text-4xl lg:text-5xl font-bold text-[#0B1D2A] leading-tight">
                 Exploring Digital Reinforcement
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed font-light">
+              <p className="text-lg text-gray-700 leading-relaxed font-normal">
                 Performance Rhythm is exploring how future digital tools might support high-trust, human-led development experiences and help organizations reinforce learning over time.
               </p>
               <div className="bg-white rounded-lg border border-[#A7BBC6] border-opacity-20 p-6">
@@ -300,7 +321,7 @@ export default function ProgramsPage() {
               {/* Manager Insights Preview */}
               <div className="bg-white rounded-lg border border-[#A7BBC6] border-opacity-20 overflow-hidden shadow-md">
                 <div className="bg-gradient-to-r from-[#D97742] to-[#5E8AA8] px-6 py-4">
-                  <h3 className="text-lg font-bold text-white">Manager Insights Concept</h3>
+                  <h3 className="text-lg font-bold text-[#0B1D2A]">Manager Insights Concept</h3>
                 </div>
                 <div className="p-6 space-y-6 max-h-96 overflow-y-auto">
                   {/* Team Header */}
@@ -332,7 +353,7 @@ export default function ProgramsPage() {
 
                   {/* Assigned Path */}
                   <div className="bg-[#FAFAF8] rounded-lg p-4 space-y-3">
-                    <p className="text-xs font-bold text-[#5E8AA8] uppercase">Assigned Path</p>
+                    <p className="text-[19px] leading-snug font-bold text-accent uppercase">Assigned Path</p>
                     <p className="text-lg font-bold text-[#0B1D2A]">Leadership Resilience</p>
                     <div className="w-full bg-gray-200 rounded-full h-2">
                       <div className="bg-[#5E8AA8] h-2 rounded-full" style={{width: '45%'}}></div>
@@ -351,28 +372,28 @@ export default function ProgramsPage() {
               {/* Company Dashboard Preview */}
               <div className="bg-white rounded-lg border border-[#A7BBC6] border-opacity-20 overflow-hidden shadow-md">
                 <div className="bg-gradient-to-r from-[#D97742] to-[#5E8AA8] px-6 py-4">
-                  <h3 className="text-lg font-bold text-white">Dashboard Concept</h3>
+                  <h3 className="text-lg font-bold text-[#0B1D2A]">Dashboard Concept</h3>
                 </div>
                 <div className="p-6 space-y-6 max-h-96 overflow-y-auto">
                   {/* Top Stats */}
-                  <div className="grid grid-cols-3 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-4">
                     <div className="text-center space-y-1">
                       <p className="text-3xl font-bold text-[#0B1D2A]">84</p>
-                      <p className="text-xs font-bold uppercase text-[#5E8AA8] tracking-wide">Active Members</p>
+                      <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide">Active Members</p>
                     </div>
                     <div className="text-center space-y-1">
                       <p className="text-3xl font-bold text-[#0B1D2A]">71%</p>
-                      <p className="text-xs font-bold uppercase text-[#D97742] tracking-wide">Content Engagement</p>
+                      <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide">Content Engagement</p>
                     </div>
                     <div className="text-center space-y-1">
                       <p className="text-3xl font-bold text-[#0B1D2A]">3</p>
-                      <p className="text-xs font-bold uppercase text-[#5E8AA8] tracking-wide">Active Programs</p>
+                      <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide">Active Programs</p>
                     </div>
                   </div>
 
                   {/* Current Focus Box */}
                   <div className="bg-[#0B1D2A] rounded-lg p-6 text-white space-y-2">
-                    <p className="text-xs font-bold uppercase tracking-widest text-[#D97742]">Current Focus</p>
+                    <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-widest">Current Focus</p>
                     <h4 className="text-2xl font-bold leading-tight">Sustainable Performance Foundations</h4>
                   </div>
 
@@ -384,7 +405,7 @@ export default function ProgramsPage() {
                       <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#5E8AA8] mt-2"></div>
                       <div>
                         <p className="font-bold text-[#0B1D2A]">Leadership Resilience Path</p>
-                        <p className="text-xs text-gray-600 font-bold">01</p>
+                        <p className="text-xs text-muted font-bold">01</p>
                       </div>
                     </div>
 
@@ -392,7 +413,7 @@ export default function ProgramsPage() {
                       <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#5E8AA8] mt-2"></div>
                       <div>
                         <p className="font-bold text-[#0B1D2A]">Customer Success Team</p>
-                        <p className="text-xs text-gray-600 font-bold">02</p>
+                        <p className="text-xs text-muted font-bold">02</p>
                       </div>
                     </div>
 
@@ -400,7 +421,7 @@ export default function ProgramsPage() {
                       <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#5E8AA8] mt-2"></div>
                       <div>
                         <p className="font-bold text-[#0B1D2A]">Organization Signals</p>
-                        <p className="text-xs text-gray-600 font-bold">03</p>
+                        <p className="text-xs text-muted font-bold">03</p>
                       </div>
                     </div>
                   </div>
@@ -417,10 +438,10 @@ export default function ProgramsPage() {
           <div className="space-y-12">
             <div className="space-y-6">
               <div className="space-y-3">
-                <p className="text-sm font-bold tracking-widest text-[#5E8AA8] uppercase">
+                <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                   {platformProgram.eyebrow}
                 </p>
-                <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl break-words hyphens-auto font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
                   {platformProgram.title}
                 </h2>
               </div>
@@ -457,11 +478,11 @@ export default function ProgramsPage() {
 
             <div className="grid lg:grid-cols-2 gap-8 border-t border-[#A7BBC6] border-opacity-20 pt-8">
               <div>
-                <p className="text-sm font-bold text-[#D97742] uppercase tracking-wide mb-2">Format</p>
+                <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">Format</p>
                 <p className="text-lg text-gray-700">{platformProgram.format}</p>
               </div>
               <div>
-                <p className="text-sm font-bold text-[#5E8AA8] uppercase tracking-wide mb-2">Investment</p>
+                <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">Investment</p>
                 <p className="text-lg text-gray-700">{platformProgram.investment}</p>
               </div>
             </div>
@@ -469,7 +490,7 @@ export default function ProgramsPage() {
             <Button 
               href={routes.bookDiscovery}
               size="lg"
-              className="w-full bg-[#D97742] hover:bg-[#5E8AA8] text-white font-bold"
+              className="w-full bg-[#D97742] hover:bg-[#C86A37] text-[#0B1D2A] font-bold"
             >
               {platformProgram.cta}
             </Button>
@@ -482,10 +503,10 @@ export default function ProgramsPage() {
         <div className="container mx-auto px-6 max-w-5xl">
           <div className="text-center space-y-12">
             <div className="space-y-6">
-              <h2 className="text-5xl lg:text-6xl font-bold text-white leading-tight">
+              <h2 className="text-5xl lg:text-6xl font-bold text-[#0B1D2A] leading-tight">
                 {foundingPartnerProgram.headline}
               </h2>
-              <p className="text-xl text-white text-opacity-90 leading-relaxed max-w-3xl mx-auto">
+              <p className="text-xl text-[#0B1D2A] text-opacity-90 leading-relaxed max-w-3xl mx-auto">
                 {foundingPartnerProgram.description}
               </p>
             </div>
@@ -493,8 +514,8 @@ export default function ProgramsPage() {
             <div className="grid lg:grid-cols-2 gap-8">
               {foundingPartnerProgram.benefits.map((benefit, idx) => (
                 <div key={idx} className="bg-white bg-opacity-10 backdrop-blur rounded-lg p-8 text-left border border-white border-opacity-20">
-                  <h3 className="text-xl font-bold text-white mb-3">{benefit.title}</h3>
-                  <p className="text-white text-opacity-90">{benefit.description}</p>
+                  <h3 className="text-xl font-bold text-[#0B1D2A] mb-3">{benefit.title}</h3>
+                  <p className="text-[#0B1D2A] text-opacity-90">{benefit.description}</p>
                 </div>
               ))}
             </div>
@@ -528,15 +549,15 @@ export default function ProgramsPage() {
                 <div key={idx} className="bg-[#FAFAF8] rounded-lg border border-[#A7BBC6] border-opacity-20 p-8">
                   <div className="grid lg:grid-cols-3 gap-6">
                     <div className="lg:col-span-1">
-                      <p className="text-sm font-bold text-[#D97742] uppercase tracking-wide mb-2">Your Situation</p>
+                      <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">Your Situation</p>
                       <p className="text-lg font-bold text-[#0B1D2A]">{scenario.situation}</p>
                     </div>
                     <div className="lg:col-span-1">
-                      <p className="text-sm font-bold text-[#5E8AA8] uppercase tracking-wide mb-2">Recommendation</p>
+                      <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">Recommendation</p>
                       <p className="text-lg font-bold text-[#0B1D2A]">{scenario.recommendation}</p>
                     </div>
                     <div className="lg:col-span-1">
-                      <p className="text-sm font-bold text-gray-600 uppercase tracking-wide mb-2">Why</p>
+                      <p className="text-sm font-bold text-muted uppercase tracking-wide mb-2">Why</p>
                       <p className="text-gray-700 leading-relaxed">{scenario.why}</p>
                     </div>
                   </div>
@@ -571,7 +592,7 @@ export default function ProgramsPage() {
       <section className="py-24 bg-gradient-to-b from-white to-[#FAFAF8]">
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="text-center space-y-8">
-            <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent leading-tight">
+            <h2 className="text-4xl lg:text-5xl font-bold text-[#0B1D2A] leading-tight">
               {finalCta.headline}
             </h2>
 
@@ -583,14 +604,14 @@ export default function ProgramsPage() {
               <Button 
                 href={routes.bookDiscovery}
                 size="lg"
-                className="bg-[#D97742] hover:bg-[#5E8AA8] text-white font-bold"
+                className="bg-[#D97742] hover:bg-[#C86A37] text-[#0B1D2A] font-bold"
               >
                 {finalCta.primaryCta}
               </Button>
               <Button 
                 href={routes.bookFoundingPartner}
                 size="lg"
-                className="bg-[#5E8AA8] hover:bg-[#D97742] text-white font-bold"
+                className="bg-[#5E8AA8] hover:!bg-[#0B1D2A] hover:text-white text-[#0B1D2A] font-bold"
               >
                 {finalCta.secondaryCta}
               </Button>

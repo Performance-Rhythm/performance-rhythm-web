@@ -13,7 +13,7 @@ export default function TermsPage() {
           <h1 className="text-5xl lg:text-6xl font-bold text-[#0B1D2A]">
             {hero.headline}
           </h1>
-          <p className="text-sm font-bold text-[#5E8AA8] uppercase tracking-wide">
+          <p className="text-sm font-bold text-muted uppercase tracking-wide">
             Last Updated: {hero.lastUpdated}
           </p>
         </div>

@@ -9,16 +9,16 @@ export const programs = [
     slug: "workshops"
   },
   {
-    title: "Leadership Programs",
-    description:
-      "Multi-session development for leaders navigating pressure, communication, decision-making, and team performance.",
-    slug: "leadership-programs"
-  },
-  {
     title: "Corporate Programs",
     description:
       "Longer engagements for organizations building resilience, healthier cultures, and sustainable performance across teams.",
     slug: "corporate-programs"
+  },
+  {
+    title: "Leadership Programs",
+    description:
+      "Multi-session development for leaders navigating pressure, communication, decision-making, and team performance.",
+    slug: "leadership-programs"
   },
   {
     title: "Future Digital Reinforcement",
@@ -92,7 +92,7 @@ export const PROGRAMS_CONTENT = {
           "Organizations starting their Performance Rhythm journey",
           "All-hands meetings and company kickoffs",
           "Department introductions (Sales, CS, Engineering, etc.)",
-          "Validation of whether Performance Rhythm is a fit"
+          "A clear first look at how Performance Rhythm fits your team"
         ]
       },
       {
@@ -111,7 +111,7 @@ export const PROGRAMS_CONTENT = {
     cta: "Explore Workshop Options"
   },
 
-  // Program 2: Leadership Programs
+  // Program 3: Leadership Programs (shown after Corporate Programs)
   leadershipProgram: {
     title: "Leadership Programs",
     slug: "leadership-programs",
@@ -170,7 +170,7 @@ export const PROGRAMS_CONTENT = {
     cta: "Discuss Leadership Program"
   },
 
-  // Program 3: Corporate Programs
+  // Program 2: Corporate Programs (shown before Leadership; features the 12-week program)
   corporateProgram: {
     title: "Corporate Programs",
     slug: "corporate-programs",
@@ -179,6 +179,21 @@ export const PROGRAMS_CONTENT = {
     audience: "Entire organizations, multiple departments, cross-functional teams",
     
     overview: "Corporate programs are designed for organizations ready for deeper, longer-term engagement. We work with leadership, departments, teams, and individual contributors to build resilience, clarity, psychological safety, and sustainable performance across the organization.",
+
+    featured: {
+      label: "Flagship Program",
+      title: "12-Week Rhythm Mastery Program",
+      summary: "A facilitator-led cohort program that builds four practical skills: noticing early stress signals, regulating in real time, responding thoughtfully under pressure, and recovering between demands.",
+      details: [
+        "Week 1 kickoff (90 minutes), followed by weekly 60-minute live sessions",
+        "Three in-person reinforcement sessions at Weeks 4, 8, and 12",
+        "Cohorts of up to 30 participants",
+        "Breathwork and meditation themes tailored to your team's priorities",
+        "Brief check-ins at the start, midpoint, and Week 12, with an aggregate cohort report"
+      ],
+      flexibility: "Program length is flexible. Shorter and longer formats are available.",
+      pricing: "Contact us for pricing."
+    },
     
     sections: [
       {
@@ -229,7 +244,7 @@ export const PROGRAMS_CONTENT = {
     ],
 
     format: "Customized engagement. Typically 3–12 months with multiple touchpoints.",
-    investment: "Starting at $7,500 for a 12-week pilot. Full-company partnerships are custom quoted.",
+    investment: "12-Week Rhythm Mastery Program. Contact us for pricing. Full-company partnerships are custom quoted.",
     cta: "Start A Corporate Partnership Conversation"
   },
 
@@ -296,7 +311,7 @@ export const PROGRAMS_CONTENT = {
   // Founding Partner Section
   foundingPartnerProgram: {
     headline: "Founding Partner Program",
-    description: "Performance Rhythm is partnering with select organizations to validate, refine, and shape the future of our approach to leadership development, resilience, and sustainable performance.",
+    description: "Performance Rhythm works closely with a small number of organizations as founding partners, building long-term programs together around leadership development, resilience, and sustainable performance.",
     
     benefits: [
       {
@@ -304,8 +319,8 @@ export const PROGRAMS_CONTENT = {
         description: "Preferred pricing on eligible workshops and programs, defined in the engagement proposal."
       },
       {
-        title: "Direct Access to Founders",
-        description: "Direct relationships with Shane and Jordan for strategic conversations and customized engagement."
+        title: "Direct Access to Our Founder",
+        description: "A direct relationship with founder Shane Curtis for strategic conversations and customized engagement."
       },
       {
         title: "Product Feedback",
@@ -337,7 +352,7 @@ export const PROGRAMS_CONTENT = {
       {
         situation: "We want to introduce the concept and see if it's a fit.",
         recommendation: "Start with a Signature Workshop",
-        why: "Low-commitment way to validate whether Performance Rhythm resonates with your culture. Great for all-hands meetings or department introductions."
+        why: "A focused way for your team to experience the Performance Rhythm Method™. Great for all-hands meetings or department introductions."
       },
       {
         situation: "Our leadership team wants to develop deeper capacity for resilience and presence.",
