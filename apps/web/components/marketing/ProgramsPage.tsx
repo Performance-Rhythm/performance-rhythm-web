@@ -125,7 +125,7 @@ export default function ProgramsPage() {
                 <p className="text-lg text-gray-700">{workshopProgram.format}</p>
               </div>
               <div>
-                <p className="text-sm font-bold text-[#5E8AA8] uppercase tracking-wide mb-2">Investment</p>
+                <p className="text-sm font-bold text-accent uppercase tracking-wide mb-2">Investment</p>
                 <p className="text-lg text-gray-700">{workshopProgram.investment}</p>
               </div>
             </div>
@@ -191,7 +191,7 @@ export default function ProgramsPage() {
                 <p className="text-lg text-gray-700">{leadershipProgram.format}</p>
               </div>
               <div>
-                <p className="text-sm font-bold text-[#5E8AA8] uppercase tracking-wide mb-2">Investment</p>
+                <p className="text-sm font-bold text-accent uppercase tracking-wide mb-2">Investment</p>
                 <p className="text-lg text-gray-700">{leadershipProgram.investment}</p>
               </div>
             </div>
@@ -257,7 +257,7 @@ export default function ProgramsPage() {
                 <p className="text-lg text-gray-700">{corporateProgram.format}</p>
               </div>
               <div>
-                <p className="text-sm font-bold text-[#5E8AA8] uppercase tracking-wide mb-2">Investment</p>
+                <p className="text-sm font-bold text-accent uppercase tracking-wide mb-2">Investment</p>
                 <p className="text-lg text-gray-700">{corporateProgram.investment}</p>
               </div>
             </div>
@@ -332,7 +332,7 @@ export default function ProgramsPage() {
 
                   {/* Assigned Path */}
                   <div className="bg-[#FAFAF8] rounded-lg p-4 space-y-3">
-                    <p className="text-xs font-bold text-[#5E8AA8] uppercase">Assigned Path</p>
+                    <p className="text-xs font-bold text-accent uppercase">Assigned Path</p>
                     <p className="text-lg font-bold text-[#0B1D2A]">Leadership Resilience</p>
                     <div className="w-full bg-gray-200 rounded-full h-2">
                       <div className="bg-[#5E8AA8] h-2 rounded-full" style={{width: '45%'}}></div>
@@ -358,7 +358,7 @@ export default function ProgramsPage() {
                   <div className="grid grid-cols-3 gap-4">
                     <div className="text-center space-y-1">
                       <p className="text-3xl font-bold text-[#0B1D2A]">84</p>
-                      <p className="text-xs font-bold uppercase text-[#5E8AA8] tracking-wide">Active Members</p>
+                      <p className="text-xs font-bold uppercase text-accent tracking-wide">Active Members</p>
                     </div>
                     <div className="text-center space-y-1">
                       <p className="text-3xl font-bold text-[#0B1D2A]">71%</p>
@@ -366,7 +366,7 @@ export default function ProgramsPage() {
                     </div>
                     <div className="text-center space-y-1">
                       <p className="text-3xl font-bold text-[#0B1D2A]">3</p>
-                      <p className="text-xs font-bold uppercase text-[#5E8AA8] tracking-wide">Active Programs</p>
+                      <p className="text-xs font-bold uppercase text-accent tracking-wide">Active Programs</p>
                     </div>
                   </div>
 
@@ -461,7 +461,7 @@ export default function ProgramsPage() {
                 <p className="text-lg text-gray-700">{platformProgram.format}</p>
               </div>
               <div>
-                <p className="text-sm font-bold text-[#5E8AA8] uppercase tracking-wide mb-2">Investment</p>
+                <p className="text-sm font-bold text-accent uppercase tracking-wide mb-2">Investment</p>
                 <p className="text-lg text-gray-700">{platformProgram.investment}</p>
               </div>
             </div>
@@ -532,7 +532,7 @@ export default function ProgramsPage() {
                       <p className="text-lg font-bold text-[#0B1D2A]">{scenario.situation}</p>
                     </div>
                     <div className="lg:col-span-1">
-                      <p className="text-sm font-bold text-[#5E8AA8] uppercase tracking-wide mb-2">Recommendation</p>
+                      <p className="text-sm font-bold text-accent uppercase tracking-wide mb-2">Recommendation</p>
                       <p className="text-lg font-bold text-[#0B1D2A]">{scenario.recommendation}</p>
                     </div>
                     <div className="lg:col-span-1">

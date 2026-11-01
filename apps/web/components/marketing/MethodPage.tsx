@@ -220,7 +220,7 @@ export default function MethodPage() {
                   <p className="text-lg text-gray-700 leading-relaxed">{step1Notice.practicalExample.scenario}</p>
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-[#5E8AA8] uppercase tracking-wide mb-2">What Notice Means</p>
+                  <p className="text-sm font-bold text-accent uppercase tracking-wide mb-2">What Notice Means</p>
                   <p className="text-lg text-gray-700 leading-relaxed">{step1Notice.practicalExample.whatNoticeMeans}</p>
                 </div>
                 <div>
@@ -292,7 +292,7 @@ export default function MethodPage() {
                   <p className="text-lg text-gray-700 leading-relaxed">{step2Reset.practicalExample.scenario}</p>
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-[#5E8AA8] uppercase tracking-wide mb-2">What Reset Means</p>
+                  <p className="text-sm font-bold text-accent uppercase tracking-wide mb-2">What Reset Means</p>
                   <p className="text-lg text-gray-700 leading-relaxed">{step2Reset.practicalExample.whatResetMeans}</p>
                 </div>
                 <div>
@@ -300,7 +300,7 @@ export default function MethodPage() {
                   <p className="text-lg text-gray-700 leading-relaxed">{step2Reset.practicalExample.whyItMatters}</p>
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-[#5E8AA8] uppercase tracking-wide mb-2">Critical Note</p>
+                  <p className="text-sm font-bold text-accent uppercase tracking-wide mb-2">Critical Note</p>
                   <p className="text-lg text-gray-700 leading-relaxed italic">{step2Reset.practicalExample.timing}</p>
                 </div>
               </div>
@@ -368,7 +368,7 @@ export default function MethodPage() {
                   <p className="text-lg text-gray-700 leading-relaxed">{step3Strengthen.practicalExample.scenario}</p>
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-[#5E8AA8] uppercase tracking-wide mb-2">What Strengthen Means</p>
+                  <p className="text-sm font-bold text-accent uppercase tracking-wide mb-2">What Strengthen Means</p>
                   <p className="text-lg text-gray-700 leading-relaxed">{step3Strengthen.practicalExample.whatStrengthenMeans}</p>
                 </div>
                 <div>
@@ -376,7 +376,7 @@ export default function MethodPage() {
                   <p className="text-lg text-gray-700 leading-relaxed">{step3Strengthen.practicalExample.whyItMatters}</p>
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-[#5E8AA8] uppercase tracking-wide mb-2">Your Flexibility</p>
+                  <p className="text-sm font-bold text-accent uppercase tracking-wide mb-2">Your Flexibility</p>
                   <p className="text-lg text-gray-700 leading-relaxed">{step3Strengthen.practicalExample.practiceType}</p>
                 </div>
               </div>
@@ -444,7 +444,7 @@ export default function MethodPage() {
                   <p className="text-lg text-gray-700 leading-relaxed">{step4Repeat.practicalExample.scenario}</p>
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-[#5E8AA8] uppercase tracking-wide mb-2">What Repeat Means</p>
+                  <p className="text-sm font-bold text-accent uppercase tracking-wide mb-2">What Repeat Means</p>
                   <p className="text-lg text-gray-700 leading-relaxed">{step4Repeat.practicalExample.whatRepeatMeans}</p>
                 </div>
                 <div>
@@ -452,7 +452,7 @@ export default function MethodPage() {
                   <p className="text-lg text-gray-700 leading-relaxed">{step4Repeat.practicalExample.whyItMatters}</p>
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-[#5E8AA8] uppercase tracking-wide mb-2">The Ripple</p>
+                  <p className="text-sm font-bold text-accent uppercase tracking-wide mb-2">The Ripple</p>
                   <p className="text-lg text-gray-700 leading-relaxed italic">{step4Repeat.practicalExample.rippleEffect}</p>
                 </div>
               </div>
