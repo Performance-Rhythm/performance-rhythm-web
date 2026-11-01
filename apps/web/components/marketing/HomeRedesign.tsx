@@ -394,7 +394,7 @@ export default function HomeRedesign() {
               <div className="relative w-full h-auto">
                 <Image
                   src="/images/Shane-Curtis-Portrait.webp"
-                  alt="Shane Curtis, Co-Founder of Performance Rhythm"
+                  alt="Shane Curtis, Founder of Performance Rhythm"
                   width={400}
                   height={500}
                   className="w-full h-auto rounded-lg"

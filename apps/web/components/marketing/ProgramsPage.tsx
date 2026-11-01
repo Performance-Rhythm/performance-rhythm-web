@@ -590,7 +590,7 @@ export default function ProgramsPage() {
               <Button 
                 href={routes.bookFoundingPartner}
                 size="lg"
-                className="bg-[#5E8AA8] hover:bg-[#D97742] text-white font-bold"
+                className="bg-[#5E8AA8] hover:!bg-[#0B1D2A] text-white font-bold"
               >
                 {finalCta.secondaryCta}
               </Button>
