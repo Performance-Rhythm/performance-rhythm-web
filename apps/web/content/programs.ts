@@ -92,7 +92,7 @@ export const PROGRAMS_CONTENT = {
           "Organizations starting their Performance Rhythm journey",
           "All-hands meetings and company kickoffs",
           "Department introductions (Sales, CS, Engineering, etc.)",
-          "Validation of whether Performance Rhythm is a fit"
+          "A clear first look at how Performance Rhythm fits your team"
         ]
       },
       {
@@ -337,7 +337,7 @@ export const PROGRAMS_CONTENT = {
       {
         situation: "We want to introduce the concept and see if it's a fit.",
         recommendation: "Start with a Signature Workshop",
-        why: "Low-commitment way to validate whether Performance Rhythm resonates with your culture. Great for all-hands meetings or department introductions."
+        why: "A focused way for your team to experience the Performance Rhythm Method™. Great for all-hands meetings or department introductions."
       },
       {
         situation: "Our leadership team wants to develop deeper capacity for resilience and presence.",
