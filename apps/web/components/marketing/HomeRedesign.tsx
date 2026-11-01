@@ -97,7 +97,7 @@ export default function HomeRedesign() {
               <Button 
                 href={routes.method}
                 size="lg" 
-                className="bg-[#5E8AA8] hover:!bg-[#0B1D2A] hover:text-white text-[#0B1D2A] font-bold shadow-md hover:shadow-lg transition-all"
+                className="!bg-[#D97742] !text-[#0B1D2A] hover:!bg-[#5E8AA8] hover:!text-[#0B1D2A] active:!bg-[#5E8AA8] active:!text-[#0B1D2A] focus-visible:!bg-[#5E8AA8] focus-visible:!text-[#0B1D2A] font-bold shadow-md hover:shadow-lg transition-all"
               >
                 {hero.secondaryCta}
               </Button>
@@ -278,7 +278,7 @@ export default function HomeRedesign() {
               <Button 
                 href={routes.method} 
                 size="lg" 
-                className="bg-[#5E8AA8] hover:!bg-[#0B1D2A] hover:text-white text-[#0B1D2A] font-bold shadow-md hover:shadow-lg transition-all"
+                className="!bg-[#D97742] !text-[#0B1D2A] hover:!bg-[#5E8AA8] hover:!text-[#0B1D2A] active:!bg-[#5E8AA8] active:!text-[#0B1D2A] focus-visible:!bg-[#5E8AA8] focus-visible:!text-[#0B1D2A] font-bold shadow-md hover:shadow-lg transition-all"
               >
                 {method.cta}
               </Button>
@@ -332,7 +332,7 @@ export default function HomeRedesign() {
                 <Button 
                   href={routes.programs}
                   size="lg"
-                  className="bg-[#5E8AA8] hover:!bg-[#0B1D2A] hover:text-white text-[#0B1D2A] font-bold shadow-md hover:shadow-lg transition-all"
+                  className="!bg-[#D97742] !text-[#0B1D2A] hover:!bg-[#5E8AA8] hover:!text-[#0B1D2A] active:!bg-[#5E8AA8] active:!text-[#0B1D2A] focus-visible:!bg-[#5E8AA8] focus-visible:!text-[#0B1D2A] font-bold shadow-md hover:shadow-lg transition-all"
                 >
                   {offer.secondaryCta}
                 </Button>
