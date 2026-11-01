@@ -342,10 +342,10 @@ export default function HomeRedesign() {
             {/* Image */}
             <div className="relative w-full h-auto">
               <Image
-                src="/images/Workshop.png"
-                alt="Performance Rhythm Workshop in session"
-                width={500}
-                height={600}
+                src="/images/workshop-breathwork-c.webp"
+                alt="Team practicing guided breathwork around a conference table"
+                width={1536}
+                height={1024}
                 className="w-full h-auto rounded-lg"
               />
             </div>
