@@ -69,7 +69,7 @@ export default function ResearchPage() {
                   <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                     {section.eyebrow}
                   </p>
-                  <h2 className="text-5xl lg:text-6xl font-bold text-[#0B1D2A]">
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl break-words hyphens-auto font-bold text-[#0B1D2A]">
                     {section.title}
                   </h2>
                 </div>
