@@ -200,7 +200,7 @@ export const CONTACT_CONTENT = {
     {
       question: "What if we want to start with something small?",
       answer:
-        "Perfect. Many organizations start with a signature workshop to validate the approach before committing to larger programs. We'll discuss what makes sense for your timeline and budget."
+        "Perfect. Many organizations start with a signature workshop to experience the approach before expanding into larger programs. We'll discuss what makes sense for your timeline and budget."
     },
     {
       question: "Can we include multiple leaders on the call?",
