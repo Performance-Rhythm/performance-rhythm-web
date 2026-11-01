@@ -9,16 +9,16 @@ export const programs = [
     slug: "workshops"
   },
   {
-    title: "Leadership Programs",
-    description:
-      "Multi-session development for leaders navigating pressure, communication, decision-making, and team performance.",
-    slug: "leadership-programs"
-  },
-  {
     title: "Corporate Programs",
     description:
       "Longer engagements for organizations building resilience, healthier cultures, and sustainable performance across teams.",
     slug: "corporate-programs"
+  },
+  {
+    title: "Leadership Programs",
+    description:
+      "Multi-session development for leaders navigating pressure, communication, decision-making, and team performance.",
+    slug: "leadership-programs"
   },
   {
     title: "Future Digital Reinforcement",
@@ -111,7 +111,7 @@ export const PROGRAMS_CONTENT = {
     cta: "Explore Workshop Options"
   },
 
-  // Program 2: Leadership Programs
+  // Program 3: Leadership Programs (shown after Corporate Programs)
   leadershipProgram: {
     title: "Leadership Programs",
     slug: "leadership-programs",
@@ -170,7 +170,7 @@ export const PROGRAMS_CONTENT = {
     cta: "Discuss Leadership Program"
   },
 
-  // Program 3: Corporate Programs
+  // Program 2: Corporate Programs (shown before Leadership; features the 12-week program)
   corporateProgram: {
     title: "Corporate Programs",
     slug: "corporate-programs",
@@ -179,6 +179,21 @@ export const PROGRAMS_CONTENT = {
     audience: "Entire organizations, multiple departments, cross-functional teams",
     
     overview: "Corporate programs are designed for organizations ready for deeper, longer-term engagement. We work with leadership, departments, teams, and individual contributors to build resilience, clarity, psychological safety, and sustainable performance across the organization.",
+
+    featured: {
+      label: "Flagship Program",
+      title: "12-Week Rhythm Mastery Program",
+      summary: "A facilitator-led cohort program that builds four practical skills: noticing early stress signals, regulating in real time, responding thoughtfully under pressure, and recovering between demands.",
+      details: [
+        "Week 1 kickoff (90 minutes), followed by weekly 60-minute live sessions",
+        "Three in-person reinforcement sessions at Weeks 4, 8, and 12",
+        "Cohorts of up to 30 participants",
+        "Breathwork and meditation themes tailored to your team's priorities",
+        "Brief check-ins at the start, midpoint, and Week 12, with an aggregate cohort report"
+      ],
+      flexibility: "Program length is flexible. Shorter and longer formats are available.",
+      pricing: "Contact us for pricing."
+    },
     
     sections: [
       {

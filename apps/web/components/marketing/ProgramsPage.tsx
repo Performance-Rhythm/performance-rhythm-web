@@ -141,74 +141,8 @@ export default function ProgramsPage() {
         </div>
       </section>
 
-      {/* PROGRAM 2: LEADERSHIP */}
+      {/* PROGRAM 2: CORPORATE */}
       <section className="py-24 bg-white">
-        <div className="container mx-auto px-6 max-w-6xl">
-          <div className="space-y-12">
-            <div className="space-y-6">
-              <div className="space-y-3">
-                <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
-                  {leadershipProgram.eyebrow}
-                </p>
-                <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
-                  {leadershipProgram.title}
-                </h2>
-              </div>
-
-              <div className="flex flex-wrap gap-4 text-sm font-bold">
-                <div className="px-4 py-2 bg-[#FAFAF8] rounded-full border border-[#A7BBC6] border-opacity-30">
-                  {leadershipProgram.duration}
-                </div>
-                <div className="px-4 py-2 bg-[#FAFAF8] rounded-full border border-[#A7BBC6] border-opacity-30">
-                  {leadershipProgram.audience}
-                </div>
-              </div>
-
-              <p className="text-xl text-gray-700 leading-relaxed max-w-3xl">
-                {leadershipProgram.overview}
-              </p>
-            </div>
-
-            <div className="grid lg:grid-cols-2 gap-8">
-              {leadershipProgram.sections.map((section, idx) => (
-                <div key={idx} className="bg-[#FAFAF8] rounded-lg border border-[#A7BBC6] border-opacity-20 p-8">
-                  <h3 className="text-xl font-bold text-[#0B1D2A] mb-6">{section.title}</h3>
-                  <ul className="space-y-3">
-                    {section.items.map((item, itemIdx) => (
-                      <li key={itemIdx} className="flex gap-3">
-                        <span className="text-[#5E8AA8] font-bold flex-shrink-0">•</span>
-                        <span className="text-gray-700">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-
-            <div className="grid lg:grid-cols-2 gap-8 border-t border-[#A7BBC6] border-opacity-20 pt-8">
-              <div>
-                <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">Format</p>
-                <p className="text-lg text-gray-700">{leadershipProgram.format}</p>
-              </div>
-              <div>
-                <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">Investment</p>
-                <p className="text-lg text-gray-700">{leadershipProgram.investment}</p>
-              </div>
-            </div>
-
-            <Button 
-              href={routes.bookDiscovery}
-              size="lg"
-              className="w-full bg-[#D97742] hover:bg-[#C86A37] text-white font-bold"
-            >
-              {leadershipProgram.cta}
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* PROGRAM 3: CORPORATE */}
-      <section className="py-24 bg-[#FAFAF8]">
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="space-y-12">
             <div className="space-y-6">
@@ -222,10 +156,10 @@ export default function ProgramsPage() {
               </div>
 
               <div className="flex flex-wrap gap-4 text-sm font-bold">
-                <div className="px-4 py-2 bg-white rounded-full border border-[#A7BBC6] border-opacity-30">
+                <div className="px-4 py-2 bg-[#FAFAF8] rounded-full border border-[#A7BBC6] border-opacity-30">
                   {corporateProgram.duration}
                 </div>
-                <div className="px-4 py-2 bg-white rounded-full border border-[#A7BBC6] border-opacity-30">
+                <div className="px-4 py-2 bg-[#FAFAF8] rounded-full border border-[#A7BBC6] border-opacity-30">
                   {corporateProgram.audience}
                 </div>
               </div>
@@ -235,9 +169,30 @@ export default function ProgramsPage() {
               </p>
             </div>
 
+            {/* FEATURED: 12-WEEK RHYTHM MASTERY PROGRAM */}
+            <div data-featured-program className="bg-white rounded-lg border-2 border-[#D97742] shadow-lg p-8 space-y-6">
+              <div className="space-y-3">
+                <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide">{corporateProgram.featured.label}</p>
+                <h3 className="text-3xl lg:text-4xl font-bold text-[#0B1D2A] leading-tight">{corporateProgram.featured.title}</h3>
+              </div>
+              <p className="text-xl text-gray-700 leading-relaxed max-w-3xl">{corporateProgram.featured.summary}</p>
+              <ul className="grid lg:grid-cols-2 gap-x-8 gap-y-3">
+                {corporateProgram.featured.details.map((item, itemIdx) => (
+                  <li key={itemIdx} className="flex gap-3">
+                    <span className="text-[#D97742] font-bold flex-shrink-0">•</span>
+                    <span className="text-gray-700">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="border-t border-[#A7BBC6] border-opacity-20 pt-6 space-y-2">
+                <p className="text-lg font-bold text-[#0B1D2A]">{corporateProgram.featured.flexibility}</p>
+                <p className="text-lg text-gray-700">{corporateProgram.featured.pricing}</p>
+              </div>
+            </div>
+
             <div className="grid lg:grid-cols-2 gap-8">
               {corporateProgram.sections.map((section, idx) => (
-                <div key={idx} className="bg-white rounded-lg border border-[#A7BBC6] border-opacity-20 p-8">
+                <div key={idx} className="bg-[#FAFAF8] rounded-lg border border-[#A7BBC6] border-opacity-20 p-8">
                   <h3 className="text-xl font-bold text-[#0B1D2A] mb-6">{section.title}</h3>
                   <ul className="space-y-3">
                     {section.items.map((item, itemIdx) => (
@@ -268,6 +223,72 @@ export default function ProgramsPage() {
               className="w-full bg-[#D97742] hover:bg-[#C86A37] text-white font-bold"
             >
               {corporateProgram.cta}
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* PROGRAM 3: LEADERSHIP */}
+      <section className="py-24 bg-[#FAFAF8]">
+        <div className="container mx-auto px-6 max-w-6xl">
+          <div className="space-y-12">
+            <div className="space-y-6">
+              <div className="space-y-3">
+                <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
+                  {leadershipProgram.eyebrow}
+                </p>
+                <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
+                  {leadershipProgram.title}
+                </h2>
+              </div>
+
+              <div className="flex flex-wrap gap-4 text-sm font-bold">
+                <div className="px-4 py-2 bg-white rounded-full border border-[#A7BBC6] border-opacity-30">
+                  {leadershipProgram.duration}
+                </div>
+                <div className="px-4 py-2 bg-white rounded-full border border-[#A7BBC6] border-opacity-30">
+                  {leadershipProgram.audience}
+                </div>
+              </div>
+
+              <p className="text-xl text-gray-700 leading-relaxed max-w-3xl">
+                {leadershipProgram.overview}
+              </p>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-8">
+              {leadershipProgram.sections.map((section, idx) => (
+                <div key={idx} className="bg-white rounded-lg border border-[#A7BBC6] border-opacity-20 p-8">
+                  <h3 className="text-xl font-bold text-[#0B1D2A] mb-6">{section.title}</h3>
+                  <ul className="space-y-3">
+                    {section.items.map((item, itemIdx) => (
+                      <li key={itemIdx} className="flex gap-3">
+                        <span className="text-[#5E8AA8] font-bold flex-shrink-0">•</span>
+                        <span className="text-gray-700">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-8 border-t border-[#A7BBC6] border-opacity-20 pt-8">
+              <div>
+                <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">Format</p>
+                <p className="text-lg text-gray-700">{leadershipProgram.format}</p>
+              </div>
+              <div>
+                <p className="text-[19px] leading-snug font-bold text-accent uppercase tracking-wide mb-2">Investment</p>
+                <p className="text-lg text-gray-700">{leadershipProgram.investment}</p>
+              </div>
+            </div>
+
+            <Button 
+              href={routes.bookDiscovery}
+              size="lg"
+              className="w-full bg-[#D97742] hover:bg-[#C86A37] text-white font-bold"
+            >
+              {leadershipProgram.cta}
             </Button>
           </div>
         </div>
