@@ -52,7 +52,7 @@ export default function ContactPage() {
             </div>
 
             {/* Center: Call Details */}
-            <div className="bg-gradient-to-br from-[#D97742] to-[#5E8AA8] rounded-lg p-12 text-white space-y-6">
+            <div className="bg-gradient-to-br from-[#D97742] to-[#5E8AA8] rounded-lg p-12 text-[#0B1D2A] space-y-6">
               <div className="text-center space-y-2">
                 <p className="text-sm font-bold uppercase tracking-wide opacity-90">
                   Discovery Conversation

@@ -168,10 +168,10 @@ export default function ResearchPage() {
       <section className="py-24 bg-gradient-to-r from-[#D97742] to-[#5E8AA8]">
         <div className="container mx-auto px-6 max-w-5xl text-center space-y-8">
           <div className="space-y-6">
-            <h2 className="text-5xl lg:text-6xl font-bold text-white leading-tight">
+            <h2 className="text-5xl lg:text-6xl font-bold text-[#0B1D2A] leading-tight">
               {RESEARCH_CONTENT.futureSection.title}
             </h2>
-            <p className="text-xl text-white text-opacity-90 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-xl text-[#0B1D2A] text-opacity-90 leading-relaxed max-w-3xl mx-auto">
               {RESEARCH_CONTENT.futureSection.description}
             </p>
           </div>
@@ -179,7 +179,7 @@ export default function ResearchPage() {
             href={routes.bookDiscovery}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-full font-bold transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 bg-[#D97742] text-white shadow-md hover:shadow-lg focus-visible:ring-[#D97742] px-7 py-4 text-base sm:text-lg bg-white hover:bg-[#ECE7DF] text-[#D97742] font-bold shadow-lg"
+            className="inline-flex items-center justify-center rounded-full font-bold transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 shadow-md hover:shadow-lg focus-visible:ring-[#D97742] px-7 py-4 text-base sm:text-lg bg-white hover:bg-[#ECE7DF] text-[#D97742] font-bold shadow-lg"
           >
             {RESEARCH_CONTENT.futureSection.cta}
           </a>

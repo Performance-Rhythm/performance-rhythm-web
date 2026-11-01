@@ -503,10 +503,10 @@ export default function ProgramsPage() {
         <div className="container mx-auto px-6 max-w-5xl">
           <div className="text-center space-y-12">
             <div className="space-y-6">
-              <h2 className="text-5xl lg:text-6xl font-bold text-white leading-tight">
+              <h2 className="text-5xl lg:text-6xl font-bold text-[#0B1D2A] leading-tight">
                 {foundingPartnerProgram.headline}
               </h2>
-              <p className="text-xl text-white text-opacity-90 leading-relaxed max-w-3xl mx-auto">
+              <p className="text-xl text-[#0B1D2A] text-opacity-90 leading-relaxed max-w-3xl mx-auto">
                 {foundingPartnerProgram.description}
               </p>
             </div>
@@ -514,8 +514,8 @@ export default function ProgramsPage() {
             <div className="grid lg:grid-cols-2 gap-8">
               {foundingPartnerProgram.benefits.map((benefit, idx) => (
                 <div key={idx} className="bg-white bg-opacity-10 backdrop-blur rounded-lg p-8 text-left border border-white border-opacity-20">
-                  <h3 className="text-xl font-bold text-white mb-3">{benefit.title}</h3>
-                  <p className="text-white text-opacity-90">{benefit.description}</p>
+                  <h3 className="text-xl font-bold text-[#0B1D2A] mb-3">{benefit.title}</h3>
+                  <p className="text-[#0B1D2A] text-opacity-90">{benefit.description}</p>
                 </div>
               ))}
             </div>
