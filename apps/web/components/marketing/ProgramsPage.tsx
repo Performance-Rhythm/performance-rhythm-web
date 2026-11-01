@@ -441,7 +441,7 @@ export default function ProgramsPage() {
                 <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                   {platformProgram.eyebrow}
                 </p>
-                <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl break-words hyphens-auto font-bold bg-gradient-to-r from-[#D97742] to-[#5E8AA8] bg-clip-text text-transparent">
                   {platformProgram.title}
                 </h2>
               </div>

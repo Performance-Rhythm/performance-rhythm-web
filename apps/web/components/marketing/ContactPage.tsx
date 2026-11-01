@@ -130,7 +130,7 @@ export default function ContactPage() {
               <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                 {CONTACT_CONTENT.discoveryFramework.eyebrow}
               </p>
-              <h2 className="text-5xl lg:text-6xl font-bold text-[#0B1D2A]">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl break-words hyphens-auto font-bold text-[#0B1D2A]">
                 {CONTACT_CONTENT.discoveryFramework.title}
               </h2>
             </div>
@@ -183,7 +183,7 @@ export default function ContactPage() {
                   href={option.href}
                   target={option.href.startsWith("http") ? "_blank" : undefined}
                   rel={option.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                  className="bg-white rounded-lg border border-[#A7BBC6] border-opacity-20 p-8 hover:border-opacity-40 hover:shadow-md transition-all duration-300 space-y-4 flex flex-col"
+                  className="bg-white rounded-lg border border-[#A7BBC6] border-opacity-20 min-w-0 w-full p-6 sm:p-8 hover:border-opacity-40 hover:shadow-md transition-all duration-300 space-y-4 flex flex-col"
                 >
                   <div className="text-4xl">{option.icon}</div>
                   <h3 className="text-xl font-bold text-[#0B1D2A]">

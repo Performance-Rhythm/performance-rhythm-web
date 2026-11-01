@@ -40,7 +40,7 @@ export default function AboutPage() {
               <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                 {ABOUT_CONTENT.founderStory.eyebrow}
               </p>
-              <h2 className="text-5xl lg:text-6xl font-bold text-[#0B1D2A]">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl break-words hyphens-auto font-bold text-[#0B1D2A]">
                 {ABOUT_CONTENT.founderStory.title}
               </h2>
             </div>
@@ -106,7 +106,7 @@ export default function AboutPage() {
               <p className="text-[19px] leading-snug font-bold tracking-widest text-accent uppercase">
                 {ABOUT_CONTENT.theProblem.eyebrow}
               </p>
-              <h2 className="text-5xl lg:text-6xl font-bold text-[#0B1D2A]">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl break-words hyphens-auto font-bold text-[#0B1D2A]">
                 {ABOUT_CONTENT.theProblem.title}
               </h2>
               <p className="text-xl text-gray-700 leading-relaxed">
