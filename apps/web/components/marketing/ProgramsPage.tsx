@@ -506,7 +506,7 @@ export default function ProgramsPage() {
               <h2 className="text-5xl lg:text-6xl font-bold text-[#0B1D2A] leading-tight">
                 {foundingPartnerProgram.headline}
               </h2>
-              <p className="text-xl text-[#0B1D2A] text-opacity-90 leading-relaxed max-w-3xl mx-auto">
+              <p className="text-xl text-[#0B1D2A] leading-relaxed max-w-3xl mx-auto">
                 {foundingPartnerProgram.description}
               </p>
             </div>
@@ -523,7 +523,7 @@ export default function ProgramsPage() {
             <Button 
               href={routes.bookFoundingPartner}
               size="lg"
-              className="bg-white hover:bg-[#ECE7DF] text-[#D97742] font-bold shadow-lg"
+              className="bg-white hover:bg-[#ECE7DF] !text-[#0B1D2A] font-bold shadow-lg"
             >
               {foundingPartnerProgram.cta}
             </Button>

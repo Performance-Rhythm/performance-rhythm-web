@@ -61,7 +61,7 @@ export default function ContactPage() {
                   {CONTACT_CONTENT.discoveryCall.duration}
                 </p>
               </div>
-              <p className="text-center text-lg opacity-90">
+              <p className="text-center text-lg text-[#0B1D2A]">
                 {CONTACT_CONTENT.discoveryCall.description}
               </p>
               <div className="pt-6 border-t border-white border-opacity-20 space-y-2">
@@ -76,7 +76,7 @@ export default function ContactPage() {
                   href={routes.bookDiscovery}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-center bg-white text-[#D97742] font-bold py-3 px-6 rounded-full hover:bg-[#ECE7DF] transition duration-200"
+                  className="block text-center bg-white text-[#0B1D2A] font-bold py-3 px-6 rounded-full hover:bg-[#ECE7DF] transition duration-200"
                 >
                   Book Now
                 </a>
