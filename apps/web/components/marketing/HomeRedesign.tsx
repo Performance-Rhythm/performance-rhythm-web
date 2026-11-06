@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { HOMEPAGE_CONTENT } from '@/content/homepage';
 import { Button } from '@/components/ui/Button';
+import { HOMEPAGE_PHOTO_C_SIZES } from '@/lib/homepage-photo-c';
 import { routes } from '@/lib/routes';
 
 export default function HomeRedesign() {
@@ -346,6 +347,7 @@ export default function HomeRedesign() {
                 alt="Team practicing guided breathwork around a conference table"
                 width={1536}
                 height={1024}
+                sizes={HOMEPAGE_PHOTO_C_SIZES}
                 className="w-full h-auto rounded-lg"
               />
             </div>
