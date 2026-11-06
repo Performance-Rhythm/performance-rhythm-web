@@ -518,7 +518,7 @@ export default function MethodPage() {
                 <div key={idx} className="bg-[#FAFAF8] rounded-lg p-8 border border-[#A7BBC6] border-opacity-20">
                   <h3 className="text-xl font-bold text-[#0B1D2A] mb-3">{framework.title}</h3>
                   <p className="text-gray-700 mb-4 leading-relaxed">{framework.description}</p>
-                  <p className="text-sm text-[#5E8AA8] font-normal italic">{framework.source}</p>
+                  <p className="text-sm text-[#0B1D2A] font-normal italic">{framework.source}</p>
                 </div>
               ))}
             </div>

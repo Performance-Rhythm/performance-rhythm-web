@@ -234,10 +234,10 @@ export default function AboutPage() {
                   <h3 className="text-3xl font-bold text-[#0B1D2A]">
                     {founder.name}
                   </h3>
-                  <p className="text-lg font-bold text-[#D97742] mt-1">
+                  <p className="text-lg font-bold text-[#0B1D2A] mt-1">
                     {founder.title}
                   </p>
-                  <p className="text-sm text-[#5E8AA8] font-bold uppercase tracking-wide mt-2">
+                  <p className="text-sm text-[#0B1D2A] font-bold uppercase tracking-wide mt-2">
                     {founder.focus}
                   </p>
                   <p className="text-lg text-gray-700 leading-relaxed mt-4">
