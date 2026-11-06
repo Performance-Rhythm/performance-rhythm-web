@@ -326,7 +326,7 @@ export default function ProgramsPage() {
                 <div className="p-6 space-y-6 max-h-96 overflow-y-auto">
                   {/* Team Header */}
                   <div>
-                    <p className="text-sm font-bold text-[#5E8AA8] mb-4">Team: Customer Success Team</p>
+                    <p className="text-sm font-bold text-[#0B1D2A] mb-4">Team: Customer Success Team</p>
                   </div>
 
                   {/* Metric 1: Team Participation */}

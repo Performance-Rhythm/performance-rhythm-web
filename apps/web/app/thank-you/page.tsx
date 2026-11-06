@@ -49,7 +49,7 @@ export default function ThankYouPage() {
             <div className="mt-10 grid gap-5 md:grid-cols-3">
               {nextSteps.map((step, index) => (
                 <Card key={step}>
-                  <span className="text-sm font-bold text-accent">0{index + 1}</span>
+                  <span className="text-sm font-bold text-primary">0{index + 1}</span>
                   <p className="mt-4 font-bold leading-7 text-primary">{step}</p>
                 </Card>
               ))}

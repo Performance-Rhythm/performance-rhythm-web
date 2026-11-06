@@ -114,7 +114,7 @@ export default function ContactPage() {
                   key={idx}
                   className="bg-white rounded-lg border border-[#A7BBC6] border-opacity-20 p-6"
                 >
-                  <p className="text-lg font-bold text-[#D97742]">{item}</p>
+                  <p className="text-lg font-bold text-[#0B1D2A]">{item}</p>
                 </div>
               ))}
             </div>
@@ -192,7 +192,7 @@ export default function ContactPage() {
                   <p className="text-gray-700 leading-relaxed flex-grow">
                     {option.description}
                   </p>
-                  <div className="text-[#D97742] font-bold hover:text-[#5E8AA8] transition">
+                  <div className="font-bold text-[#0B1D2A] underline decoration-[#D97742] underline-offset-4">
                     {option.cta} →
                   </div>
                 </a>

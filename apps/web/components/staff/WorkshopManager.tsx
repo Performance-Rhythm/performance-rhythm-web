@@ -35,15 +35,15 @@ function SurveyCard({ label, url, filename }: { label: string; url: string; file
 
   return (
     <article className="rounded-[1.5rem] border border-primary/10 bg-white p-5 shadow-medium sm:p-7">
-      <p className="text-xs font-bold uppercase tracking-[0.18em] text-accent">{label}</p>
+      <p className="text-xs font-bold uppercase tracking-[0.18em] text-primary">{label}</p>
       <div className="mx-auto mt-5 aspect-square w-full max-w-[360px] rounded-2xl border border-primary/10 bg-white p-3">
         {qrDataUrl ? <Image src={qrDataUrl} alt={`${label} QR code`} width={720} height={720} unoptimized className="h-full w-full" /> : <div className="h-full w-full animate-pulse rounded-xl bg-neutral" />}
       </div>
-      <a href={url} target="_blank" rel="noreferrer" className="mt-5 block break-all text-sm text-secondary underline decoration-accent/40 underline-offset-4 hover:text-accent">
+      <a href={url} target="_blank" rel="noreferrer" className="mt-5 block break-all text-sm text-primary underline decoration-accent underline-offset-4 hover:text-primary">
         {url}
       </a>
       <div className="mt-5 flex flex-wrap gap-3">
-        <button type="button" onClick={copyLink} className={`${actionClass} bg-primary text-white hover:bg-secondary`}>
+        <button type="button" onClick={copyLink} className={`${actionClass} bg-primary text-white hover:bg-secondary hover:text-[#0B1D2A]`}>
           {copied ? "Copied" : "Copy link"}
         </button>
         <a href={qrDataUrl || undefined} download={filename} aria-disabled={!qrDataUrl} className={`${actionClass} border border-primary/20 text-primary hover:bg-neutral ${!qrDataUrl ? "pointer-events-none opacity-50" : ""}`}>
@@ -109,7 +109,7 @@ export function WorkshopManager() {
             </select>
           </label>
         </div>
-        <button disabled={submitting} className={`${actionClass} mt-7 bg-accent px-7 text-white shadow-md hover:bg-secondary disabled:cursor-wait disabled:opacity-60`}>
+        <button disabled={submitting} className={`${actionClass} mt-7 bg-accent px-7 text-[#0B1D2A] shadow-md hover:bg-secondary hover:text-[#0B1D2A] disabled:cursor-wait disabled:opacity-60`}>
           {submitting ? "Creating workshop…" : "Create Workshop"}
         </button>
         {error ? <p role="alert" className="mt-5 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-bold text-red-800">{error}</p> : null}

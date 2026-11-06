@@ -102,7 +102,7 @@ export default function ResearchPage() {
                             </a>
                           </div>
                           <div className="flex gap-2 flex-wrap justify-end">
-                            <span className="px-3 py-1 bg-[#5E8AA8] bg-opacity-10 rounded-full text-xs font-bold text-[#5E8AA8] uppercase tracking-wide">
+                            <span className="px-3 py-1 bg-[#5E8AA8] bg-opacity-10 rounded-full text-xs font-bold text-[#0B1D2A] uppercase tracking-wide">
                               {article.credibility === "peer-reviewed"
                                 ? "Peer-Reviewed"
                                 : article.credibility === "institutional"
@@ -135,14 +135,14 @@ export default function ResearchPage() {
 
                       {/* Footer: Type & Link */}
                       <div className="flex items-center justify-between pt-4 border-t border-[#A7BBC6] border-opacity-20">
-                        <span className="text-xs font-bold text-[#5E8AA8] uppercase tracking-wide">
+                        <span className="text-xs font-bold text-[#0B1D2A] uppercase tracking-wide">
                           {getResourceTypeLabel(article.type)}
                         </span>
                         <a
                           href={article.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 font-bold text-[#D97742] hover:text-[#5E8AA8] transition duration-200"
+                          className="inline-flex items-center gap-2 font-bold text-[#0B1D2A] underline decoration-[#D97742] underline-offset-4 hover:text-[#0B1D2A] transition duration-200"
                         >
                           View Source →
                         </a>
