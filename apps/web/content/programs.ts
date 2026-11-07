@@ -185,8 +185,8 @@ export const PROGRAMS_CONTENT = {
       title: "12-Week Rhythm Mastery Program",
       summary: "A facilitator-led cohort program that builds four practical skills: noticing early stress signals, regulating in real time, responding thoughtfully under pressure, and recovering between demands.",
       details: [
-        "Week 1 kickoff (90 minutes), followed by weekly 60-minute live sessions",
-        "Three in-person reinforcement sessions at Weeks 4, 8, and 12",
+        "Week 1 in-person kickoff (90 minutes) and 11 weekly 60-minute live sessions, 12 sessions in all",
+        "Three of the 11 weekly sessions are in person, scheduled with the team, and each replaces that week's virtual session",
         "Cohorts of up to 30 participants",
         "Breathwork and meditation themes tailored to your team's priorities",
         "Brief check-ins at the start, midpoint, and Week 12, with an aggregate cohort report"

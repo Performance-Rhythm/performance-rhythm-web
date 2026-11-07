@@ -304,7 +304,7 @@ export const RESEARCH_CONTENT = {
           category: "Team Learning",
           description:
             "A foundational field study connecting team psychological safety with learning behavior and showing how leader coaching and context contribute to it.",
-          url: "https://doi.org/10.2307/2666999",
+          url: "https://www.jstor.org/stable/2666999",
           type: "study",
           credibility: "peer-reviewed"
         }

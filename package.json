@@ -11,7 +11,8 @@
     "build": "pnpm --filter @performance-rhythm/web build",
     "start": "pnpm --filter @performance-rhythm/web start",
     "lint": "pnpm --filter @performance-rhythm/web lint",
-    "typecheck": "pnpm --filter @performance-rhythm/web typecheck"
+    "typecheck": "pnpm --filter @performance-rhythm/web typecheck",
+    "test": "pnpm --filter @performance-rhythm/web test"
   },
   "packageManager": "pnpm@10.25.0"
 }
